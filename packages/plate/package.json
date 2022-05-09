@@ -1,6 +1,6 @@
 {
-  "name": "@udecode/plate",
-  "version": "10.8.0",
+  "name": "@shapeci/plate",
+  "version": "1.0.0",
   "description": "Plate – a plugin system for slate",
   "keywords": [
     "wysiwyg",
@@ -13,13 +13,9 @@
     "plate",
     "plugin"
   ],
-  "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "git+https://github.com/ShapeCI/plate.git",
     "directory": "packages/plate"
   },
   "license": "MIT",
@@ -50,7 +46,7 @@
     "styled-components": ">=5.0.0"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/shapeci"
   },
   "gitHead": "9f660a54cbd931cd20a6ad99e9319dbebfc7e1af"
 }
