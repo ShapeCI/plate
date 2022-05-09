@@ -39,9 +39,9 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
-    "slate": ">=0.66.1",
-    "slate-history": ">=0.66.0",
-    "slate-react": ">=0.74.2"
+    "@shapeci/slate": "1.0.0",
+    "@shapeci/slate-history": "1.0.2",
+    "@shapeci/slate-react": "1.0.1"
   },
   "publishConfig": {
     "access": "public"
