@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
+import { withReact } from '@shapeci/slate-react';
 import { mockPlugin } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { withReact } from 'slate-react';
 import { CONFIG } from '../../../../../../../docs/src/live/config/config';
 import { MARK_BOLD } from '../../../../../../nodes/basic-marks/src/createBoldPlugin';
 import { MARK_ITALIC } from '../../../../../../nodes/basic-marks/src/createItalicPlugin';

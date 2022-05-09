@@ -1,20 +1,20 @@
 /** @jsx jsx */
 
+import { Range } from '@shapeci/slate';
+import { withReact } from '@shapeci/slate-react';
 import {
-  ELEMENT_CODE_BLOCK,
-  insertEmptyCodeBlock,
+    ELEMENT_CODE_BLOCK,
+    insertEmptyCodeBlock
 } from '@udecode/plate-code-block';
 import {
-  ELEMENT_DEFAULT,
-  getPluginType,
-  getRangeFromBlockStart,
-  getText,
-  mockPlugin,
-  PlateEditor,
+    ELEMENT_DEFAULT,
+    getPluginType,
+    getRangeFromBlockStart,
+    getText,
+    mockPlugin,
+    PlateEditor
 } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { Range } from 'slate';
-import { withReact } from 'slate-react';
 import { clearBlockFormat } from '../../../../../../../docs/src/live/config/autoformat/autoformatUtils';
 import { CONFIG } from '../../../../../../../docs/src/live/config/config';
 import { AutoformatPlugin } from '../../../types';

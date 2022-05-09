@@ -1,8 +1,8 @@
+import { Range } from '@shapeci/slate';
 import { createPlateEditor } from '@udecode/plate-core';
-import { Range } from 'slate';
 import {
-  createFindReplacePlugin,
-  MARK_SEARCH_HIGHLIGHT,
+    createFindReplacePlugin,
+    MARK_SEARCH_HIGHLIGHT
 } from '../../../createFindReplacePlugin';
 import { decorateFindReplace } from '../../../decorateFindReplace';
 

@@ -2,7 +2,7 @@
  * Iterate through all of the nodes in the editor and return the first match. If
  * no match is found, return undefined.
  */
-import { Editor, Node, NodeEntry, Path, Range, Span } from 'slate';
+import { Editor, Node, NodeEntry, Path, Range, Span } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { TNode } from '../../types/slate/TNode';
 import { FindNodeOptions } from './findNode';

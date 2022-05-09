@@ -1,5 +1,5 @@
+import { Location } from '@shapeci/slate';
 import { getRangeBefore, getText, TEditor } from '@udecode/plate-core';
-import { Location } from 'slate';
 
 export const isPreviousCharacterEmpty = (editor: TEditor, at: Location) => {
   const range = getRangeBefore(editor, at);

@@ -1,16 +1,15 @@
 /** @jsx jsx */
 
+import { Range, Transforms } from '@shapeci/slate';
 import {
-  comboboxActions,
-  comboboxSelectors,
-  ComboboxState,
+    comboboxActions,
+    comboboxSelectors,
+    ComboboxState
 } from '@udecode/plate-combobox';
 import { PlateEditor } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { Range, Transforms } from 'slate';
-import { createEditorWithMentions } from './__tests__/createEditorWithMentions';
 import { getMentionOnSelectItem } from './getMentionOnSelectItem';
-import { withMention } from './withMention';
+import { createEditorWithMentions } from './__tests__/createEditorWithMentions';
 
 jsx;
 

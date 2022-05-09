@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
+import { Range } from '@shapeci/slate';
 import { createLinkPlugin } from '@udecode/plate-link';
 import { jsx } from '@udecode/plate-test-utils';
-import { Range } from 'slate';
 import { PlateEditor } from '../../../../types/PlateEditor';
 import { createPlateEditor } from '../../../../utils/createPlateEditor';
 import { getBlockAbove } from '../../../queries/getBlockAbove';

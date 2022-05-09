@@ -1,4 +1,4 @@
-import { RenderLeafProps } from 'slate-react';
+import { RenderLeafProps } from '@shapeci/slate-react';
 import { AnyObject } from '../utility/AnyObject';
 import { TText } from './TText';
 

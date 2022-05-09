@@ -1,14 +1,14 @@
+import { Editor, Node, PathRef } from '@shapeci/slate';
 import { getNode, TEditor, WithOverride } from '@udecode/plate-core';
 import { KEY_INDENT } from '@udecode/plate-indent';
-import { Editor, Node, PathRef } from 'slate';
+import {
+    IndentListPlugin,
+    KEY_LIST_STYLE_TYPE
+} from './createIndentListPlugin';
+import { normalizeIndentList } from './normalizeIndentList';
 import { normalizeIndentListStart } from './normalizers/normalizeIndentListStart';
 import { getNextIndentList } from './queries/getNextIndentList';
 import { getPreviousIndentList } from './queries/getPreviousIndentList';
-import {
-  IndentListPlugin,
-  KEY_LIST_STYLE_TYPE,
-} from './createIndentListPlugin';
-import { normalizeIndentList } from './normalizeIndentList';
 import { ListStyleType } from './types';
 
 export const withIndentList: WithOverride<{}, IndentListPlugin> = (

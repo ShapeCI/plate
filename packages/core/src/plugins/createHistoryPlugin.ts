@@ -1,4 +1,4 @@
-import { withHistory } from 'slate-history';
+import { withHistory } from '@shapeci/slate-history';
 import { WithOverride } from '../types/plugins/WithOverride';
 import { createPluginFactory } from '../utils/createPluginFactory';
 

@@ -1,12 +1,12 @@
+import { Editor } from '@shapeci/slate';
 import {
-  getPluginInjectProps,
-  PlateEditor,
-  setNodes,
-  SetNodesOptions,
-  TNodeMatch,
-  unsetNodes,
+    getPluginInjectProps,
+    PlateEditor,
+    setNodes,
+    SetNodesOptions,
+    TNodeMatch,
+    unsetNodes
 } from '@udecode/plate-core';
-import { Editor } from 'slate';
 import { KEY_LINE_HEIGHT } from '../createLineHeightPlugin';
 
 export const setLineHeight = (

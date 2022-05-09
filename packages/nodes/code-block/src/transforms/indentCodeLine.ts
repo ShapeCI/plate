@@ -1,5 +1,5 @@
+import { Ancestor, Editor, Node, NodeEntry, Transforms } from '@shapeci/slate';
 import { isExpanded, TEditor } from '@udecode/plate-core';
-import { Ancestor, Editor, Node, NodeEntry, Transforms } from 'slate';
 
 export interface IndentCodeLineOptions {
   codeBlock: NodeEntry<Ancestor>;

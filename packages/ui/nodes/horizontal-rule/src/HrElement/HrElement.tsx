@@ -1,6 +1,6 @@
-import React from 'react';
+import { useFocused, useSelected } from '@shapeci/slate-react';
 import { getRootProps } from '@udecode/plate-styled-components';
-import { useFocused, useSelected } from 'slate-react';
+import React from 'react';
 import { getHrElementStyles } from './HrElement.styles';
 import { HrElementProps } from './HrElement.types';
 

@@ -1,4 +1,4 @@
-import { NodeEntry } from 'slate';
+import { NodeEntry } from '@shapeci/slate';
 import { queryNode } from '../common/queries/index';
 import { QueryNodeOptions } from '../common/types/QueryNodeOptions';
 import { isAncestor } from '../types/slate/TAncestor';

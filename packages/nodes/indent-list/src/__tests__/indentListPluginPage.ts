@@ -1,5 +1,5 @@
+import { Path } from '@shapeci/slate';
 import { getNode, PlatePlugin, TElement } from '@udecode/plate-core';
-import { Path } from 'slate';
 import { getPreviousPath } from '../../../../core/src/common/queries/getPreviousPath';
 import { IndentListPlugin } from '../createIndentListPlugin';
 

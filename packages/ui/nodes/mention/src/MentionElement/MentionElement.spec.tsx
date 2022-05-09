@@ -1,7 +1,7 @@
-import React from 'react';
+import * as SlateReact from '@shapeci/slate-react';
 import { render } from '@testing-library/react';
 import { ELEMENT_MENTION } from '@udecode/plate-mention';
-import * as SlateReact from 'slate-react';
+import React from 'react';
 import { MentionElement } from './MentionElement';
 
 it('should render', () => {

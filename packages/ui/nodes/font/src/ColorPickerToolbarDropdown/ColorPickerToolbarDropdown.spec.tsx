@@ -1,20 +1,20 @@
-import React, { ReactElement, ReactNode } from 'react';
+import { Editor, Transforms } from '@shapeci/slate';
 import { render, RenderOptions, screen } from '@testing-library/react';
 import userEvents from '@testing-library/user-event';
 import {
-  getPlateEditorRef,
-  Plate,
-  PlateEditor,
-  TDescendant,
+    getPlateEditorRef,
+    Plate,
+    PlateEditor,
+    TDescendant
 } from '@udecode/plate-core';
 import {
-  createFontBackgroundColorPlugin,
-  createFontColorPlugin,
-  createFontSizePlugin,
-  MARK_BG_COLOR,
-  MARK_COLOR,
+    createFontBackgroundColorPlugin,
+    createFontColorPlugin,
+    createFontSizePlugin,
+    MARK_BG_COLOR,
+    MARK_COLOR
 } from '@udecode/plate-font';
-import { Editor, Transforms } from 'slate';
+import React, { ReactElement, ReactNode } from 'react';
 import { ColorPickerToolbarDropdown } from './ColorPickerToolbarDropdown';
 
 const DEFAULT_PLUGINS = [

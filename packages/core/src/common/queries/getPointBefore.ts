@@ -1,7 +1,7 @@
 /* eslint-disable no-constant-condition */
+import { Editor, Location, Point } from '@shapeci/slate';
 import castArray from 'lodash/castArray';
 import map from 'lodash/map';
-import { Editor, Location, Point } from 'slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { isRangeAcrossBlocks } from './isRangeAcrossBlocks';
 

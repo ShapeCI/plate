@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
+import { Path } from '@shapeci/slate';
 import { jsx } from '@udecode/plate-test-utils';
-import { Path } from 'slate';
 import { PlateEditor } from '../../types/PlateEditor';
 import { findNode } from '../queries/findNode';
 import { moveChildren } from './moveChildren';

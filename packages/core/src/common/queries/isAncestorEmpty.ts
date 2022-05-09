@@ -1,4 +1,4 @@
-import { Ancestor, Editor, Node } from 'slate';
+import { Ancestor, Editor, Node } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 
 /**

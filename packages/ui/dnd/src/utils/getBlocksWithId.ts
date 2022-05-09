@@ -1,5 +1,5 @@
+import { Editor } from '@shapeci/slate';
 import { EditorNodesOptions, getNodes, TEditor } from '@udecode/plate-core';
-import { Editor } from 'slate';
 
 /**
  * Get blocks with an id

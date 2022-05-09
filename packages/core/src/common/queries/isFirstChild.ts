@@ -1,4 +1,4 @@
-import { Path } from 'slate';
+import { Path } from '@shapeci/slate';
 
 /**
  * Is it the first child of the parent

@@ -1,4 +1,4 @@
-import { Path, Range } from 'slate';
+import { Path, Range } from '@shapeci/slate';
 
 /**
  * Is the range in the same single text path.

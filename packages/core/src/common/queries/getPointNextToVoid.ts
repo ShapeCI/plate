@@ -1,4 +1,4 @@
-import { Editor, Path, Point } from 'slate';
+import { Editor, Path, Point } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { getBlockAbove } from './getBlockAbove';
 

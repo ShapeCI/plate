@@ -1,6 +1,6 @@
+import { Transforms } from '@shapeci/slate';
+import { ReactEditor } from '@shapeci/slate-react';
 import { EditorNodesOptions, unhangRange } from '@udecode/plate-core';
-import { Transforms } from 'slate';
-import { ReactEditor } from 'slate-react';
 import { getBlocksWithId } from './getBlocksWithId';
 import { getNodesRange } from './getNodesRange';
 

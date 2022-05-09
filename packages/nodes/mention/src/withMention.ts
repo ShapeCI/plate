@@ -1,13 +1,13 @@
+import { Editor, Node, Range, Transforms } from '@shapeci/slate';
 import { comboboxActions } from '@udecode/plate-combobox';
 import { getPlugin, insertNodes, WithOverride } from '@udecode/plate-core';
-import { Editor, Node, Range, Transforms } from 'slate';
-import { removeMentionInput } from './transforms/removeMentionInput';
 import { ELEMENT_MENTION_INPUT } from './createMentionPlugin';
 import {
-  findMentionInput,
-  isNodeMentionInput,
-  isSelectionInMentionInput,
+    findMentionInput,
+    isNodeMentionInput,
+    isSelectionInMentionInput
 } from './queries';
+import { removeMentionInput } from './transforms/removeMentionInput';
 import { MentionInputNode, MentionPlugin } from './types';
 
 export const withMention: WithOverride<{}, MentionPlugin> = (

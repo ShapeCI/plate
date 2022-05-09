@@ -1,5 +1,5 @@
-import { Text } from 'slate';
-import { jsx } from 'slate-hyperscript';
+import { Text } from '@shapeci/slate';
+import { jsx } from '@shapeci/slate-hyperscript';
 import { PlateEditor } from '../../../types/PlateEditor';
 import { TDescendant } from '../../../types/slate/TDescendant';
 import { isElement } from '../../../types/slate/TElement';

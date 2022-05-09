@@ -1,4 +1,4 @@
-import { NodeEntry } from 'slate';
+import { NodeEntry } from '@shapeci/slate';
 import { TNode } from '../../types/slate/TNode';
 
 /**

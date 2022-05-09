@@ -1,4 +1,4 @@
-import { Editor, Path, Point, Range, Span } from 'slate';
+import { Editor, Path, Point, Range, Span } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 
 export interface UnhangRangeOptions {

@@ -1,4 +1,4 @@
-import { Element } from 'slate';
+import { Element } from '@shapeci/slate';
 import { AnyObject } from '../utility/AnyObject';
 import { TDescendant } from './TDescendant';
 

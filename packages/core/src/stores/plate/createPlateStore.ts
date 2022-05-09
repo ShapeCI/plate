@@ -1,5 +1,5 @@
+import { createEditor } from '@shapeci/slate';
 import { createStore } from '@udecode/zustood';
-import { createEditor } from 'slate';
 import { ELEMENT_DEFAULT } from '../../common/types/node.types';
 import { withPlate } from '../../plugins/withPlate';
 import { PlateChangeKey, PlateStoreState } from '../../types/PlateStore';

@@ -1,4 +1,4 @@
-import { jsx } from 'slate-hyperscript';
+import { jsx } from '@shapeci/slate-hyperscript';
 import { PlateEditor } from '../../../types/PlateEditor';
 import { TDescendant } from '../../../types/slate/TDescendant';
 import { deserializeHtmlNodeChildren } from './deserializeHtmlNodeChildren';

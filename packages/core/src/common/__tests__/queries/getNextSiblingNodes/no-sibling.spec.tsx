@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
+import { Range } from '@shapeci/slate';
 import { jsx } from '@udecode/plate-test-utils';
-import { Range } from 'slate';
 import { createLinkPlugin } from '../../../../../../nodes/link/src/createLinkPlugin';
 import { PlateEditor } from '../../../../types/PlateEditor';
 import { TDescendant } from '../../../../types/slate/TDescendant';

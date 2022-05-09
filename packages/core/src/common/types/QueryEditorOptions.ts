@@ -1,4 +1,4 @@
-import { Location } from 'slate';
+import { Location } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { QueryNodeOptions } from './QueryNodeOptions';
 

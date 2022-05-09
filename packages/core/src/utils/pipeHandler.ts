@@ -1,5 +1,5 @@
+import { EditableProps } from '@shapeci/slate-react/dist/components/editable';
 import { SyntheticEvent } from 'react';
-import { EditableProps } from 'slate-react/dist/components/editable';
 import { PlateEditor } from '../types/PlateEditor';
 import { DOMHandlers, HandlerReturnType } from '../types/plugins/DOMHandlers';
 

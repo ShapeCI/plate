@@ -1,14 +1,14 @@
-import React, { useMemo } from 'react';
+import { ReactEditor, useReadOnly } from '@shapeci/slate-react';
 import { getRootProps } from '@udecode/plate-styled-components';
 import {
-  ELEMENT_TABLE,
-  getTableColumnIndex,
-  setTableColSize,
+    ELEMENT_TABLE,
+    getTableColumnIndex,
+    setTableColSize
 } from '@udecode/plate-table';
 import clsx from 'clsx';
 import { useAtom } from 'jotai';
 import { HandleStyles, Resizable, ResizableProps } from 're-resizable';
-import { ReactEditor, useReadOnly } from 'slate-react';
+import React, { useMemo } from 'react';
 import { hoveredColIndexAtom, resizingColAtom } from '../table.atoms';
 import { getTableCellElementStyles } from './TableCellElement.styles';
 import { TableCellElementProps } from './TableCellElement.types';

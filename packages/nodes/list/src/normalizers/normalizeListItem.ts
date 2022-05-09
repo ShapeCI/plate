@@ -1,15 +1,15 @@
+import { Editor, NodeEntry, Path, PathRef, Transforms } from '@shapeci/slate';
 import {
-  getChildren,
-  getParent,
-  getPluginType,
-  insertEmptyElement,
-  match,
-  PlateEditor,
-  setNodes,
-  TDescendant,
-  TElement,
+    getChildren,
+    getParent,
+    getPluginType,
+    insertEmptyElement,
+    match,
+    PlateEditor,
+    setNodes,
+    TDescendant,
+    TElement
 } from '@udecode/plate-core';
-import { Editor, NodeEntry, Path, PathRef, Transforms } from 'slate';
 import { ELEMENT_LIC, ELEMENT_OL, ELEMENT_UL } from '../createListPlugin';
 import { getListTypes } from '../queries';
 import { moveListItemUp } from '../transforms';

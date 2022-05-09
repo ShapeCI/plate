@@ -1,6 +1,6 @@
+import { Point, Range, Transforms } from '@shapeci/slate';
 import { TEditor } from '@udecode/plate-core';
 import castArray from 'lodash/castArray';
-import { Point, Range, Transforms } from 'slate';
 import { AutoformatTextRule } from '../types';
 import { getMatchPoints } from '../utils/getMatchPoints';
 import { getMatchRange } from '../utils/getMatchRange';

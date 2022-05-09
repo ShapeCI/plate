@@ -1,5 +1,5 @@
-import { NodeEntry, Range } from 'slate';
-import { EditableProps } from 'slate-react/dist/components/editable';
+import { NodeEntry, Range } from '@shapeci/slate';
+import { EditableProps } from '@shapeci/slate-react/dist/components/editable';
 import { PlateEditor } from '../types/PlateEditor';
 
 /**

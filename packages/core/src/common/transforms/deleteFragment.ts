@@ -1,12 +1,12 @@
 import {
-  Editor,
-  Location,
-  NodeEntry,
-  Path,
-  Point,
-  Range,
-  Transforms,
-} from 'slate';
+    Editor,
+    Location,
+    NodeEntry,
+    Path,
+    Point,
+    Range,
+    Transforms
+} from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { mergeNodes } from './mergeNodes';
 

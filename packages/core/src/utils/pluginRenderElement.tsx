@@ -1,5 +1,5 @@
+import { DefaultElement } from '@shapeci/slate-react';
 import React from 'react';
-import { DefaultElement } from 'slate-react';
 import { PlateEditor } from '../types/PlateEditor';
 import { PlatePlugin } from '../types/plugins/PlatePlugin';
 import { RenderElement } from '../types/RenderElement';

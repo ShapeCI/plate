@@ -1,5 +1,5 @@
-import { Editor, Location, Transforms } from 'slate';
-import { ReactEditor } from 'slate-react';
+import { Editor, Location, Transforms } from '@shapeci/slate';
+import { ReactEditor } from '@shapeci/slate-react';
 
 export interface SelectEditorOptions {
   /**

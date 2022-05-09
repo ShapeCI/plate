@@ -1,8 +1,8 @@
 /* eslint-disable simple-import-sort/imports */
+import { NodeEntry, Text } from '@shapeci/slate';
 import { Decorate } from '@udecode/plate'; // noinspection CommaExpressionJS
 import Prism from 'prismjs';
 import 'prismjs/components/prism-markdown';
-import { NodeEntry, Text } from 'slate';
 
 /**
  * Decorate texts with markdown preview.

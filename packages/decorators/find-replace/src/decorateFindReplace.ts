@@ -1,5 +1,5 @@
+import { NodeEntry, Range, Text } from '@shapeci/slate';
 import { Decorate } from '@udecode/plate-core';
-import { NodeEntry, Range, Text } from 'slate';
 import { FindReplacePlugin } from './types';
 
 export const decorateFindReplace: Decorate<{}, FindReplacePlugin> = (

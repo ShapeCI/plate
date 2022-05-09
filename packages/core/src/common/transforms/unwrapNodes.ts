@@ -1,4 +1,4 @@
-import { Transforms } from 'slate';
+import { Transforms } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { getQueryOptions } from '../queries/match';
 import { WrapOptions } from '../types/Transforms.types';

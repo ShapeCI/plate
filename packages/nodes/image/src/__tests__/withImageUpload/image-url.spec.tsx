@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
+import { withReact } from '@shapeci/slate-react';
 import { mockPlugin } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { withReact } from 'slate-react';
 import { withImageUpload } from '../../withImageUpload';
 
 jsx;

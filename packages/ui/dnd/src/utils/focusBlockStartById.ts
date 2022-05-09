@@ -1,6 +1,6 @@
+import { Editor, Transforms } from '@shapeci/slate';
+import { ReactEditor } from '@shapeci/slate-react';
 import { findNode } from '@udecode/plate-core';
-import { Editor, Transforms } from 'slate';
-import { ReactEditor } from 'slate-react';
 
 /**
  * Select the start of a block by id and focus the editor.

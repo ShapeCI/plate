@@ -1,4 +1,4 @@
-import { Node, Text } from 'slate';
+import { Node, Text } from '@shapeci/slate';
 
 export const hasSingleChild = (node: Node): boolean => {
   if (Text.isText(node)) {

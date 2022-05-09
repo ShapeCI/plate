@@ -1,4 +1,4 @@
-import { createEditor, Editor } from 'slate';
+import { createEditor, Editor } from '@shapeci/slate';
 import { withPlate, WithPlateOptions } from '../plugins/withPlate';
 import { OverrideByKey } from '../types/OverrideByKey';
 import { PlateEditor } from '../types/PlateEditor';

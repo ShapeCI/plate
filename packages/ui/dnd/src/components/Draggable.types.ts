@@ -1,7 +1,7 @@
-import React from 'react';
+import { Element, Path } from '@shapeci/slate';
 import { TEditor } from '@udecode/plate-core';
 import { StyledElementProps } from '@udecode/plate-styled-components';
-import { Element, Path } from 'slate';
+import React from 'react';
 import { CSSProp } from 'styled-components';
 
 export interface DraggableStyleProps extends DraggableProps {

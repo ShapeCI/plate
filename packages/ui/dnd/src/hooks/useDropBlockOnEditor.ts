@@ -1,7 +1,7 @@
-import { DropTargetMonitor, useDrop } from 'react-dnd';
+import { Path, Transforms } from '@shapeci/slate';
+import { ReactEditor } from '@shapeci/slate-react';
 import { findNode, isExpanded } from '@udecode/plate-core';
-import { Path, Transforms } from 'slate';
-import { ReactEditor } from 'slate-react';
+import { DropTargetMonitor, useDrop } from 'react-dnd';
 import { DragItemBlock } from '../types';
 import { getHoverDirection } from '../utils/getHoverDirection';
 import { getNewDirection } from '../utils/getNewDirection';

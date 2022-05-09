@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
+import { ReactEditor } from '@shapeci/slate-react';
 import { jsx } from '@udecode/plate-test-utils';
-import { ReactEditor } from 'slate-react';
 import { selectEditor } from './selectEditor';
 
 jsx;

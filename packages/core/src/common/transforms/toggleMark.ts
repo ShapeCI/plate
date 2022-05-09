@@ -1,5 +1,5 @@
+import { Editor } from '@shapeci/slate';
 import castArray from 'lodash/castArray';
-import { Editor } from 'slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { isMarkActive } from '../queries/isMarkActive';
 import { ToggleMarkPlugin } from '../types/plugins/ToggleMarkPlugin';

@@ -1,19 +1,19 @@
-import React, { useCallback } from 'react';
+import { ReactEditor } from '@shapeci/slate-react';
 import {
-  getPluginInjectProps,
-  isCollapsed,
-  someNode,
-  useEventPlateId,
-  usePlateEditorState,
-  withPlateEventProvider,
+    getPluginInjectProps,
+    isCollapsed,
+    someNode,
+    useEventPlateId,
+    usePlateEditorState,
+    withPlateEventProvider
 } from '@udecode/plate-core';
 import { KEY_LINE_HEIGHT, setLineHeight } from '@udecode/plate-line-height';
 import {
-  ToolbarButton,
-  ToolbarButtonProps,
-  ToolbarDropdown,
+    ToolbarButton,
+    ToolbarButtonProps,
+    ToolbarDropdown
 } from '@udecode/plate-ui-toolbar';
-import { ReactEditor } from 'slate-react';
+import React, { useCallback } from 'react';
 
 export const LineHeightToolbarDropdown = withPlateEventProvider(
   (props: ToolbarButtonProps) => {

@@ -1,4 +1,4 @@
-import { Editor, Location } from 'slate';
+import { Editor, Location } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 
 /**

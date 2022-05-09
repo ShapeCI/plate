@@ -1,24 +1,24 @@
+import { Editor } from '@shapeci/slate';
 import {
-  deleteFragment,
-  ELEMENT_DEFAULT,
-  getPluginType,
-  isFirstChild,
-  isSelectionAtBlockStart,
-  mockPlugin,
-  PlateEditor,
+    deleteFragment,
+    ELEMENT_DEFAULT,
+    getPluginType,
+    isFirstChild,
+    isSelectionAtBlockStart,
+    mockPlugin,
+    PlateEditor
 } from '@udecode/plate-core';
 import {
-  onKeyDownResetNode,
-  ResetNodePlugin,
-  SIMULATE_BACKSPACE,
+    onKeyDownResetNode,
+    ResetNodePlugin,
+    SIMULATE_BACKSPACE
 } from '@udecode/plate-reset-node';
-import { Editor } from 'slate';
+import { ELEMENT_LI } from './createListPlugin';
 import { getListItemEntry } from './queries/getListItemEntry';
 import { isListNested } from './queries/isListNested';
 import { removeFirstListItem } from './transforms/removeFirstListItem';
 import { removeListItem } from './transforms/removeListItem';
 import { unwrapList } from './transforms/unwrapList';
-import { ELEMENT_LI } from './createListPlugin';
 
 export const deleteBackwardList = (
   editor: PlateEditor,

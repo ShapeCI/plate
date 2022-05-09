@@ -1,4 +1,4 @@
-import { createEditor } from 'slate';
+import { createEditor } from '@shapeci/slate';
 import { createNodeIdPlugin } from '../../../editor/node-id/src/createNodeIdPlugin';
 import { ELEMENT_H1 } from '../../../nodes/heading/src/constants';
 import { createHeadingPlugin } from '../../../nodes/heading/src/createHeadingPlugin';

@@ -1,6 +1,6 @@
+import { Node, NodeEntry, Transforms } from '@shapeci/slate';
 import { isElement, WithOverride } from '@udecode/plate-core';
 import castArray from 'lodash/castArray';
-import { Node, NodeEntry, Transforms } from 'slate';
 import { RemoveEmptyNodesPlugin } from './createRemoveEmptyNodesPlugin';
 
 /**

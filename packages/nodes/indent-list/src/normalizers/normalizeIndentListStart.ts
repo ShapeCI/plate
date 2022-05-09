@@ -1,10 +1,10 @@
+import { NodeEntry } from '@shapeci/slate';
 import {
-  getNode,
-  setNodes,
-  TEditor,
-  withoutNormalizing,
+    getNode,
+    setNodes,
+    TEditor,
+    withoutNormalizing
 } from '@udecode/plate-core';
-import { NodeEntry } from 'slate';
 import { KEY_LIST_START, KEY_LIST_STYLE_TYPE } from '../createIndentListPlugin';
 import { getNextIndentList } from '../queries/getNextIndentList';
 import { getPreviousIndentList } from '../queries/getPreviousIndentList';

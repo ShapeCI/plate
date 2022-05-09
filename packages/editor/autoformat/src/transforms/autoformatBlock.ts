@@ -1,15 +1,15 @@
+import { Editor, Range, Transforms } from '@shapeci/slate';
 import {
-  ELEMENT_DEFAULT,
-  getRangeBefore,
-  getRangeFromBlockStart,
-  getText,
-  setNodes,
-  someNode,
-  TEditor,
-  TElement,
+    ELEMENT_DEFAULT,
+    getRangeBefore,
+    getRangeFromBlockStart,
+    getText,
+    setNodes,
+    someNode,
+    TEditor,
+    TElement
 } from '@udecode/plate-core';
 import castArray from 'lodash/castArray';
-import { Editor, Range, Transforms } from 'slate';
 import { AutoformatBlockRule } from '../types';
 import { getMatchRange } from '../utils/getMatchRange';
 

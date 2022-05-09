@@ -1,5 +1,5 @@
+import { NodeEntry } from '@shapeci/slate';
 import castArray from 'lodash/castArray';
-import { NodeEntry } from 'slate';
 import { TNode } from '../../types/slate/TNode';
 import { QueryNodeOptions } from '../types/QueryNodeOptions';
 

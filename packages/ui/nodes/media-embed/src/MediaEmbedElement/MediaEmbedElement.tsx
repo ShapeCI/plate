@@ -1,8 +1,8 @@
-import React from 'react';
+import { ReactEditor } from '@shapeci/slate-react';
 import { setNodes, TElement } from '@udecode/plate-core';
 import { MediaEmbedNodeData } from '@udecode/plate-media-embed';
 import { getRootProps } from '@udecode/plate-styled-components';
-import { ReactEditor } from 'slate-react';
+import React from 'react';
 import { getMediaEmbedElementStyles } from './MediaEmbedElement.styles';
 import { MediaEmbedElementProps } from './MediaEmbedElement.types';
 import { MediaEmbedUrlInput } from './MediaEmbedUrlInput';

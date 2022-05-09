@@ -1,4 +1,4 @@
-import { NodeEntry, Range } from 'slate';
+import { NodeEntry, Range } from '@shapeci/slate';
 import { PlateEditor } from '../PlateEditor';
 import { WithPlatePlugin } from './PlatePlugin';
 

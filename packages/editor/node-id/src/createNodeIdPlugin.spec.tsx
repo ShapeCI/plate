@@ -1,16 +1,16 @@
 /** @jsx jsx */
 
+import { Transforms } from '@shapeci/slate';
 import {
-  createPlateEditor,
-  insertNodes,
-  PlateEditor,
-  TElement,
+    createPlateEditor,
+    insertNodes,
+    PlateEditor,
+    TElement
 } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { Transforms } from 'slate';
 import {
-  ELEMENT_LI,
-  ELEMENT_UL,
+    ELEMENT_LI,
+    ELEMENT_UL
 } from '../../../nodes/list/src/createListPlugin';
 import { ELEMENT_PARAGRAPH } from '../../../nodes/paragraph/src/createParagraphPlugin';
 import { createNodeIdPlugin } from './createNodeIdPlugin';

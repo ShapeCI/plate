@@ -1,6 +1,6 @@
-import { HTMLAttributes } from 'react';
+import { Element } from '@shapeci/slate';
 import { PlateRenderElementProps } from '@udecode/plate-core';
-import { Element } from 'slate';
+import { HTMLAttributes } from 'react';
 import { StyledProps } from '../types/StyledProps';
 
 export type StyledElementProps<

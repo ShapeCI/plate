@@ -3627,6 +3627,43 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@shapeci/slate-history@1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@shapeci/slate-history/1.0.2/33a48dae1b7027b5a28f205b9b9e26e1d249166d50c530b4b830874f8c51117e#10ef6666cafb640e8f73a68ebc5e19d4cedeaf5f"
+  integrity sha512-8I/espzKRtNiunN6FXvMZ1ABQdyTqNrSmE0tRycfvmqQQNX24ozjz6D11oI4HEzBepY/9hsZZsEmOGeyds0BsA==
+  dependencies:
+    is-plain-object "^5.0.0"
+
+"@shapeci/slate-hyperscript@1.0.1":
+  version "1.0.1"
+  resolved "https://npm.pkg.github.com/download/@shapeci/slate-hyperscript/1.0.1/193b8e083e968edbded8b9ab3dae658b2881dbf6a26444e98d12ce1456d3cd40#3ca908bc1acb59bb9d556c00a9c7aa00520590f6"
+  integrity sha512-GL9rdrMoUKCns5mBJfOjbwTchkrHLvFlInDRAaH1M9YFQwbVFv4H1JIwHK0RkxsYBCtN1weB1TitYovQtJ1i7g==
+  dependencies:
+    is-plain-object "^5.0.0"
+
+"@shapeci/slate-react@1.0.1":
+  version "1.0.1"
+  resolved "https://npm.pkg.github.com/download/@shapeci/slate-react/1.0.1/1fc614d77513bb28526d8e3e0bc441d72478982144b9cf12055dee537d60757f#b7245cc69874621eb6384c94d2e950f6d345fa4c"
+  integrity sha512-w2FoSL3w9evNVpGbLdEq2TmXI8Uokpoittccr0BpgYH1OQ0auDxayzg4nHOlSqdMzprAd0XFwliMcKaaEBzikA==
+  dependencies:
+    "@types/is-hotkey" "^0.1.1"
+    "@types/lodash" "^4.14.149"
+    direction "^1.0.3"
+    is-hotkey "^0.1.6"
+    is-plain-object "^5.0.0"
+    lodash "^4.17.4"
+    scroll-into-view-if-needed "^2.2.20"
+    tiny-invariant "1.0.6"
+
+"@shapeci/slate@1.0.0":
+  version "1.0.0"
+  resolved "https://npm.pkg.github.com/download/@shapeci/slate/1.0.0/78544f02dd04b874d5a7730e9b35058990ba3088591c04d9e678934100d1e479#cfb989335f449be8114fa90704fb27b48ee16fa9"
+  integrity sha512-0enb9gpMVfqim1EhwusLX/u4KuVLciBvcp6C5H6fU+HAumdn6auqEfshB20HwKrq1PU4+LBpXgP3L6CSzTikeA==
+  dependencies:
+    immer "^9.0.6"
+    is-plain-object "^5.0.0"
+    tiny-warning "^1.0.3"
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.3.tgz#3802ddd21a50a949b6721ddd72da36e67e7f1b2d"
@@ -15819,34 +15856,6 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-slate-history@0.66.0:
-  version "0.66.0"
-  resolved "https://registry.yarnpkg.com/slate-history/-/slate-history-0.66.0.tgz#ac63fddb903098ceb4c944433e3f75fe63acf940"
-  integrity sha512-6MWpxGQZiMvSINlCbMW43E2YBSVMCMCIwQfBzGssjWw4kb0qfvj0pIdblWNRQZD0hR6WHP+dHHgGSeVdMWzfng==
-  dependencies:
-    is-plain-object "^5.0.0"
-
-slate-hyperscript@0.67.0:
-  version "0.67.0"
-  resolved "https://registry.yarnpkg.com/slate-hyperscript/-/slate-hyperscript-0.67.0.tgz#b066febf10a5176106fe1fcdcdc76460f3eb721b"
-  integrity sha512-3c+d2ePTUk5J7wMjs2CZIJPhb1/VnTltel+qnQarOWlXtJng7oRc8BNaYbNfkl2ecT9W5bpxpsy1r6x5ICXucQ==
-  dependencies:
-    is-plain-object "^5.0.0"
-
-slate-react@0.74.2:
-  version "0.74.2"
-  resolved "https://registry.yarnpkg.com/slate-react/-/slate-react-0.74.2.tgz#da184e5bc86d3fb1f2922be4aefc39bc9bddbe13"
-  integrity sha512-NX9lFpHoEcHZ44KVJk1QvXoof5nN+QbDZ/zaAVklBn/XXbjogm1P6d/QqUStB2faKecZrV4BDRMq0Kw3WIpvaA==
-  dependencies:
-    "@types/is-hotkey" "^0.1.1"
-    "@types/lodash" "^4.14.149"
-    direction "^1.0.3"
-    is-hotkey "^0.1.6"
-    is-plain-object "^5.0.0"
-    lodash "^4.17.4"
-    scroll-into-view-if-needed "^2.2.20"
-    tiny-invariant "1.0.6"
-
 slate-test-utils@1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/slate-test-utils/-/slate-test-utils-1.3.1.tgz#9353e91d59e67028a1bb90b52be8b23db029a831"
@@ -15855,15 +15864,6 @@ slate-test-utils@1.3.1:
     is-hotkey "^0.2.0"
     jest-useragent-mock "^0.1.1"
     lodash.clonedeep "^4.5.0"
-
-slate@0.72.8:
-  version "0.72.8"
-  resolved "https://registry.yarnpkg.com/slate/-/slate-0.72.8.tgz#5a018edf24e45448655293a68bfbcf563aa5ba81"
-  integrity sha512-/nJwTswQgnRurpK+bGJFH1oM7naD5qDmHd89JyiKNT2oOKD8marW0QSBtuFnwEbL5aGCS8AmrhXQgNOsn4osAw==
-  dependencies:
-    immer "^9.0.6"
-    is-plain-object "^5.0.0"
-    tiny-warning "^1.0.3"
 
 slice-ansi@^4.0.0:
   version "4.0.0"

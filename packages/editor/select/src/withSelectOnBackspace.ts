@@ -1,10 +1,10 @@
+import Slate, { Editor, Transforms } from '@shapeci/slate';
 import {
-  isCollapsed,
-  queryNode,
-  TNode,
-  WithOverride,
+    isCollapsed,
+    queryNode,
+    TNode,
+    WithOverride
 } from '@udecode/plate-core';
-import Slate, { Editor, Transforms } from 'slate';
 import { SelectOnBackspacePlugin } from './createSelectOnBackspacePlugin';
 
 /**

@@ -1,4 +1,4 @@
-import { Editor } from 'slate';
+import { Editor } from '@shapeci/slate';
 import { AnyObject } from '../utility/AnyObject';
 import { TDescendant } from './TDescendant';
 

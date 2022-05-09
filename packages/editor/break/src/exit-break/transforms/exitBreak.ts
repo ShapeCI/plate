@@ -1,10 +1,10 @@
+import { Editor, Path } from '@shapeci/slate';
 import {
-  ELEMENT_DEFAULT,
-  getPluginType,
-  insertNodes,
-  PlateEditor,
+    ELEMENT_DEFAULT,
+    getPluginType,
+    insertNodes,
+    PlateEditor
 } from '@udecode/plate-core';
-import { Editor, Path } from 'slate';
 import { exitBreakAtEdges } from '../queries/exitBreakAtEdges';
 import { ExitBreakRule } from '../types';
 

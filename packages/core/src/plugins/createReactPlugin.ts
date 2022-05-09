@@ -1,4 +1,4 @@
-import { withReact } from 'slate-react';
+import { withReact } from '@shapeci/slate-react';
 import { WithOverride } from '../types/plugins/WithOverride';
 import { createPluginFactory } from '../utils/createPluginFactory';
 

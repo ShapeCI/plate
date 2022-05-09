@@ -1,5 +1,5 @@
+import { ReactEditor } from '@shapeci/slate-react';
 import { findNodePath, getParent, TElement } from '@udecode/plate-core';
-import { ReactEditor } from 'slate-react';
 
 /**
  * Get table column index of a cell node.

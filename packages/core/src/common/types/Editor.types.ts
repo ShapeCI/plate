@@ -1,4 +1,4 @@
-import { Location, Path, Point, Range } from 'slate';
+import { Location, Path, Point, Range } from '@shapeci/slate';
 import { TAncestor } from '../../types/slate/TAncestor';
 import { TNode } from '../../types/slate/TNode';
 import { Predicate } from '../queries/match';

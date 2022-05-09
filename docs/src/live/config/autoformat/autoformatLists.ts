@@ -1,14 +1,14 @@
+import { Editor } from '@shapeci/slate';
 import {
-  AutoformatRule,
-  ELEMENT_LI,
-  ELEMENT_OL,
-  ELEMENT_TODO_LI,
-  ELEMENT_UL,
-  setNodes,
-  TElement,
-  TodoListItemNodeData,
+    AutoformatRule,
+    ELEMENT_LI,
+    ELEMENT_OL,
+    ELEMENT_TODO_LI,
+    ELEMENT_UL,
+    setNodes,
+    TElement,
+    TodoListItemNodeData
 } from '@udecode/plate';
-import { Editor } from 'slate';
 import { clearBlockFormat, formatList } from './autoformatUtils';
 
 export const autoformatLists: AutoformatRule[] = [

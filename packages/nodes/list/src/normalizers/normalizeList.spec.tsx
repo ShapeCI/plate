@@ -1,9 +1,9 @@
 /** @jsx jsx */
 
-import { createPlateUIEditor } from '@udecode/plate/src';
-import { getNode, PlateEditor } from '@udecode/plate-core';
+import { Editor } from '@shapeci/slate';
+import { PlateEditor } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { Editor } from 'slate';
+import { createPlateUIEditor } from '@udecode/plate/src';
 import { createListPlugin } from '../createListPlugin';
 
 jsx;

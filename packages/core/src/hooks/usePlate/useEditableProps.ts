@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
+import { EditableProps } from '@shapeci/slate-react/dist/components/editable';
 import omit from 'lodash/omit';
-import { EditableProps } from 'slate-react/dist/components/editable';
+import { useMemo } from 'react';
 import { useDeepCompareMemo } from 'use-deep-compare';
 import { PlateProps } from '../../components/Plate';
 import { usePlateSelectors } from '../../stores/plate/platesStore';

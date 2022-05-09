@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import { Editable, Slate } from '@shapeci/slate-react';
 import { Provider } from 'jotai';
-import { Editable, Slate } from 'slate-react';
+import React, { useEffect } from 'react';
 import { usePlate } from '../hooks/usePlate/usePlate';
 import { usePlatesStoreEffect } from '../hooks/usePlatesStoreEffect';
 import { platesActions, usePlatesSelectors } from '../stores/plate/platesStore';

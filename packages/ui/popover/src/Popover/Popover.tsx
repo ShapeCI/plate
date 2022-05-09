@@ -1,7 +1,7 @@
-import React, { HTMLAttributes } from 'react';
+import { useReadOnly, useSelected } from '@shapeci/slate-react';
 import Tippy, { TippyProps } from '@tippyjs/react';
 import { StyledProps } from '@udecode/plate-styled-components';
-import { useReadOnly, useSelected } from 'slate-react';
+import React, { HTMLAttributes } from 'react';
 import { getPopoverStyles } from './Popover.styles';
 
 export interface PopoverProps extends TippyProps, StyledProps {

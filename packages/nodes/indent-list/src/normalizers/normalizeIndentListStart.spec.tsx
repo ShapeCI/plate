@@ -1,12 +1,12 @@
 /** @jsx jsx */
 
+import { Editor } from '@shapeci/slate';
 import { createPlateEditor } from '@udecode/plate-core';
 import { createIndentPlugin } from '@udecode/plate-indent';
 import { jsx } from '@udecode/plate-test-utils';
-import { Editor } from 'slate';
 import { createParagraphPlugin } from '../../../paragraph/src/createParagraphPlugin';
-import { indentListPluginPage } from '../__tests__/indentListPluginPage';
 import { createIndentListPlugin } from '../createIndentListPlugin';
+import { indentListPluginPage } from '../__tests__/indentListPluginPage';
 
 jsx;
 

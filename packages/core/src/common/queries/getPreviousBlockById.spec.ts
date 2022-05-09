@@ -1,4 +1,4 @@
-import { createEditor } from 'slate';
+import { createEditor } from '@shapeci/slate';
 import { getPreviousBlockById } from './getPreviousBlockById';
 
 const nodesFixture5 = [

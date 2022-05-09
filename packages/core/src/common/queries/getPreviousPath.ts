@@ -1,4 +1,4 @@
-import { Path } from 'slate';
+import { Path } from '@shapeci/slate';
 
 export const getPreviousPath = (path: Path): Path | undefined => {
   if (path.length === 0) return;

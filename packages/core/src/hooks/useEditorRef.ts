@@ -1,4 +1,4 @@
-import { useSlateStatic } from 'slate-react';
+import { useSlateStatic } from '@shapeci/slate-react';
 import { PlateEditor } from '../types/PlateEditor';
 
 /**

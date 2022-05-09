@@ -1,13 +1,13 @@
+import { Editor } from '@shapeci/slate';
 import {
-  getPluginInjectProps,
-  PlateEditor,
-  PlatePluginKey,
-  setNodes,
-  SetNodesOptions,
-  TNodeMatch,
-  unsetNodes,
+    getPluginInjectProps,
+    PlateEditor,
+    PlatePluginKey,
+    setNodes,
+    SetNodesOptions,
+    TNodeMatch,
+    unsetNodes
 } from '@udecode/plate-core';
-import { Editor } from 'slate';
 import { KEY_ALIGN } from '../createAlignPlugin';
 import { Alignment } from '../types';
 

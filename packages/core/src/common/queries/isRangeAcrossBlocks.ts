@@ -1,4 +1,4 @@
-import { Path, Range } from 'slate';
+import { Path, Range } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { EditorAboveOptions } from '../types/Editor.types';
 import { getBlockAbove } from './getBlockAbove';

@@ -1,11 +1,11 @@
-import React, { forwardRef, useMemo } from 'react';
+import { Path } from '@shapeci/slate';
+import { ReactEditor, useReadOnly } from '@shapeci/slate-react';
 import {
-  createNodesWithHOC,
-  PlateRenderElementProps,
-  TEditor,
+    createNodesWithHOC,
+    PlateRenderElementProps,
+    TEditor
 } from '@udecode/plate-core';
-import { Path } from 'slate';
-import { ReactEditor, useReadOnly } from 'slate-react';
+import React, { forwardRef, useMemo } from 'react';
 import { Draggable } from './Draggable';
 import { DraggableProps } from './Draggable.types';
 

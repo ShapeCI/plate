@@ -1,4 +1,4 @@
-import { createEditor } from 'slate';
+import { createEditor } from '@shapeci/slate';
 import { mergeDeepPlugins } from './mergeDeepPlugins';
 import { mockPlugin } from './mockPlugin';
 

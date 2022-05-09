@@ -1,11 +1,11 @@
+import { Text } from '@shapeci/slate';
 import {
-  ELEMENT_LI,
-  ELEMENT_LIC,
-  ELEMENT_PARAGRAPH,
-  ELEMENT_UL,
-  TElement,
+    ELEMENT_LI,
+    ELEMENT_LIC,
+    ELEMENT_PARAGRAPH,
+    ELEMENT_UL,
+    TElement
 } from '@udecode/plate';
-import { Text } from 'slate';
 
 export const createElement = (
   text = '',

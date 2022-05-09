@@ -1,4 +1,4 @@
-import { Editor } from 'slate';
+import { Editor } from '@shapeci/slate';
 import { PlateEditor } from '../types/PlateEditor';
 import { PlatePluginInsertDataOptions } from '../types/plugins/PlatePluginInsertData';
 import { TDescendant } from '../types/slate/TDescendant';

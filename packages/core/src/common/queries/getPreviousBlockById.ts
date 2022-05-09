@@ -1,4 +1,4 @@
-import { Editor, Node, NodeEntry } from 'slate';
+import { Editor, Node, NodeEntry } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { TNode } from '../../types/slate/TNode';
 import { QueryNodeOptions } from '../types/QueryNodeOptions';

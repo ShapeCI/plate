@@ -1,11 +1,11 @@
+import { Location } from '@shapeci/slate';
 import {
-  getAbove,
-  getParent,
-  isElement,
-  PlateEditor,
-  someNode,
+    getAbove,
+    getParent,
+    isElement,
+    PlateEditor,
+    someNode
 } from '@udecode/plate-core';
-import { Location } from 'slate';
 import { getCodeLineType } from '../options';
 
 /**

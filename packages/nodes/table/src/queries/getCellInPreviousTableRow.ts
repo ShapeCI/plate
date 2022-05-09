@@ -1,5 +1,5 @@
+import { Ancestor, Editor, NodeEntry, Path } from '@shapeci/slate';
 import { TEditor } from '@udecode/plate-core';
-import { Ancestor, Editor, NodeEntry, Path } from 'slate';
 
 export function getCellInPreviousTableRow(
   editor: TEditor,

@@ -1,5 +1,5 @@
-import { Path } from 'slate';
-import { ReactEditor } from 'slate-react';
+import { Path } from '@shapeci/slate';
+import { ReactEditor } from '@shapeci/slate-react';
 import { TNode } from '../../types/slate/TNode';
 
 /**

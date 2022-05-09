@@ -1,4 +1,4 @@
-import { Location, Path, Point, Range } from 'slate';
+import { Location, Path, Point, Range } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 
 /**

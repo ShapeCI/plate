@@ -1,7 +1,7 @@
+import { Range } from '@shapeci/slate';
 import { isCollapsed, OnChange } from '@udecode/plate-core';
-import { Range } from 'slate';
-import { getTextFromTrigger } from './utils/getTextFromTrigger';
 import { comboboxActions, comboboxSelectors } from './combobox.store';
+import { getTextFromTrigger } from './utils/getTextFromTrigger';
 
 /**
  * For each combobox state (byId):

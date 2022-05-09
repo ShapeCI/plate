@@ -1,4 +1,4 @@
-import { Range } from 'slate';
+import { Range } from '@shapeci/slate';
 
 /**
  * See {@link Range.isExpanded}.

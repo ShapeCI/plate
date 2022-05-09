@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
+import { Element } from '@shapeci/slate';
 import { jsx } from '@udecode/plate-test-utils';
-import { Element } from 'slate';
 import { PlateEditor } from '../../../../types/PlateEditor';
 import { isAncestorEmpty } from '../../../queries/index';
 

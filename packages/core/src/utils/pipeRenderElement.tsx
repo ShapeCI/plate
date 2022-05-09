@@ -1,6 +1,6 @@
+import { DefaultElement } from '@shapeci/slate-react';
+import { EditableProps } from '@shapeci/slate-react/dist/components/editable';
 import React from 'react';
-import { DefaultElement } from 'slate-react';
-import { EditableProps } from 'slate-react/dist/components/editable';
 import { PlateEditor } from '../types/PlateEditor';
 import { PlateRenderElementProps } from '../types/PlateRenderElementProps';
 import { RenderElement } from '../types/RenderElement';

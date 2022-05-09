@@ -1,5 +1,5 @@
+import { Editor, Point } from '@shapeci/slate';
 import { escapeRegExp, getText } from '@udecode/plate-core';
-import { Editor, Point } from 'slate';
 
 /**
  * Get text and range from trigger to cursor.

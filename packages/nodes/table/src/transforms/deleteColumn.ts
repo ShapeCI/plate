@@ -1,15 +1,15 @@
+import { Transforms } from '@shapeci/slate';
 import {
-  getAbove,
-  getPluginType,
-  PlateEditor,
-  someNode,
+    getAbove,
+    getPluginType,
+    PlateEditor,
+    someNode
 } from '@udecode/plate-core';
-import { Transforms } from 'slate';
 import {
-  ELEMENT_TABLE,
-  ELEMENT_TD,
-  ELEMENT_TH,
-  ELEMENT_TR,
+    ELEMENT_TABLE,
+    ELEMENT_TD,
+    ELEMENT_TH,
+    ELEMENT_TR
 } from '../createTablePlugin';
 
 export const deleteColumn = (editor: PlateEditor) => {

@@ -1,5 +1,5 @@
+import { Text } from '@shapeci/slate';
 import { PlateRenderLeafProps } from '@udecode/plate-core';
-import { Text } from 'slate';
 import { StyledProps } from '../types/StyledProps';
 
 export type StyledLeafProps<

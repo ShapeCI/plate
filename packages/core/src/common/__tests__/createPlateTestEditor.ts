@@ -1,8 +1,8 @@
-import { buildTestHarness } from 'slate-test-utils';
+import { buildTestHarness } from '@shapeci/slate-test-utils';
 import { PlateTest } from '../../components/PlateTest';
 import {
-  createPlateEditor,
-  CreatePlateEditorOptions,
+    createPlateEditor,
+    CreatePlateEditorOptions
 } from '../../utils/createPlateEditor';
 
 /**

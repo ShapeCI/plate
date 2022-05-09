@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { Editor, NodeEntry, Transforms } from '@shapeci/slate';
 import { render } from '@testing-library/react';
 import { isEqual, memoize } from 'lodash';
-import { Editor, NodeEntry, Transforms } from 'slate';
+import React, { useEffect, useState } from 'react';
 import { PlatePlugin, TEditor } from '../types';
 import { createPlateEditor } from '../utils/createPlateEditor';
 import { Plate } from './Plate';

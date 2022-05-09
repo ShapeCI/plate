@@ -1,6 +1,6 @@
+import { createEditor } from '@shapeci/slate';
+import { ReactEditor, Slate, withReact } from '@shapeci/slate-react';
 import React from 'react';
-import { createEditor } from 'slate';
-import { ReactEditor, Slate, withReact } from 'slate-react';
 import { SlateProps } from '../../../types/slate/SlateProps';
 
 /**

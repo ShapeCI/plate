@@ -1,4 +1,4 @@
-import React from 'react';
+import * as slateReact from '@shapeci/slate-react';
 import { act, fireEvent, render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import * as core from '@udecode/plate-core';
@@ -6,7 +6,7 @@ import { Plate } from '@udecode/plate-core/src';
 import { ELEMENT_H1 } from '@udecode/plate-heading';
 import { createImagePlugin } from '@udecode/plate-image';
 import { createPlateUIEditor } from '@udecode/plate-ui';
-import * as slateReact from 'slate-react';
+import React from 'react';
 import { ImageToolbarButton } from '../ImageToolbarButton';
 import { imgInput } from './ImageElement.fixtures';
 

@@ -1,4 +1,4 @@
-import { Transforms } from 'slate';
+import { Transforms } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { TElement } from '../../types/slate/TElement';
 import { TNode } from '../../types/slate/TNode';

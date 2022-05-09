@@ -1,5 +1,5 @@
+import { Range } from '@shapeci/slate';
 import { createStore, StateActions, StoreApi } from '@udecode/zustood';
-import { Range } from 'slate';
 import { ComboboxOnSelectItem, NoData, TComboboxItem } from './types';
 
 export type ComboboxStateById<TData = NoData> = {

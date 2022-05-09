@@ -1,10 +1,10 @@
+import { Path } from '@shapeci/slate';
 import {
-  getParent,
-  getPluginType,
-  PlateEditor,
-  TElement,
+    getParent,
+    getPluginType,
+    PlateEditor,
+    TElement
 } from '@udecode/plate-core';
-import { Path } from 'slate';
 import { ELEMENT_LI } from '../createListPlugin';
 
 /**

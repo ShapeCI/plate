@@ -1,5 +1,5 @@
+import { NodeEntry } from '@shapeci/slate';
 import { isDefined, TEditor, unsetNodes } from '@udecode/plate-core';
-import { NodeEntry } from 'slate';
 import { KEY_LIST_START } from '../createIndentListPlugin';
 
 /**

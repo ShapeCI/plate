@@ -1,12 +1,12 @@
+import { Editor, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import {
-  findDescendant,
-  getLastChildPath,
-  moveChildren,
-  MoveChildrenOptions,
-  PlateEditor,
-  TElement,
+    findDescendant,
+    getLastChildPath,
+    moveChildren,
+    MoveChildrenOptions,
+    PlateEditor,
+    TElement
 } from '@udecode/plate-core';
-import { Editor, NodeEntry, Path, Transforms } from 'slate';
 import { getListTypes } from '../queries/getListTypes';
 
 export interface MergeListItemIntoListOptions {

@@ -1,19 +1,19 @@
+import { Descendant, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import {
-  ELEMENT_DEFAULT,
-  getChildren,
-  getNode,
-  getParent,
-  getPluginType,
-  getPreviousPath,
-  isElement,
-  match,
-  PlateEditor,
-  setNodes,
-  TDescendant,
-  TElement,
-  wrapNodes,
+    ELEMENT_DEFAULT,
+    getChildren,
+    getNode,
+    getParent,
+    getPluginType,
+    getPreviousPath,
+    isElement,
+    match,
+    PlateEditor,
+    setNodes,
+    TDescendant,
+    TElement,
+    wrapNodes
 } from '@udecode/plate-core';
-import { Descendant, NodeEntry, Path, Transforms } from 'slate';
 import { ELEMENT_LI, ELEMENT_LIC } from '../createListPlugin';
 import { getListTypes, isListRoot } from '../queries';
 import { moveListItemsToList } from '../transforms';

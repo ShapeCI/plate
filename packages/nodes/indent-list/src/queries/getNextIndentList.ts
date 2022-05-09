@@ -1,8 +1,8 @@
+import { NodeEntry, Path } from '@shapeci/slate';
 import { getNode, TEditor } from '@udecode/plate-core';
-import { NodeEntry, Path } from 'slate';
 import {
-  getSiblingIndentList,
-  GetSiblingIndentListOptions,
+    getSiblingIndentList,
+    GetSiblingIndentListOptions
 } from './getSiblingIndentList';
 
 /**

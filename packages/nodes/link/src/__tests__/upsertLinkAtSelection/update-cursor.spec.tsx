@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
+import { Transforms } from '@shapeci/slate';
 import { createPlateEditor } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { Transforms } from 'slate';
 import { createLinkPlugin, ELEMENT_LINK } from '../../createLinkPlugin';
 import { upsertLinkAtSelection } from '../../transforms/upsertLinkAtSelection';
 

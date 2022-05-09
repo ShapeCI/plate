@@ -1,4 +1,4 @@
-import { Text } from 'slate';
+import { Text } from '@shapeci/slate';
 import { AnyObject } from '../utility/AnyObject';
 
 export type TText<TExtension = AnyObject> = Text & TExtension & AnyObject;

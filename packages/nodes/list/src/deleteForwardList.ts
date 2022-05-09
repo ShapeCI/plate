@@ -1,22 +1,22 @@
+import { Editor, Node, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import {
-  getBlockAbove,
-  getChildren,
-  getNode,
-  getPluginType,
-  getText,
-  isSelectionAtBlockEnd,
-  PlateEditor,
-  TDescendant,
-  TElement,
+    getBlockAbove,
+    getChildren,
+    getNode,
+    getPluginType,
+    getText,
+    isSelectionAtBlockEnd,
+    PlateEditor,
+    TDescendant,
+    TElement
 } from '@udecode/plate-core';
-import { Editor, Node, NodeEntry, Path, Transforms } from 'slate';
 import { ELEMENT_LI } from './createListPlugin';
 import { getListItemEntry, getListRoot, hasListChild } from './queries';
 import {
-  moveListItemsToList,
-  moveListItemUp,
-  removeFirstListItem,
-  removeListItem,
+    moveListItemsToList,
+    moveListItemUp,
+    removeFirstListItem,
+    removeListItem
 } from './transforms';
 
 const pathToEntry = <T extends Node>(

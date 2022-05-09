@@ -1,20 +1,20 @@
+import { Range, Transforms } from '@shapeci/slate';
 import {
-  getPluginType,
-  getRangeBefore,
-  getRangeFromBlockStart,
-  getText,
-  isCollapsed,
-  mockPlugin,
-  PlateEditor,
-  someNode,
-  unwrapNodes,
-  WithOverride,
+    getPluginType,
+    getRangeBefore,
+    getRangeFromBlockStart,
+    getText,
+    isCollapsed,
+    mockPlugin,
+    PlateEditor,
+    someNode,
+    unwrapNodes,
+    WithOverride
 } from '@udecode/plate-core';
 import { withRemoveEmptyNodes } from '@udecode/plate-normalizers';
-import { Range, Transforms } from 'slate';
+import { ELEMENT_LINK } from './createLinkPlugin';
 import { upsertLinkAtSelection } from './transforms/upsertLinkAtSelection';
 import { wrapLink } from './transforms/wrapLink';
-import { ELEMENT_LINK } from './createLinkPlugin';
 import { LinkPlugin } from './types';
 
 const upsertLink = (

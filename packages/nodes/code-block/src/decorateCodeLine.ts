@@ -1,20 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unused-vars,simple-import-sort/imports */
+import { Node, NodeEntry, Range } from '@shapeci/slate';
 import {
-  Decorate,
-  getParent,
-  getPlugin,
-  TDescendant,
+    Decorate,
+    getParent,
+    getPlugin,
+    TDescendant
 } from '@udecode/plate-core';
-import { Node, NodeEntry, Range } from 'slate';
-import {
-  ELEMENT_CODE_BLOCK,
-  ELEMENT_CODE_LINE,
-  ELEMENT_CODE_SYNTAX,
-} from './constants';
-import { CodeBlockPlugin } from './types';
-
 // noinspection ES6UnusedImports
-import Prism, { languages, Token, tokenize } from 'prismjs';
+import { languages, Token, tokenize } from 'prismjs';
 import 'prismjs/components/prism-antlr4';
 import 'prismjs/components/prism-bash';
 import 'prismjs/components/prism-c';
@@ -62,6 +55,13 @@ import 'prismjs/components/prism-tsx';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-wasm';
 import 'prismjs/components/prism-yaml';
+import {
+    ELEMENT_CODE_BLOCK,
+    ELEMENT_CODE_LINE,
+    ELEMENT_CODE_SYNTAX
+} from './constants';
+import { CodeBlockPlugin } from './types';
+
 
 export interface CodeSyntaxRange extends Range {
   tokenType: string;

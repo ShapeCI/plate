@@ -1,5 +1,5 @@
+import { Editor, Transforms } from '@shapeci/slate';
 import { getText, TEditor } from '@udecode/plate-core';
-import { Editor, Transforms } from 'slate';
 import { OutdentCodeLineOptions } from './outdentCodeLine';
 
 /**

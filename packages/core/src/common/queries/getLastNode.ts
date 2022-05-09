@@ -1,4 +1,4 @@
-import { Editor, NodeEntry } from 'slate';
+import { Editor, NodeEntry } from '@shapeci/slate';
 import { isAncestor } from '../../types/slate/TAncestor';
 import { TDescendant } from '../../types/slate/TDescendant';
 import { TEditor } from '../../types/slate/TEditor';

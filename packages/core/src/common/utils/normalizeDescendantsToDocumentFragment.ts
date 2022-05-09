@@ -1,4 +1,4 @@
-import { Descendant, Editor, Element, Text } from 'slate';
+import { Descendant, Editor, Element, Text } from '@shapeci/slate';
 import { PlateEditor } from '../../types/PlateEditor';
 import { isElement, TElement } from '../../types/slate/TElement';
 import { getPluginType } from '../../utils/getPluginType';

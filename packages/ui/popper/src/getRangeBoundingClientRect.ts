@@ -1,5 +1,5 @@
-import { Range } from 'slate';
-import { ReactEditor } from 'slate-react';
+import { Range } from '@shapeci/slate';
+import { ReactEditor } from '@shapeci/slate-react';
 
 /**
  * Get bounding client rect by slate range

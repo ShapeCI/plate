@@ -1,19 +1,19 @@
+import { Editor, Transforms } from '@shapeci/slate';
+import { HistoryEditor } from '@shapeci/slate-history';
 import {
-  comboboxActions,
-  ComboboxOnSelectItem,
-  comboboxSelectors,
-  Data,
-  NoData,
-  TComboboxItem,
+    comboboxActions,
+    ComboboxOnSelectItem,
+    comboboxSelectors,
+    Data,
+    NoData,
+    TComboboxItem
 } from '@udecode/plate-combobox';
 import {
-  getBlockAbove,
-  getPlugin,
-  insertNodes,
-  PlatePluginKey,
+    getBlockAbove,
+    getPlugin,
+    insertNodes,
+    PlatePluginKey
 } from '@udecode/plate-core';
-import { Editor, Transforms } from 'slate';
-import { HistoryEditor } from 'slate-history';
 import { ELEMENT_MENTION, ELEMENT_MENTION_INPUT } from './createMentionPlugin';
 import { MentionNode, MentionNodeData, MentionPlugin } from './types';
 

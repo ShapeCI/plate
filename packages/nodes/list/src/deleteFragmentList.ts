@@ -1,15 +1,15 @@
+import { Editor, Range, Transforms } from '@shapeci/slate';
 import {
-  deleteFragment,
-  getAbove,
-  getParent,
-  getPluginType,
-  PlateEditor,
+    deleteFragment,
+    getAbove,
+    getParent,
+    getPluginType,
+    PlateEditor
 } from '@udecode/plate-core';
-import { Editor, Range, Transforms } from 'slate';
+import { ELEMENT_LI } from './createListPlugin';
 import { getHighestEmptyList } from './queries/getHighestEmptyList';
 import { hasListChild } from './queries/hasListChild';
 import { isAcrossListItems } from './queries/isAcrossListItems';
-import { ELEMENT_LI } from './createListPlugin';
 
 export const deleteFragmentList = (editor: PlateEditor) => {
   let deleted = false;

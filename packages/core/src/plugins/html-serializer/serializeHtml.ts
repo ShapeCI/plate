@@ -1,12 +1,12 @@
-import { Text } from 'slate';
+import { Text } from '@shapeci/slate';
 import { PlateEditor } from '../../types/PlateEditor';
 import { SlateProps } from '../../types/slate/SlateProps';
 import { TDescendant } from '../../types/slate/TDescendant';
+import { elementToHtml } from './elementToHtml';
+import { leafToHtml } from './leafToHtml';
 import { isEncoded } from './utils/isEncoded';
 import { stripSlateDataAttributes } from './utils/stripSlateDataAttributes';
 import { trimWhitespace } from './utils/trimWhitespace';
-import { elementToHtml } from './elementToHtml';
-import { leafToHtml } from './leafToHtml';
 
 /**
  * Convert Slate Nodes into HTML string

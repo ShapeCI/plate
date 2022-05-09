@@ -1,10 +1,10 @@
+import { createEditor, Editor } from '@shapeci/slate';
 import { useEffect, useRef } from 'react';
-import { createEditor, Editor } from 'slate';
 import { PlateProps } from '../../components/Plate';
 import { withPlate } from '../../plugins/withPlate';
 import {
-  getPlateActions,
-  usePlateSelectors,
+    getPlateActions,
+    usePlateSelectors
 } from '../../stores/plate/platesStore';
 import { usePlateEditorRef } from '../../stores/plate/selectors/usePlateEditorRef';
 import { PlateEditor } from '../../types/PlateEditor';

@@ -1,4 +1,4 @@
-import { RenderElementProps } from 'slate-react';
+import { RenderElementProps } from '@shapeci/slate-react';
 import { AnyObject } from '../utility/AnyObject';
 import { TElement } from './TElement';
 

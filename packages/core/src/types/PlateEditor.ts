@@ -1,5 +1,5 @@
-import { HistoryEditor } from 'slate-history/dist/history-editor';
-import { ReactEditor } from 'slate-react';
+import { HistoryEditor } from '@shapeci/slate-history/dist/history-editor';
+import { ReactEditor } from '@shapeci/slate-react';
 import { WithPlatePlugin } from './plugins/PlatePlugin';
 import { PluginKey } from './plugins/PlatePluginKey';
 import { TEditor } from './slate/TEditor';

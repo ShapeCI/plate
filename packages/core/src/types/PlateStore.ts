@@ -1,11 +1,11 @@
-import { EditableProps } from 'slate-react/dist/components/editable';
+import { EditableProps } from '@shapeci/slate-react/dist/components/editable';
 import { createPlateStore } from '../stores/plate/createPlateStore';
 import { platesStore } from '../stores/plate/platesStore';
+import { PlateEditor } from './PlateEditor';
 import { PlatePlugin } from './plugins/PlatePlugin';
 import { TDescendant } from './slate/TDescendant';
 import { TNode } from './slate/TNode';
 import { Nullable } from './utility/Nullable';
-import { PlateEditor } from './PlateEditor';
 
 /**
  * A unique id used to store the editor state by id.

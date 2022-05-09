@@ -1,12 +1,12 @@
-import React from 'react';
+import { Editor } from '@shapeci/slate';
+import { useFocused, useSelected } from '@shapeci/slate-react';
 import {
-  createNodeHOC,
-  createNodesHOC,
-  isCollapsed,
-  useEditorState,
+    createNodeHOC,
+    createNodesHOC,
+    isCollapsed,
+    useEditorState
 } from '@udecode/plate-core';
-import { Editor } from 'slate';
-import { useFocused, useSelected } from 'slate-react';
+import React from 'react';
 import { getPlaceholderStyles } from './Placeholder.styles';
 import { PlaceholderProps } from './Placeholder.types';
 

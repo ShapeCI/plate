@@ -1,5 +1,5 @@
+import { Editor, NodeEntry } from '@shapeci/slate';
 import { TEditor } from '@udecode/plate-core';
-import { Editor, NodeEntry } from 'slate';
 
 /**
  * Get node entries range.

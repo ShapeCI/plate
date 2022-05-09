@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
+import { withReact } from '@shapeci/slate-react';
 import { mockPlugin } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { withReact } from 'slate-react';
 import { clearBlockFormat } from '../../../../../../../docs/src/live/config/autoformat/autoformatUtils';
 import { CONFIG } from '../../../../../../../docs/src/live/config/config';
 import { ELEMENT_H1 } from '../../../../../../nodes/heading/src/constants';

@@ -1,20 +1,20 @@
 import {
-  createEditor as makeEditor,
-  Descendant,
-  Editor,
-  Element,
-  Node,
-  Range,
-  Text,
-} from 'slate';
+    createEditor as makeEditor,
+    Descendant,
+    Editor,
+    Element,
+    Node,
+    Range,
+    Text
+} from '@shapeci/slate';
 import {
-  addAnchorToken,
-  addFocusToken,
-  AnchorToken,
-  FocusToken,
-  getAnchorOffset,
-  getFocusOffset,
-  Token,
+    addAnchorToken,
+    addFocusToken,
+    AnchorToken,
+    FocusToken,
+    getAnchorOffset,
+    getFocusOffset,
+    Token
 } from './tokens';
 
 /**

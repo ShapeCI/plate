@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
+import { assertOutput, buildTestHarness } from '@shapeci/slate-test-utils';
 import { jsx } from '@udecode/plate-test-utils';
-import { assertOutput, buildTestHarness } from 'slate-test-utils';
 import { PlateTest } from './PlateTest';
 
 jsx;

@@ -1,13 +1,13 @@
+import { Editor, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import {
-  getAbove,
-  getNode,
-  getPluginType,
-  insertNodes,
-  isLastChild,
-  PlateEditor,
-  TElement,
+    getAbove,
+    getNode,
+    getPluginType,
+    insertNodes,
+    isLastChild,
+    PlateEditor,
+    TElement
 } from '@udecode/plate-core';
-import { Editor, NodeEntry, Path, Transforms } from 'slate';
 import { ELEMENT_LI } from '../createListPlugin';
 import { hasListChild } from '../queries/hasListChild';
 import { moveListItemsToList } from './moveListItemsToList';

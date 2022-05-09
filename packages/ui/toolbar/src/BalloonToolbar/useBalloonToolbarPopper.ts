@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useFocused } from '@shapeci/slate-react';
 import {
-  getSelectionText,
-  isSelectionExpanded,
-  useEditorState,
-  useEventEditorSelectors,
+    getSelectionText,
+    isSelectionExpanded,
+    useEditorState,
+    useEventEditorSelectors
 } from '@udecode/plate-core';
 import {
-  getSelectionBoundingClientRect,
-  usePopperPosition,
-  UsePopperPositionOptions,
+    getSelectionBoundingClientRect,
+    usePopperPosition,
+    UsePopperPositionOptions
 } from '@udecode/plate-ui-popper';
-import { useFocused } from 'slate-react';
+import { useEffect, useState } from 'react';
 
 export const useBalloonToolbarPopper = (options: UsePopperPositionOptions) => {
   const focusedEditorId = useEventEditorSelectors.focus();

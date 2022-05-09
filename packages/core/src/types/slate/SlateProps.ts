@@ -1,5 +1,5 @@
+import { ReactEditor } from '@shapeci/slate-react';
 import React from 'react';
-import { ReactEditor } from 'slate-react';
 import { TDescendant } from './TDescendant';
 
 export interface SlateProps {

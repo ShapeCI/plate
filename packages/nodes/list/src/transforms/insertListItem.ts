@@ -1,14 +1,14 @@
+import { Editor, Path, Range, Transforms } from '@shapeci/slate';
 import {
-  getAbove,
-  getParent,
-  getPluginType,
-  insertNodes,
-  isBlockTextEmptyAfterSelection,
-  PlateEditor,
-  TElement,
-  wrapNodes,
+    getAbove,
+    getParent,
+    getPluginType,
+    insertNodes,
+    isBlockTextEmptyAfterSelection,
+    PlateEditor,
+    TElement,
+    wrapNodes
 } from '@udecode/plate-core';
-import { Editor, Path, Range, Transforms } from 'slate';
 import { ELEMENT_LI, ELEMENT_LIC } from '../createListPlugin';
 
 /**

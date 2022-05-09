@@ -1,12 +1,12 @@
+import { Editor, Transforms } from '@shapeci/slate';
 import {
-  getPluginType,
-  insertNodes,
-  isCollapsed,
-  PlateEditor,
-  TElement,
-  unwrapNodes,
+    getPluginType,
+    insertNodes,
+    isCollapsed,
+    PlateEditor,
+    TElement,
+    unwrapNodes
 } from '@udecode/plate-core';
-import { Editor, Transforms } from 'slate';
 import { ELEMENT_LINK } from '../createLinkPlugin';
 import { wrapLink } from './wrapLink';
 

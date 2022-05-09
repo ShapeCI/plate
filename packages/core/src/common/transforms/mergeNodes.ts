@@ -1,13 +1,13 @@
 import {
-  Editor,
-  Element,
-  Location,
-  Node,
-  Path,
-  Range,
-  Text,
-  Transforms,
-} from 'slate';
+    Editor,
+    Element,
+    Location,
+    Node,
+    Path,
+    Range,
+    Text,
+    Transforms
+} from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { hasSingleChild } from '../queries/hasSingleChild';
 

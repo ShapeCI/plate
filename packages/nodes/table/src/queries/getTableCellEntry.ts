@@ -1,11 +1,11 @@
+import { Location } from '@shapeci/slate';
 import {
-  getAbove,
-  getParent,
-  getPluginType,
-  PlateEditor,
-  someNode,
+    getAbove,
+    getParent,
+    getPluginType,
+    PlateEditor,
+    someNode
 } from '@udecode/plate-core';
-import { Location } from 'slate';
 import { ELEMENT_TD, ELEMENT_TH, ELEMENT_TR } from '../createTablePlugin';
 
 /**

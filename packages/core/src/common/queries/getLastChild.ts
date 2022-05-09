@@ -1,4 +1,4 @@
-import { NodeEntry, Path } from 'slate';
+import { NodeEntry, Path } from '@shapeci/slate';
 import { TAncestor } from '../../types/slate/TAncestor';
 import { TDescendant } from '../../types/slate/TDescendant';
 

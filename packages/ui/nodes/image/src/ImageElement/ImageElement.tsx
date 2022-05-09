@@ -1,16 +1,16 @@
-import React, {
-  ChangeEventHandler,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
-import TextareaAutosize from 'react-textarea-autosize';
+import { Node, Transforms } from '@shapeci/slate';
+import { ReactEditor, useFocused, useReadOnly, useSelected } from '@shapeci/slate-react';
 import { setNodes } from '@udecode/plate-core';
 import { getRootProps } from '@udecode/plate-styled-components';
 import { Resizable, ResizableProps } from 're-resizable';
-import { Node, Transforms } from 'slate';
-import { ReactEditor, useFocused, useReadOnly, useSelected } from 'slate-react';
+import React, {
+    ChangeEventHandler,
+    useCallback,
+    useEffect,
+    useMemo,
+    useState
+} from 'react';
+import TextareaAutosize from 'react-textarea-autosize';
 import { getImageElementStyles } from './ImageElement.styles';
 import { ImageElementProps } from './ImageElement.types';
 import { ImageHandle } from './ImageHandle';

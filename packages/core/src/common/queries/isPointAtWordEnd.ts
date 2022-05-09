@@ -1,4 +1,4 @@
-import { Editor, Point } from 'slate';
+import { Editor, Point } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { getText } from './getText';
 

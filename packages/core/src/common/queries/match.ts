@@ -1,5 +1,5 @@
+import { Editor } from '@shapeci/slate';
 import { castArray } from 'lodash';
-import { Editor } from 'slate';
 import { TEditor } from '../../types/slate/TEditor';
 
 export type PredicateObj<T> = Partial<Record<keyof T, any | any[]>>;

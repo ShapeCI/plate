@@ -1,5 +1,5 @@
+import { Location } from '@shapeci/slate';
 import { getPluginType, PlateEditor, wrapNodes } from '@udecode/plate-core';
-import { Location } from 'slate';
 import { ELEMENT_LINK } from '../createLinkPlugin';
 
 /**

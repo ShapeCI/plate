@@ -1,22 +1,22 @@
-import React, { ReactNode, useCallback, useEffect, useState } from 'react';
+import { Transforms } from '@shapeci/slate';
+import { ReactEditor } from '@shapeci/slate-react';
 import {
-  getMark,
-  getPluginType,
-  isMarkActive,
-  removeMark,
-  setMarks,
-  useEventPlateId,
-  usePlateEditorRef,
-  usePlateEditorState,
-  withPlateEventProvider,
+    getMark,
+    getPluginType,
+    isMarkActive,
+    removeMark,
+    setMarks,
+    useEventPlateId,
+    usePlateEditorRef,
+    usePlateEditorState,
+    withPlateEventProvider
 } from '@udecode/plate-core';
 import {
-  ToolbarButton,
-  ToolbarButtonProps,
-  ToolbarDropdown,
+    ToolbarButton,
+    ToolbarButtonProps,
+    ToolbarDropdown
 } from '@udecode/plate-ui-toolbar';
-import { Transforms } from 'slate';
-import { ReactEditor } from 'slate-react';
+import React, { ReactNode, useCallback, useEffect, useState } from 'react';
 import { ColorPicker } from '../ColorPicker/ColorPicker';
 import { ColorType } from '../ColorPicker/ColorType';
 import { DEFAULT_COLORS, DEFAULT_CUSTOM_COLORS } from './constants';

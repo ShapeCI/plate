@@ -1,4 +1,4 @@
-import { Editor } from 'slate';
+import { Editor } from '@shapeci/slate';
 import { TEditor } from '../../types/slate/TEditor';
 import { TNode } from '../../types/slate/TNode';
 import { unhangRange, UnhangRangeOptions } from '../transforms/unhangRange';
