@@ -3,7 +3,7 @@
   "changelog": ["@udecode/changelog-config", { "repo": "udecode/plate" }],
   "commit": false,
   "linked": [["@udecode/plate*"]],
-  "access": "public",
+  "registry": "https://npm.pkg.github.com/shapeci",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": []

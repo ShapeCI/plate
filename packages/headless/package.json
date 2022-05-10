@@ -81,7 +81,7 @@
     "@shapeci/slate-react": "1.0.1"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/shapeci"
   },
   "gitHead": "9f660a54cbd931cd20a6ad99e9319dbebfc7e1af"
 }
