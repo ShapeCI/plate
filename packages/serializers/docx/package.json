@@ -1,5 +1,5 @@
 {
-  "name": "@udecode/plate-serializer-docx",
+  "name": "@shapeci/plate-serializer-docx",
   "version": "10.7.0",
   "description": "Docx serializer plugin for Plate",
   "keywords": [

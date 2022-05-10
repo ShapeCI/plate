@@ -8,7 +8,7 @@
     "**/*.development.*"
   ],
   "includeVersion": true,
-  "name": "@udecode/plate",
+  "name": "@shapeci/plate",
   "entryPoints": ["packages/plate/src/index.tsx"],
   "out": "./typedoc",
   "readme": "./README.md"

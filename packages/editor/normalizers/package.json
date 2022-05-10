@@ -1,5 +1,5 @@
 {
-  "name": "@udecode/plate-normalizers",
+  "name": "@shapeci/plate-normalizers",
   "version": "10.5.3",
   "description": "Normalizer plugins for Plate",
   "keywords": [

@@ -1,5 +1,5 @@
 {
-  "name": "@udecode/plate-core",
+  "name": "@shapeci/plate-core",
   "version": "10.5.3",
   "description": "The core architecture of Plate – a plugin system for slate",
   "keywords": [
