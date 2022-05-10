@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
 import {
-  createBasicElementsPlugin,
-  createExitBreakPlugin,
-  createPlugins,
-  createResetNodePlugin,
-  createSoftBreakPlugin,
-  Plate,
-  PlateRenderElementProps,
-} from '@udecode/plate';
+    createBasicElementsPlugin,
+    createExitBreakPlugin,
+    createPlugins,
+    createResetNodePlugin,
+    createSoftBreakPlugin,
+    Plate,
+    PlateRenderElementProps
+} from '@shapeci/plate';
+import React, { useState } from 'react';
 import { CONFIG } from '../../config/config';
 import { VALUES } from '../../config/values/values';
 

@@ -1,4 +1,4 @@
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { StyledElementProps } from '@shapeci/plate-styled-components';
 import { CSSProp } from 'styled-components';
 
 export interface HrElementStyleProps extends HrElementProps {

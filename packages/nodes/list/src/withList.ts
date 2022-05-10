@@ -1,4 +1,4 @@
-import { WithOverride } from '@udecode/plate-core';
+import { WithOverride } from '@shapeci/plate-core';
 import { deleteBackwardList } from './deleteBackwardList';
 import { deleteForwardList } from './deleteForwardList';
 import { deleteFragmentList } from './deleteFragmentList';

@@ -1,12 +1,12 @@
-import React from 'react';
-import { Data, NoData } from '@udecode/plate-combobox';
-import { getPluginOptions, usePlateEditorRef } from '@udecode/plate-core';
+import { Data, NoData } from '@shapeci/plate-combobox';
+import { getPluginOptions, usePlateEditorRef } from '@shapeci/plate-core';
 import {
-  ELEMENT_MENTION,
-  getMentionOnSelectItem,
-  MentionPlugin,
-} from '@udecode/plate-mention';
-import { Combobox, ComboboxProps } from '@udecode/plate-ui-combobox';
+    ELEMENT_MENTION,
+    getMentionOnSelectItem,
+    MentionPlugin
+} from '@shapeci/plate-mention';
+import { Combobox, ComboboxProps } from '@shapeci/plate-ui-combobox';
+import React from 'react';
 
 export interface MentionComboboxProps<TData extends Data = NoData>
   extends Partial<ComboboxProps<TData>> {

@@ -1,10 +1,10 @@
 import {
-  EditorAboveOptions,
-  findNode,
-  setNodes,
-  TEditor,
-  TElement,
-} from '@udecode/plate-core';
+    EditorAboveOptions,
+    findNode,
+    setNodes,
+    TEditor,
+    TElement
+} from '@shapeci/plate-core';
 import { ELEMENT_TABLE } from '../createTablePlugin';
 import { getTableColumnCount } from '../queries/getTableColumnCount';
 import { TableNodeData } from '../types';

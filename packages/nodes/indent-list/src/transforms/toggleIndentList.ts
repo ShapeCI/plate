@@ -1,19 +1,19 @@
 import {
-  getBlockAbove,
-  getNodes,
-  getPluginOptions,
-  isCollapsed,
-  isExpanded,
-  PlateEditor,
-  setNodes,
-  TElement,
-  unsetNodes,
-  withoutNormalizing,
-} from '@udecode/plate-core';
-import { KEY_INDENT } from '@udecode/plate-indent';
+    getBlockAbove,
+    getNodes,
+    getPluginOptions,
+    isCollapsed,
+    isExpanded,
+    PlateEditor,
+    setNodes,
+    TElement,
+    unsetNodes,
+    withoutNormalizing
+} from '@shapeci/plate-core';
+import { KEY_INDENT } from '@shapeci/plate-indent';
 import {
-  IndentListPlugin,
-  KEY_LIST_STYLE_TYPE,
+    IndentListPlugin,
+    KEY_LIST_STYLE_TYPE
 } from '../createIndentListPlugin';
 import { areEqListStyleType } from '../queries/areEqListStyleType';
 import { IndentListOptions } from './indentList';

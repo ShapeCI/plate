@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate-core';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { ImagePlugin } from './types';
 import { withImageUpload } from './withImageUpload';
 

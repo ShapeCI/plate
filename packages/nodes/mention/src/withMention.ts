@@ -1,6 +1,6 @@
+import { comboboxActions } from '@shapeci/plate-combobox';
+import { getPlugin, insertNodes, WithOverride } from '@shapeci/plate-core';
 import { Editor, Node, Range, Transforms } from '@shapeci/slate';
-import { comboboxActions } from '@udecode/plate-combobox';
-import { getPlugin, insertNodes, WithOverride } from '@udecode/plate-core';
 import { ELEMENT_MENTION_INPUT } from './createMentionPlugin';
 import {
     findMentionInput,

@@ -1,5 +1,5 @@
+import { RenderLeaf } from '@shapeci/plate';
 import React from 'react';
-import { RenderLeaf } from '@udecode/plate';
 import { getPreviewLeafStyles } from './PreviewLeaf.styles';
 
 export const PreviewLeaf: RenderLeaf = (props) => {

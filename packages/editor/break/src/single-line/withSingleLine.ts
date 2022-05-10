@@ -1,5 +1,5 @@
+import { WithOverride } from '@shapeci/plate-core';
 import { Transforms } from '@shapeci/slate';
-import { WithOverride } from '@udecode/plate-core';
 
 export const withSingleLine: WithOverride = (editor) => {
   const { normalizeNode } = editor;

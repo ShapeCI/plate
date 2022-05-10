@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate-core';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { onKeyDownSingleLine } from './onKeyDownSingleLine';
 import { withSingleLine } from './withSingleLine';
 

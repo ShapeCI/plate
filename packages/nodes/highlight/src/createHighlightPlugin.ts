@@ -1,8 +1,8 @@
 import {
-  createPluginFactory,
-  onKeyDownToggleMark,
-  ToggleMarkPlugin,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    onKeyDownToggleMark,
+    ToggleMarkPlugin
+} from '@shapeci/plate-core';
 
 export const MARK_HIGHLIGHT = 'highlight';
 

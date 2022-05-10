@@ -1,5 +1,5 @@
+import { StyledProps } from '@shapeci/plate-styled-components';
 import { ButtonHTMLAttributes } from 'react';
-import { StyledProps } from '@udecode/plate-styled-components';
 
 export interface ButtonStyleProps extends ButtonProps {}
 

@@ -1,8 +1,8 @@
 import {
-  ELEMENT_H1,
-  ELEMENT_PARAGRAPH,
-  withPlaceholders,
-} from '@udecode/plate';
+    ELEMENT_H1,
+    ELEMENT_PARAGRAPH,
+    withPlaceholders
+} from '@shapeci/plate';
 
 export const withStyledPlaceHolders = (components: any) =>
   withPlaceholders(components, [

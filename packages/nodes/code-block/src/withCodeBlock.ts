@@ -1,4 +1,4 @@
-import { WithOverride } from '@udecode/plate-core';
+import { WithOverride } from '@shapeci/plate-core';
 import { insertFragmentCodeBlock } from './insertFragmentCodeBlock';
 import { getCodeLineEntry, getIndentDepth } from './queries';
 import { insertCodeLine } from './transforms';

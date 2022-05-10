@@ -1,5 +1,5 @@
-import { createStyles, StyledProps } from '@udecode/plate-styled-components';
-// import { getButtonStyles } from '@udecode/plate-ui-button';
+import { createStyles, StyledProps } from '@shapeci/plate-styled-components';
+// import { getButtonStyles } from '@shapeci/plate-ui-button';
 import tw from 'twin.macro';
 import { MenuButtonStyles } from './MenuButton.types';
 

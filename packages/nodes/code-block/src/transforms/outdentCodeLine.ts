@@ -1,5 +1,5 @@
+import { TEditor } from '@shapeci/plate-core';
 import { Ancestor, Node, NodeEntry } from '@shapeci/slate';
-import { TEditor } from '@udecode/plate-core';
 import { deleteStartSpace } from './deleteStartSpace';
 
 export interface OutdentCodeLineOptions {

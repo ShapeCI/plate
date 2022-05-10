@@ -1,4 +1,4 @@
-import { traverseHtmlElements } from '@udecode/plate-core';
+import { traverseHtmlElements } from '@shapeci/plate-core';
 import { isDocxFootnote } from './isDocxFootnote';
 
 /**

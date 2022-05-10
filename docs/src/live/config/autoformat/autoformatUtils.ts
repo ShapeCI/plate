@@ -1,15 +1,15 @@
 import {
-  AutoformatBlockRule,
-  ELEMENT_CODE_BLOCK,
-  ELEMENT_CODE_LINE,
-  getParent,
-  isElement,
-  isType,
-  PlateEditor,
-  TEditor,
-  toggleList,
-  unwrapList,
-} from '@udecode/plate';
+    AutoformatBlockRule,
+    ELEMENT_CODE_BLOCK,
+    ELEMENT_CODE_LINE,
+    getParent,
+    isElement,
+    isType,
+    PlateEditor,
+    TEditor,
+    toggleList,
+    unwrapList
+} from '@shapeci/plate';
 
 export const clearBlockFormat: AutoformatBlockRule['preFormat'] = (editor) =>
   unwrapList(editor as PlateEditor);

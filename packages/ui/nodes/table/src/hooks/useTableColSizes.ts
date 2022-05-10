@@ -1,9 +1,9 @@
-import { TElement } from '@udecode/plate-core';
+import { TElement } from '@shapeci/plate-core';
 import {
-  ELEMENT_TABLE,
-  getTableColumnCount,
-  TableNodeData,
-} from '@udecode/plate-table';
+    ELEMENT_TABLE,
+    getTableColumnCount,
+    TableNodeData
+} from '@shapeci/plate-table';
 import { useAtom } from 'jotai';
 import { resizingColAtom } from '../table.atoms';
 

@@ -1,4 +1,3 @@
-import { Location, NodeEntry, Path, Range } from '@shapeci/slate';
 import {
     getAbove,
     getNode,
@@ -7,7 +6,8 @@ import {
     isCollapsed,
     PlateEditor,
     TElement
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Location, NodeEntry, Path, Range } from '@shapeci/slate';
 import { ELEMENT_LI } from '../createListPlugin';
 
 /**

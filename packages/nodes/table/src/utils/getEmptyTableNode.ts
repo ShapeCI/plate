@@ -1,4 +1,4 @@
-import { getPluginType, PlateEditor } from '@udecode/plate-core';
+import { getPluginType, PlateEditor } from '@shapeci/plate-core';
 import { ELEMENT_TABLE } from '../createTablePlugin';
 import { TablePluginOptions } from '../types';
 import { getEmptyRowNode } from './getEmptyRowNode';

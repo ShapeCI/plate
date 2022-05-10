@@ -1,14 +1,14 @@
 import {
-  AutoformatRule,
-  MARK_BOLD,
-  MARK_CODE,
-  MARK_HIGHLIGHT,
-  MARK_ITALIC,
-  MARK_STRIKETHROUGH,
-  MARK_SUBSCRIPT,
-  MARK_SUPERSCRIPT,
-  MARK_UNDERLINE,
-} from '@udecode/plate';
+    AutoformatRule,
+    MARK_BOLD,
+    MARK_CODE,
+    MARK_HIGHLIGHT,
+    MARK_ITALIC,
+    MARK_STRIKETHROUGH,
+    MARK_SUBSCRIPT,
+    MARK_SUPERSCRIPT,
+    MARK_UNDERLINE
+} from '@shapeci/plate';
 
 export const autoformatMarks: AutoformatRule[] = [
   {

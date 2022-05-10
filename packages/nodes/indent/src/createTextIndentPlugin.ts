@@ -1,8 +1,8 @@
 import {
-  createPluginFactory,
-  ELEMENT_DEFAULT,
-  getPluginType,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    ELEMENT_DEFAULT,
+    getPluginType
+} from '@shapeci/plate-core';
 import { IndentPlugin } from './types';
 
 export const KEY_TEXT_INDENT = 'textIndent';

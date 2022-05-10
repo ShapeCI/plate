@@ -1,4 +1,4 @@
-import { getHtmlComments } from '@udecode/plate-core';
+import { getHtmlComments } from '@shapeci/plate-core';
 
 export const getVShapes = (document: Document): Record<string, string> => {
   const comments = getHtmlComments(document);

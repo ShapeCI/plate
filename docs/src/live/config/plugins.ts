@@ -1,21 +1,21 @@
 import {
-  createBasicElementsPlugin,
-  createBlockquotePlugin,
-  createBoldPlugin,
-  createCodeBlockPlugin,
-  createCodePlugin,
-  createHeadingPlugin,
-  createImagePlugin,
-  createItalicPlugin,
-  createParagraphPlugin,
-  createPlateUI,
-  createPlugins,
-  createSelectOnBackspacePlugin,
-  createStrikethroughPlugin,
-  createSubscriptPlugin,
-  createSuperscriptPlugin,
-  createUnderlinePlugin,
-} from '@udecode/plate';
+    createBasicElementsPlugin,
+    createBlockquotePlugin,
+    createBoldPlugin,
+    createCodeBlockPlugin,
+    createCodePlugin,
+    createHeadingPlugin,
+    createImagePlugin,
+    createItalicPlugin,
+    createParagraphPlugin,
+    createPlateUI,
+    createPlugins,
+    createSelectOnBackspacePlugin,
+    createStrikethroughPlugin,
+    createSubscriptPlugin,
+    createSuperscriptPlugin,
+    createUnderlinePlugin
+} from '@shapeci/plate';
 import { CONFIG } from './config';
 
 const basicElements = createPlugins(

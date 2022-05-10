@@ -1,20 +1,20 @@
 import {
-  ELEMENT_DEFAULT,
-  getPluginType,
-  isBlockAboveEmpty,
-  mockPlugin,
-  PlateEditor,
-} from '@udecode/plate-core';
+    ELEMENT_DEFAULT,
+    getPluginType,
+    isBlockAboveEmpty,
+    mockPlugin,
+    PlateEditor
+} from '@shapeci/plate-core';
 import {
-  onKeyDownResetNode,
-  ResetNodePlugin,
-  SIMULATE_BACKSPACE,
-} from '@udecode/plate-reset-node';
+    onKeyDownResetNode,
+    ResetNodePlugin,
+    SIMULATE_BACKSPACE
+} from '@shapeci/plate-reset-node';
+import { ELEMENT_LI } from './createListPlugin';
 import { getListItemEntry } from './queries/getListItemEntry';
 import { insertListItem } from './transforms/insertListItem';
 import { moveListItemUp } from './transforms/moveListItemUp';
 import { unwrapList } from './transforms/unwrapList';
-import { ELEMENT_LI } from './createListPlugin';
 
 export const insertBreakList = (editor: PlateEditor) => {
   if (!editor.selection) return;

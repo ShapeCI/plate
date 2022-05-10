@@ -1,14 +1,14 @@
 import {
-  getPluginType,
-  InsertNodesOptions,
-  isExpanded,
-  isSelectionAtBlockStart,
-  PlateEditor,
-  setNodes,
-  someNode,
-  TElement,
-  wrapNodes,
-} from '@udecode/plate-core';
+    getPluginType,
+    InsertNodesOptions,
+    isExpanded,
+    isSelectionAtBlockStart,
+    PlateEditor,
+    setNodes,
+    someNode,
+    TElement,
+    wrapNodes
+} from '@shapeci/plate-core';
 import { ELEMENT_CODE_BLOCK } from '../constants';
 import { getCodeLineType } from '../options';
 

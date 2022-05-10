@@ -1,4 +1,4 @@
-import { PlateEditor, TDescendant } from '@udecode/plate-core';
+import { PlateEditor, TDescendant } from '@shapeci/plate-core';
 import { getListTypes } from './getListTypes';
 
 export const isListRoot = (editor: PlateEditor, node: TDescendant): boolean =>

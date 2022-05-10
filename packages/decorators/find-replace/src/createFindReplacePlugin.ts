@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate-core';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { decorateFindReplace } from './decorateFindReplace';
 import { FindReplacePlugin } from './types';
 

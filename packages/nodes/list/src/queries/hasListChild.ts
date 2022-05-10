@@ -1,5 +1,5 @@
+import { match, PlateEditor } from '@shapeci/plate-core';
 import { Ancestor } from '@shapeci/slate';
-import { match, PlateEditor } from '@udecode/plate-core';
 import { getListTypes } from './getListTypes';
 
 /**

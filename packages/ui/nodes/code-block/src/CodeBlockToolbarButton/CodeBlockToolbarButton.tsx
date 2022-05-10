@@ -1,20 +1,20 @@
+import {
+    CodeBlockInsertOptions,
+    ELEMENT_CODE_BLOCK,
+    insertEmptyCodeBlock
+} from '@shapeci/plate-code-block';
+import {
+    getPluginType,
+    getPreventDefaultHandler,
+    useEventPlateId,
+    usePlateEditorState,
+    withPlateEventProvider
+} from '@shapeci/plate-core';
+import {
+    BlockToolbarButton,
+    ToolbarButtonProps
+} from '@shapeci/plate-ui-toolbar';
 import React from 'react';
-import {
-  CodeBlockInsertOptions,
-  ELEMENT_CODE_BLOCK,
-  insertEmptyCodeBlock,
-} from '@udecode/plate-code-block';
-import {
-  getPluginType,
-  getPreventDefaultHandler,
-  useEventPlateId,
-  usePlateEditorState,
-  withPlateEventProvider,
-} from '@udecode/plate-core';
-import {
-  BlockToolbarButton,
-  ToolbarButtonProps,
-} from '@udecode/plate-ui-toolbar';
 
 export const CodeBlockToolbarButton = withPlateEventProvider(
   ({

@@ -1,5 +1,5 @@
+import { findNodePath, TElement, useEditorRef } from '@shapeci/plate-core';
 import { Transforms } from '@shapeci/slate';
-import { findNodePath, TElement, useEditorRef } from '@udecode/plate-core';
 import React from 'react';
 import { DeleteIcon } from '../Icon/DeleteIcon';
 import { Button } from './Button';

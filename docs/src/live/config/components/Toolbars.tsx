@@ -1,6 +1,40 @@
-import 'tippy.js/animations/scale.css';
-import 'tippy.js/dist/tippy.css';
-import React from 'react';
+import {
+    addColumn,
+    addRow,
+    AlignToolbarButton,
+    BalloonToolbar,
+    BlockToolbarButton,
+    CodeBlockToolbarButton,
+    deleteColumn,
+    deleteRow,
+    deleteTable,
+    ELEMENT_BLOCKQUOTE,
+    ELEMENT_CODE_BLOCK,
+    ELEMENT_H1,
+    ELEMENT_H2,
+    ELEMENT_H3,
+    ELEMENT_H4,
+    ELEMENT_H5,
+    ELEMENT_H6,
+    ELEMENT_OL,
+    ELEMENT_UL,
+    getPluginType,
+    getPreventDefaultHandler,
+    indent,
+    insertTable,
+    ListToolbarButton, MarkToolbarButton, MARK_BOLD,
+    MARK_CODE,
+    MARK_HIGHLIGHT,
+    MARK_ITALIC,
+    MARK_KBD,
+    MARK_STRIKETHROUGH,
+    MARK_SUBSCRIPT,
+    MARK_SUPERSCRIPT,
+    MARK_UNDERLINE, outdent,
+    TableToolbarButton,
+    ToolbarButton,
+    usePlateEditorRef
+} from '@shapeci/plate';
 import { CodeAlt } from '@styled-icons/boxicons-regular/CodeAlt';
 import { CodeBlock } from '@styled-icons/boxicons-regular/CodeBlock';
 import { Highlight } from '@styled-icons/boxicons-regular/Highlight';
@@ -32,46 +66,9 @@ import { Looks5 } from '@styled-icons/material/Looks5';
 import { Looks6 } from '@styled-icons/material/Looks6';
 import { LooksOne } from '@styled-icons/material/LooksOne';
 import { LooksTwo } from '@styled-icons/material/LooksTwo';
-import {
-  addColumn,
-  addRow,
-  AlignToolbarButton,
-  BalloonToolbar,
-  BlockToolbarButton,
-  CodeBlockToolbarButton,
-  deleteColumn,
-  deleteRow,
-  deleteTable,
-  ELEMENT_BLOCKQUOTE,
-  ELEMENT_CODE_BLOCK,
-  ELEMENT_H1,
-  ELEMENT_H2,
-  ELEMENT_H3,
-  ELEMENT_H4,
-  ELEMENT_H5,
-  ELEMENT_H6,
-  ELEMENT_OL,
-  ELEMENT_UL,
-  getPluginType,
-  getPreventDefaultHandler,
-  indent,
-  insertTable,
-  ListToolbarButton,
-  MARK_BOLD,
-  MARK_CODE,
-  MARK_HIGHLIGHT,
-  MARK_ITALIC,
-  MARK_KBD,
-  MARK_STRIKETHROUGH,
-  MARK_SUBSCRIPT,
-  MARK_SUPERSCRIPT,
-  MARK_UNDERLINE,
-  MarkToolbarButton,
-  outdent,
-  TableToolbarButton,
-  ToolbarButton,
-  usePlateEditorRef,
-} from '@udecode/plate';
+import React from 'react';
+import 'tippy.js/animations/scale.css';
+import 'tippy.js/dist/tippy.css';
 
 export const BasicElementToolbarButtons = () => {
   const editor = usePlateEditorRef()!;

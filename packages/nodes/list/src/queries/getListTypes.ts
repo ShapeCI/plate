@@ -1,9 +1,9 @@
-import { getPluginType, PlateEditor } from '@udecode/plate-core';
+import { getPluginType, PlateEditor } from '@shapeci/plate-core';
 import {
-  ELEMENT_LI,
-  ELEMENT_LIC,
-  ELEMENT_OL,
-  ELEMENT_UL,
+    ELEMENT_LI,
+    ELEMENT_LIC,
+    ELEMENT_OL,
+    ELEMENT_UL
 } from '../createListPlugin';
 
 export const getUnorderedListType = (editor: PlateEditor) => {

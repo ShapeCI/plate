@@ -1,5 +1,5 @@
+import { setNodes, TElement, WithOverride } from '@shapeci/plate-core';
 import { Transforms } from '@shapeci/slate';
-import { setNodes, TElement, WithOverride } from '@udecode/plate-core';
 import { IndentPlugin } from './types';
 
 /**

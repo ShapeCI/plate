@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { createPlateEditor, PlateEditor } from '@udecode/plate-core';
-import { createParagraphPlugin } from '@udecode/plate-paragraph';
-import { jsx } from '@udecode/plate-test-utils';
+import { createPlateEditor, PlateEditor } from '@shapeci/plate-core';
+import { createParagraphPlugin } from '@shapeci/plate-paragraph';
+import { jsx } from '@shapeci/plate-test-utils';
 import { createMentionPlugin } from '../createMentionPlugin';
 
 jsx;

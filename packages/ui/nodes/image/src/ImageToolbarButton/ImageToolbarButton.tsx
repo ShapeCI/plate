@@ -1,7 +1,7 @@
+import { usePlateEditorRef } from '@shapeci/plate-core';
+import { insertImage } from '@shapeci/plate-image';
+import { ToolbarButton, ToolbarButtonProps } from '@shapeci/plate-ui-toolbar';
 import React from 'react';
-import { usePlateEditorRef } from '@udecode/plate-core';
-import { insertImage } from '@udecode/plate-image';
-import { ToolbarButton, ToolbarButtonProps } from '@udecode/plate-ui-toolbar';
 
 export interface ImageToolbarButtonProps extends ToolbarButtonProps {
   /**

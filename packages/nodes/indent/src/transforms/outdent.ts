@@ -1,4 +1,4 @@
-import { PlateEditor } from '@udecode/plate-core';
+import { PlateEditor } from '@shapeci/plate-core';
 import { setIndent, SetIndentOptions } from './setIndent';
 
 /**

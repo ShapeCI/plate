@@ -1,10 +1,10 @@
-import { KeyboardHandler } from '@udecode/plate-core';
-import { getNextWrappingIndex } from './utils/getNextWrappingIndex';
+import { KeyboardHandler } from '@shapeci/plate-core';
 import {
-  comboboxActions,
-  comboboxSelectors,
-  getComboboxStoreById,
+    comboboxActions,
+    comboboxSelectors,
+    getComboboxStoreById
 } from './combobox.store';
+import { getNextWrappingIndex } from './utils/getNextWrappingIndex';
 
 /**
  * If the combobox is open, handle:

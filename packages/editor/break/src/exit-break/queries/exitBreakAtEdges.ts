@@ -1,9 +1,9 @@
 import {
-  isExpanded,
-  isSelectionAtBlockEnd,
-  isSelectionAtBlockStart,
-  TEditor,
-} from '@udecode/plate-core';
+    isExpanded,
+    isSelectionAtBlockEnd,
+    isSelectionAtBlockStart,
+    TEditor
+} from '@shapeci/plate-core';
 
 /**
  * Check if the selection is at the edge of its parent block.

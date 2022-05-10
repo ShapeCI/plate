@@ -1,9 +1,9 @@
-import { useReadOnly } from '@shapeci/slate-react';
 import {
     CodeBlockPlugin, CODE_BLOCK_LANGUAGES,
     CODE_BLOCK_LANGUAGES_POPULAR, ELEMENT_CODE_BLOCK
-} from '@udecode/plate-code-block';
-import { getPluginOptions, useEditorRef } from '@udecode/plate-core';
+} from '@shapeci/plate-code-block';
+import { getPluginOptions, useEditorRef } from '@shapeci/plate-core';
+import { useReadOnly } from '@shapeci/slate-react';
 import React from 'react';
 import { CSSProp } from 'styled-components';
 

@@ -1,5 +1,3 @@
-import { Transforms } from '@shapeci/slate';
-import { ReactEditor } from '@shapeci/slate-react';
 import {
     getMark,
     getPluginType,
@@ -10,12 +8,14 @@ import {
     usePlateEditorRef,
     usePlateEditorState,
     withPlateEventProvider
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
 import {
     ToolbarButton,
     ToolbarButtonProps,
     ToolbarDropdown
-} from '@udecode/plate-ui-toolbar';
+} from '@shapeci/plate-ui-toolbar';
+import { Transforms } from '@shapeci/slate';
+import { ReactEditor } from '@shapeci/slate-react';
 import React, { ReactNode, useCallback, useEffect, useState } from 'react';
 import { ColorPicker } from '../ColorPicker/ColorPicker';
 import { ColorType } from '../ColorPicker/ColorType';

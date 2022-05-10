@@ -1,5 +1,5 @@
-import { ImageNodeData } from '@udecode/plate-image';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { ImageNodeData } from '@shapeci/plate-image';
+import { StyledElementProps } from '@shapeci/plate-styled-components';
 import { ResizableProps } from 're-resizable';
 import { CSSProp } from 'styled-components';
 

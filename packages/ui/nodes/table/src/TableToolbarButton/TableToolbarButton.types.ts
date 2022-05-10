@@ -1,6 +1,6 @@
-import { PlateEditor } from '@udecode/plate-core';
-import { TablePluginOptions } from '@udecode/plate-table';
-import { ToolbarButtonProps } from '@udecode/plate-ui-toolbar';
+import { PlateEditor } from '@shapeci/plate-core';
+import { TablePluginOptions } from '@shapeci/plate-table';
+import { ToolbarButtonProps } from '@shapeci/plate-ui-toolbar';
 
 export interface TableToolbarButtonProps
   extends ToolbarButtonProps,

@@ -1,11 +1,11 @@
-import { Editor, Path, PathRef } from '@shapeci/slate';
 import {
     EditorNodesOptions,
     getNodes,
     getParent,
     getPluginType,
     PlateEditor
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, Path, PathRef } from '@shapeci/slate';
 import { ELEMENT_LIC } from '../createListPlugin';
 import { isListNested } from '../queries/isListNested';
 import { moveListItemDown } from './moveListItemDown';

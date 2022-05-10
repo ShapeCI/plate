@@ -1,13 +1,13 @@
 import {
-  createPluginFactory,
-  getPlugin,
-  KEY_DESERIALIZE_HTML,
-  someNode,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    getPlugin,
+    KEY_DESERIALIZE_HTML,
+    someNode
+} from '@shapeci/plate-core';
 import {
-  ELEMENT_CODE_BLOCK,
-  ELEMENT_CODE_LINE,
-  ELEMENT_CODE_SYNTAX,
+    ELEMENT_CODE_BLOCK,
+    ELEMENT_CODE_LINE,
+    ELEMENT_CODE_SYNTAX
 } from './constants';
 import { decorateCodeLine } from './decorateCodeLine';
 import { deserializeHtmlCodeBlock } from './deserializeHtmlCodeBlockPre';

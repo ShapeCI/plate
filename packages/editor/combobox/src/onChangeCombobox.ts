@@ -1,5 +1,5 @@
+import { isCollapsed, OnChange } from '@shapeci/plate-core';
 import { Range } from '@shapeci/slate';
-import { isCollapsed, OnChange } from '@udecode/plate-core';
 import { comboboxActions, comboboxSelectors } from './combobox.store';
 import { getTextFromTrigger } from './utils/getTextFromTrigger';
 

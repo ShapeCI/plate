@@ -1,9 +1,9 @@
 import {
-  createPluginFactory,
-  findHtmlParentElement,
-  onKeyDownToggleMark,
-  ToggleMarkPlugin,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    findHtmlParentElement,
+    onKeyDownToggleMark,
+    ToggleMarkPlugin
+} from '@shapeci/plate-core';
 
 export const MARK_CODE = 'code';
 

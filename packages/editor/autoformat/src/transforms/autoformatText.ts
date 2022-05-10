@@ -1,5 +1,5 @@
+import { TEditor } from '@shapeci/plate-core';
 import { Point, Range, Transforms } from '@shapeci/slate';
-import { TEditor } from '@udecode/plate-core';
 import castArray from 'lodash/castArray';
 import { AutoformatTextRule } from '../types';
 import { getMatchPoints } from '../utils/getMatchPoints';

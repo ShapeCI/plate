@@ -1,11 +1,11 @@
-import { NodeEntry } from '@shapeci/slate';
 import {
     defaultsDeepToNodes,
     queryNode,
     someNode,
     TNode,
     WithOverride
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { NodeEntry } from '@shapeci/slate';
 import cloneDeep from 'lodash/cloneDeep';
 import { NodeIdPlugin } from './createNodeIdPlugin';
 

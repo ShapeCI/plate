@@ -1,45 +1,45 @@
 import {
-  MARK_BOLD,
-  MARK_CODE,
-  MARK_ITALIC,
-  MARK_STRIKETHROUGH,
-  MARK_SUBSCRIPT,
-  MARK_SUPERSCRIPT,
-  MARK_UNDERLINE,
-} from '@udecode/plate-basic-marks';
-import { ELEMENT_BLOCKQUOTE } from '@udecode/plate-block-quote';
+    MARK_BOLD,
+    MARK_CODE,
+    MARK_ITALIC,
+    MARK_STRIKETHROUGH,
+    MARK_SUBSCRIPT,
+    MARK_SUPERSCRIPT,
+    MARK_UNDERLINE
+} from '@shapeci/plate-basic-marks';
+import { ELEMENT_BLOCKQUOTE } from '@shapeci/plate-block-quote';
 import {
-  ELEMENT_CODE_BLOCK,
-  ELEMENT_CODE_LINE,
-} from '@udecode/plate-code-block';
-import { MARK_SEARCH_HIGHLIGHT } from '@udecode/plate-find-replace';
+    ELEMENT_CODE_BLOCK,
+    ELEMENT_CODE_LINE
+} from '@shapeci/plate-code-block';
+import { MARK_SEARCH_HIGHLIGHT } from '@shapeci/plate-find-replace';
 import {
-  ELEMENT_H1,
-  ELEMENT_H2,
-  ELEMENT_H3,
-  ELEMENT_H4,
-  ELEMENT_H5,
-  ELEMENT_H6,
-} from '@udecode/plate-heading';
-import { MARK_HIGHLIGHT } from '@udecode/plate-highlight';
-import { ELEMENT_IMAGE } from '@udecode/plate-image';
-import { MARK_KBD } from '@udecode/plate-kbd';
-import { ELEMENT_LINK } from '@udecode/plate-link';
+    ELEMENT_H1,
+    ELEMENT_H2,
+    ELEMENT_H3,
+    ELEMENT_H4,
+    ELEMENT_H5,
+    ELEMENT_H6
+} from '@shapeci/plate-heading';
+import { MARK_HIGHLIGHT } from '@shapeci/plate-highlight';
+import { ELEMENT_IMAGE } from '@shapeci/plate-image';
+import { MARK_KBD } from '@shapeci/plate-kbd';
+import { ELEMENT_LINK } from '@shapeci/plate-link';
 import {
-  ELEMENT_LI,
-  ELEMENT_OL,
-  ELEMENT_TODO_LI,
-  ELEMENT_UL,
-} from '@udecode/plate-list';
-import { ELEMENT_MEDIA_EMBED } from '@udecode/plate-media-embed';
-import { ELEMENT_MENTION, ELEMENT_MENTION_INPUT } from '@udecode/plate-mention';
-import { ELEMENT_PARAGRAPH } from '@udecode/plate-paragraph';
+    ELEMENT_LI,
+    ELEMENT_OL,
+    ELEMENT_TODO_LI,
+    ELEMENT_UL
+} from '@shapeci/plate-list';
+import { ELEMENT_MEDIA_EMBED } from '@shapeci/plate-media-embed';
+import { ELEMENT_MENTION, ELEMENT_MENTION_INPUT } from '@shapeci/plate-mention';
+import { ELEMENT_PARAGRAPH } from '@shapeci/plate-paragraph';
 import {
-  ELEMENT_TABLE,
-  ELEMENT_TD,
-  ELEMENT_TH,
-  ELEMENT_TR,
-} from '@udecode/plate-table';
+    ELEMENT_TABLE,
+    ELEMENT_TD,
+    ELEMENT_TH,
+    ELEMENT_TR
+} from '@shapeci/plate-table';
 
 export type DefaultPlatePluginKey =
   | typeof ELEMENT_BLOCKQUOTE

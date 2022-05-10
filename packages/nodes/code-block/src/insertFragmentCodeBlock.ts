@@ -1,10 +1,10 @@
-import { Node, Transforms } from '@shapeci/slate';
 import {
     findNode,
     getPluginType,
     PlateEditor,
     TDescendant
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Node, Transforms } from '@shapeci/slate';
 import { ELEMENT_CODE_BLOCK, ELEMENT_CODE_LINE } from './constants';
 
 export const insertFragmentCodeBlock = (editor: PlateEditor) => {

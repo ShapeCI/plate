@@ -1,11 +1,11 @@
-import { Editor, Range, Transforms } from '@shapeci/slate';
 import {
     deleteFragment,
     getAbove,
     getParent,
     getPluginType,
     PlateEditor
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, Range, Transforms } from '@shapeci/slate';
 import { ELEMENT_LI } from './createListPlugin';
 import { getHighestEmptyList } from './queries/getHighestEmptyList';
 import { hasListChild } from './queries/hasListChild';

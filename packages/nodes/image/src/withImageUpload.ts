@@ -1,11 +1,11 @@
 import {
-  getInjectedPlugins,
-  pipeInsertDataQuery,
-  WithOverride,
-} from '@udecode/plate-core';
+    getInjectedPlugins,
+    pipeInsertDataQuery,
+    WithOverride
+} from '@shapeci/plate-core';
 import { insertImage } from './transforms/insertImage';
-import { isImageUrl } from './utils/isImageUrl';
 import { ImagePlugin } from './types';
+import { isImageUrl } from './utils/isImageUrl';
 
 /**
  * Allows for pasting images from clipboard.

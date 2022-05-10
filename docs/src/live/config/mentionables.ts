@@ -1,4 +1,4 @@
-import { TComboboxItem } from '@udecode/plate';
+import { TComboboxItem } from '@shapeci/plate';
 
 export const MENTIONABLES: TComboboxItem<{ email: string }>[] = [
   { key: '0', text: 'Aayla Secura', data: { email: 'aayla_secura@force.com' } },

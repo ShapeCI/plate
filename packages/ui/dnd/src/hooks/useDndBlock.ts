@@ -1,6 +1,6 @@
+import { useEditorRef } from '@shapeci/plate-core';
 import { useState } from 'react';
 import { getEmptyImage } from 'react-dnd-html5-backend';
-import { useEditorRef } from '@udecode/plate-core';
 import { useDragBlock } from './useDragBlock';
 import { useDropBlockOnEditor } from './useDropBlockOnEditor';
 

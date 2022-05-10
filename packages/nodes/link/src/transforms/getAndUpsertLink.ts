@@ -1,10 +1,10 @@
 import {
-  getAbove,
-  getPluginType,
-  isCollapsed,
-  PlateEditor,
-  unwrapNodes,
-} from '@udecode/plate-core';
+    getAbove,
+    getPluginType,
+    isCollapsed,
+    PlateEditor,
+    unwrapNodes
+} from '@shapeci/plate-core';
 import { ELEMENT_LINK } from '../createLinkPlugin';
 import { LinkPlugin } from '../types';
 import { upsertLinkAtSelection } from './upsertLinkAtSelection';

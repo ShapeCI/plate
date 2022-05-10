@@ -1,5 +1,5 @@
+import { TEditor, unsetNodes } from '@shapeci/plate-core';
 import { NodeEntry } from '@shapeci/slate';
-import { TEditor, unsetNodes } from '@udecode/plate-core';
 import { KEY_LIST_STYLE_TYPE } from '../createIndentListPlugin';
 import { ListStyleType } from '../types';
 import { outdentList } from './outdentList';

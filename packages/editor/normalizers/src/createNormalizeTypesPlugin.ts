@@ -1,5 +1,5 @@
+import { createPluginFactory, ErrorHandler } from '@shapeci/plate-core';
 import { Path } from '@shapeci/slate';
-import { createPluginFactory, ErrorHandler } from '@udecode/plate-core';
 import { withNormalizeTypes } from './withNormalizeTypes';
 
 interface Rule {

@@ -1,10 +1,10 @@
 import {
-  getParent,
-  insertNodes,
-  PlateEditor,
-  PlatePluginKey,
-  TElement,
-} from '@udecode/plate-core';
+    getParent,
+    insertNodes,
+    PlateEditor,
+    PlatePluginKey,
+    TElement
+} from '@shapeci/plate-core';
 import { ELEMENT_EXCALIDRAW } from '../createExcalidrawPlugin';
 import { ExcalidrawNodeData } from '../types';
 

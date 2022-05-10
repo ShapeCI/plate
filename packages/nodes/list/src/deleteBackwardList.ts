@@ -1,4 +1,3 @@
-import { Editor } from '@shapeci/slate';
 import {
     deleteFragment,
     ELEMENT_DEFAULT,
@@ -7,12 +6,13 @@ import {
     isSelectionAtBlockStart,
     mockPlugin,
     PlateEditor
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
 import {
     onKeyDownResetNode,
     ResetNodePlugin,
     SIMULATE_BACKSPACE
-} from '@udecode/plate-reset-node';
+} from '@shapeci/plate-reset-node';
+import { Editor } from '@shapeci/slate';
 import { ELEMENT_LI } from './createListPlugin';
 import { getListItemEntry } from './queries/getListItemEntry';
 import { isListNested } from './queries/isListNested';

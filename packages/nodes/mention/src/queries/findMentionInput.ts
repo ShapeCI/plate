@@ -1,9 +1,9 @@
 import {
-  findNode,
-  FindNodeOptions,
-  getPluginType,
-  PlateEditor,
-} from '@udecode/plate-core';
+    findNode,
+    FindNodeOptions,
+    getPluginType,
+    PlateEditor
+} from '@shapeci/plate-core';
 import { ELEMENT_MENTION_INPUT } from '../createMentionPlugin';
 
 export const findMentionInput = (

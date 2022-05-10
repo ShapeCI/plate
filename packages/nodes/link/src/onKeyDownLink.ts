@@ -1,4 +1,4 @@
-import { KeyboardHandler } from '@udecode/plate-core';
+import { KeyboardHandler } from '@shapeci/plate-core';
 import isHotkey from 'is-hotkey';
 import { getAndUpsertLink } from './transforms';
 import { LinkPlugin } from './types';

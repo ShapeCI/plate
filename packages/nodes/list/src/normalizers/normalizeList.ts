@@ -1,4 +1,3 @@
-import { Descendant, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import {
     ELEMENT_DEFAULT,
     getChildren,
@@ -13,7 +12,8 @@ import {
     TDescendant,
     TElement,
     wrapNodes
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Descendant, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import { ELEMENT_LI, ELEMENT_LIC } from '../createListPlugin';
 import { getListTypes, isListRoot } from '../queries';
 import { moveListItemsToList } from '../transforms';

@@ -1,5 +1,5 @@
+import { Button } from '@shapeci/plate-ui-button';
 import React, { ReactNode } from 'react';
-import { Button } from '@udecode/plate-ui-button';
 import tw from 'twin.macro';
 import { getColorPickerStyles } from './ColorPicker.styles';
 import { Colors } from './Colors';

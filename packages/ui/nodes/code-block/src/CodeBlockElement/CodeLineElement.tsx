@@ -1,8 +1,8 @@
-import React from 'react';
 import {
-  getRootProps,
-  StyledElementProps,
-} from '@udecode/plate-styled-components';
+    getRootProps,
+    StyledElementProps
+} from '@shapeci/plate-styled-components';
+import React from 'react';
 import { getCodeLineElementStyles } from './CodeLineElement.styles';
 
 export const CodeLineElement = (props: StyledElementProps) => {

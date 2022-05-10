@@ -1,7 +1,7 @@
+import { usePlateEditorRef } from '@shapeci/plate-core';
+import { insertMediaEmbed } from '@shapeci/plate-media-embed';
+import { ToolbarButton, ToolbarButtonProps } from '@shapeci/plate-ui-toolbar';
 import React from 'react';
-import { usePlateEditorRef } from '@udecode/plate-core';
-import { insertMediaEmbed } from '@udecode/plate-media-embed';
-import { ToolbarButton, ToolbarButtonProps } from '@udecode/plate-ui-toolbar';
 
 export interface MediaEmbedToolbarButtonProps extends ToolbarButtonProps {
   /**

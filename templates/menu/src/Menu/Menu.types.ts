@@ -1,6 +1,6 @@
-import { HTMLAttributes } from 'react';
+import { StyledProps } from '@shapeci/plate-styled-components';
 import { MenuProps as MenuBaseProps } from '@szhsin/react-menu';
-import { StyledProps } from '@udecode/plate-styled-components';
+import { HTMLAttributes } from 'react';
 
 export interface MenuStyleProps extends MenuProps {}
 

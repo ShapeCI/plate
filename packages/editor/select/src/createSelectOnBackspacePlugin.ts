@@ -1,4 +1,4 @@
-import { createPluginFactory, QueryNodeOptions } from '@udecode/plate-core';
+import { createPluginFactory, QueryNodeOptions } from '@shapeci/plate-core';
 import { withSelectOnBackspace } from './withSelectOnBackspace';
 
 export type SelectOnBackspacePlugin = {

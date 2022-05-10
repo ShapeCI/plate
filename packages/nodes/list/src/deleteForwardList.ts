@@ -1,4 +1,3 @@
-import { Editor, Node, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import {
     getBlockAbove,
     getChildren,
@@ -9,7 +8,8 @@ import {
     PlateEditor,
     TDescendant,
     TElement
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, Node, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import { ELEMENT_LI } from './createListPlugin';
 import { getListItemEntry, getListRoot, hasListChild } from './queries';
 import {

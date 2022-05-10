@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate-core';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { createBoldPlugin } from './createBoldPlugin';
 import { createCodePlugin } from './createCodePlugin';
 import { createItalicPlugin } from './createItalicPlugin';

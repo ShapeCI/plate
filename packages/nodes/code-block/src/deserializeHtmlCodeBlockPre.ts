@@ -1,4 +1,4 @@
-import { DeserializeHtml } from '@udecode/plate-core';
+import { DeserializeHtml } from '@shapeci/plate-core';
 import { ELEMENT_CODE_BLOCK, ELEMENT_CODE_LINE } from './constants';
 
 export const deserializeHtmlCodeBlock: DeserializeHtml = {

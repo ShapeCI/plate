@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from 'react';
-import { TElement, TText } from '@udecode/plate-core';
+import { TElement, TText } from '@shapeci/plate-core';
 import castArray from 'lodash/castArray';
+import React, { FunctionComponent } from 'react';
 import { CSSProp, CSSProperties } from 'styled-components';
 
 /**

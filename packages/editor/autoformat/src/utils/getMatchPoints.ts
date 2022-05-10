@@ -1,5 +1,5 @@
+import { getPointBefore, TEditor } from '@shapeci/plate-core';
 import { Point, Range } from '@shapeci/slate';
-import { getPointBefore, TEditor } from '@udecode/plate-core';
 import { MatchRange } from '../types';
 import { isPreviousCharacterEmpty } from './isPreviousCharacterEmpty';
 

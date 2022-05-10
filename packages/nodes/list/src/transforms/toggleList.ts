@@ -1,4 +1,3 @@
-import { Editor, Node, NodeEntry, Range } from '@shapeci/slate';
 import {
     ELEMENT_DEFAULT,
     findNode,
@@ -10,7 +9,8 @@ import {
     setNodes,
     TElement,
     wrapNodes
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, Node, NodeEntry, Range } from '@shapeci/slate';
 import { ELEMENT_LI, ELEMENT_LIC } from '../createListPlugin';
 import { getListItemEntry, getListTypes } from '../queries';
 import { unwrapList } from './unwrapList';

@@ -1,4 +1,4 @@
-import { AnyObject } from '@udecode/plate-core';
+import { AnyObject } from '@shapeci/plate-core';
 import { StyledElementProps } from '../StyledElement/StyledElement.types';
 import { StyledLeafProps } from '../StyledLeaf/StyledLeaf.types';
 

@@ -1,7 +1,7 @@
+import { withPlateEventProvider } from '@shapeci/plate-core';
+import { PortalBody } from '@shapeci/plate-styled-components';
+import { UsePopperPositionOptions } from '@shapeci/plate-ui-popper';
 import React, { useRef } from 'react';
-import { withPlateEventProvider } from '@udecode/plate-core';
-import { PortalBody } from '@udecode/plate-styled-components';
-import { UsePopperPositionOptions } from '@udecode/plate-ui-popper';
 import { ToolbarBase } from '../Toolbar/Toolbar';
 import { getBalloonToolbarStyles } from './BalloonToolbar.styles';
 import { BalloonToolbarProps } from './BalloonToolbar.types';

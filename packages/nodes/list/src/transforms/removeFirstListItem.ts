@@ -1,5 +1,5 @@
+import { isFirstChild, PlateEditor, TElement } from '@shapeci/plate-core';
 import { NodeEntry } from '@shapeci/slate';
-import { isFirstChild, PlateEditor, TElement } from '@udecode/plate-core';
 import { isListNested } from '../queries/isListNested';
 import { moveListItemUp } from './moveListItemUp';
 

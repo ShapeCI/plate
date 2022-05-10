@@ -1,4 +1,3 @@
-import { Editor, Path } from '@shapeci/slate';
 import {
     ELEMENT_DEFAULT,
     getPluginType,
@@ -7,7 +6,8 @@ import {
     isExpanded,
     PlateEditor,
     TElement
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, Path } from '@shapeci/slate';
 import { CodeBlockInsertOptions } from '../types';
 import { insertCodeBlock } from './insertCodeBlock';
 

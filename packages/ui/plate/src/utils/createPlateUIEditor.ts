@@ -1,7 +1,7 @@
 import {
-  createPlateEditor,
-  CreatePlateEditorOptions,
-} from '@udecode/plate-headless';
+    createPlateEditor,
+    CreatePlateEditorOptions
+} from '@shapeci/plate-headless';
 import { createPlateUI } from './createPlateUI';
 
 /**

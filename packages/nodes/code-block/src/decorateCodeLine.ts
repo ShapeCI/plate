@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars,simple-import-sort/imports */
-import { Node, NodeEntry, Range } from '@shapeci/slate';
 import {
     Decorate,
     getParent,
     getPlugin,
     TDescendant
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Node, NodeEntry, Range } from '@shapeci/slate';
 // noinspection ES6UnusedImports
 import { languages, Token, tokenize } from 'prismjs';
 import 'prismjs/components/prism-antlr4';

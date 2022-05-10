@@ -1,5 +1,5 @@
+import { TEditor } from '@shapeci/plate-core';
 import { useDrag } from 'react-dnd';
-import { TEditor } from '@udecode/plate-core';
 
 export const useDragBlock = (editor: TEditor, id: string) => {
   return useDrag(

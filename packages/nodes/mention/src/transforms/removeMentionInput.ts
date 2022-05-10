@@ -1,5 +1,5 @@
+import { PlateEditor, TDescendant } from '@shapeci/plate-core';
 import { Editor, Node, Path, Transforms } from '@shapeci/slate';
-import { PlateEditor, TDescendant } from '@udecode/plate-core';
 
 export const removeMentionInput = (editor: PlateEditor, path: Path) =>
   Editor.withoutNormalizing(editor, () => {

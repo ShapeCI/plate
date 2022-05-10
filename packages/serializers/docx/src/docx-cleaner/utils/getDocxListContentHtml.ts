@@ -1,7 +1,7 @@
 import {
-  removeHtmlNodesBetweenComments,
-  traverseHtmlElements,
-} from '@udecode/plate-core';
+    removeHtmlNodesBetweenComments,
+    traverseHtmlElements
+} from '@shapeci/plate-core';
 
 export const getDocxListContentHtml = (rootElement: Element): string => {
   const clonedElement = rootElement.cloneNode(true) as Element;

@@ -1,14 +1,14 @@
-import { ReactEditor } from '@shapeci/slate-react';
 import {
     CodeBlockNodeData,
     CodeBlockPlugin,
     ELEMENT_CODE_BLOCK
-} from '@udecode/plate-code-block';
-import { getPluginOptions, setNodes, TElement } from '@udecode/plate-core';
+} from '@shapeci/plate-code-block';
+import { getPluginOptions, setNodes, TElement } from '@shapeci/plate-core';
 import {
     getRootProps,
     StyledElementProps
-} from '@udecode/plate-styled-components';
+} from '@shapeci/plate-styled-components';
+import { ReactEditor } from '@shapeci/slate-react';
 import React from 'react';
 import { getCodeBlockElementStyles } from './CodeBlockElement.styles';
 import { CodeBlockSelectElement } from './CodeBlockSelectElement';

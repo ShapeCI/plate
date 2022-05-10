@@ -1,25 +1,25 @@
 import {
-  createPluginFactory,
-  DeserializeHtml,
-  KEY_DESERIALIZE_HTML,
-  PlatePlugin,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    DeserializeHtml,
+    KEY_DESERIALIZE_HTML,
+    PlatePlugin
+} from '@shapeci/plate-core';
 import {
-  ELEMENT_H1,
-  ELEMENT_H2,
-  ELEMENT_H3,
-  ELEMENT_H4,
-  ELEMENT_H5,
-  ELEMENT_H6,
-} from '@udecode/plate-heading';
-import { ELEMENT_IMAGE } from '@udecode/plate-image';
-import { KEY_INDENT, KEY_TEXT_INDENT } from '@udecode/plate-indent';
-import { KEY_LIST_STYLE_TYPE, ListStyleType } from '@udecode/plate-indent-list';
-import { ELEMENT_PARAGRAPH } from '@udecode/plate-paragraph';
+    ELEMENT_H1,
+    ELEMENT_H2,
+    ELEMENT_H3,
+    ELEMENT_H4,
+    ELEMENT_H5,
+    ELEMENT_H6
+} from '@shapeci/plate-heading';
+import { ELEMENT_IMAGE } from '@shapeci/plate-image';
+import { KEY_INDENT, KEY_TEXT_INDENT } from '@shapeci/plate-indent';
+import { KEY_LIST_STYLE_TYPE, ListStyleType } from '@shapeci/plate-indent-list';
+import { ELEMENT_PARAGRAPH } from '@shapeci/plate-paragraph';
 import { cleanDocx } from '../docx-cleaner/cleanDocx';
 import {
-  getDocxIndent,
-  getDocxTextIndent,
+    getDocxIndent,
+    getDocxTextIndent
 } from '../docx-cleaner/utils/getDocxIndent';
 import { getDocxListContentHtml } from '../docx-cleaner/utils/getDocxListContentHtml';
 import { getDocxListIndent } from '../docx-cleaner/utils/getDocxListIndent';

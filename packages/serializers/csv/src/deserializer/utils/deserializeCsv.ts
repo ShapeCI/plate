@@ -1,18 +1,18 @@
 import {
-  ELEMENT_DEFAULT,
-  getPlugin,
-  getPluginType,
-  PlateEditor,
-  TDescendant,
-  TElement,
-  TNode,
-} from '@udecode/plate-core';
+    ELEMENT_DEFAULT,
+    getPlugin,
+    getPluginType,
+    PlateEditor,
+    TDescendant,
+    TElement,
+    TNode
+} from '@shapeci/plate-core';
 import {
-  ELEMENT_TABLE,
-  ELEMENT_TD,
-  ELEMENT_TH,
-  ELEMENT_TR,
-} from '@udecode/plate-table';
+    ELEMENT_TABLE,
+    ELEMENT_TD,
+    ELEMENT_TH,
+    ELEMENT_TR
+} from '@shapeci/plate-table';
 import { parse } from 'papaparse';
 import { KEY_DESERIALIZE_CSV } from '../createDeserializeCsvPlugin';
 import { DeserializeCsvPlugin } from '../types';

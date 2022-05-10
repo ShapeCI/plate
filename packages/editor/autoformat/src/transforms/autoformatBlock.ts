@@ -1,4 +1,3 @@
-import { Editor, Range, Transforms } from '@shapeci/slate';
 import {
     ELEMENT_DEFAULT,
     getRangeBefore,
@@ -8,7 +7,8 @@ import {
     someNode,
     TEditor,
     TElement
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, Range, Transforms } from '@shapeci/slate';
 import castArray from 'lodash/castArray';
 import { AutoformatBlockRule } from '../types';
 import { getMatchRange } from '../utils/getMatchRange';

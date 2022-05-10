@@ -1,14 +1,14 @@
-import React from 'react';
-import { Alignment, KEY_ALIGN, setAlign } from '@udecode/plate-alignment';
+import { Alignment, KEY_ALIGN, setAlign } from '@shapeci/plate-alignment';
 import {
-  getPreventDefaultHandler,
-  isCollapsed,
-  someNode,
-  useEventPlateId,
-  usePlateEditorState,
-  withPlateEventProvider,
-} from '@udecode/plate-core';
-import { ToolbarButton, ToolbarButtonProps } from '@udecode/plate-ui-toolbar';
+    getPreventDefaultHandler,
+    isCollapsed,
+    someNode,
+    useEventPlateId,
+    usePlateEditorState,
+    withPlateEventProvider
+} from '@shapeci/plate-core';
+import { ToolbarButton, ToolbarButtonProps } from '@shapeci/plate-ui-toolbar';
+import React from 'react';
 
 export interface AlignToolbarButtonProps extends ToolbarButtonProps {
   value: Alignment;

@@ -1,6 +1,6 @@
+import { getHandler } from '@shapeci/plate-core';
+import { getRootProps } from '@shapeci/plate-styled-components';
 import { useFocused, useSelected } from '@shapeci/slate-react';
-import { getHandler } from '@udecode/plate-core';
-import { getRootProps } from '@udecode/plate-styled-components';
 import React from 'react';
 import { getMentionInputElementStyles } from './MentionInputElement.styles';
 import { MentionInputElementProps } from './MentionInputElement.types';

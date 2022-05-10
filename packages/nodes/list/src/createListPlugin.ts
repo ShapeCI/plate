@@ -1,9 +1,9 @@
 import {
-  createPluginFactory,
-  KEY_DESERIALIZE_HTML,
-  PlatePlugin,
-  someNode,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    KEY_DESERIALIZE_HTML,
+    PlatePlugin,
+    someNode
+} from '@shapeci/plate-core';
 import { onKeyDownList } from './onKeyDownList';
 import { ListPlugin } from './types';
 import { withList } from './withList';

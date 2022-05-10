@@ -1,4 +1,4 @@
-import { insertNodes, PlateEditor, TElement } from '@udecode/plate-core';
+import { insertNodes, PlateEditor, TElement } from '@shapeci/plate-core';
 import { getCodeLineType } from '../options';
 
 /**

@@ -1,5 +1,5 @@
+import { getAbove, getPluginType, PlateEditor } from '@shapeci/plate-core';
 import { Path } from '@shapeci/slate';
-import { getAbove, getPluginType, PlateEditor } from '@udecode/plate-core';
 import { ELEMENT_LI } from '../createListPlugin';
 import { getListTypes } from './getListTypes';
 

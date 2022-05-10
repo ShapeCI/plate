@@ -1,4 +1,4 @@
-import { TEditor } from '@udecode/plate-core';
+import { TEditor } from '@shapeci/plate-core';
 import { GetMatchPointsReturnType } from './utils/getMatchPoints';
 
 export interface MatchRange {

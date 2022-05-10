@@ -1,9 +1,9 @@
 import {
-  createPluginFactory,
-  ELEMENT_DEFAULT,
-  getPluginType,
-  QueryNodeOptions,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    ELEMENT_DEFAULT,
+    getPluginType,
+    QueryNodeOptions
+} from '@shapeci/plate-core';
 import { withTrailingBlock } from './withTrailingBlock';
 
 export interface TrailingBlockPlugin extends QueryNodeOptions {

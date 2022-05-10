@@ -1,5 +1,5 @@
-import { PlateEditor } from '@udecode/plate-core';
-import { setIndent } from '@udecode/plate-indent';
+import { PlateEditor } from '@shapeci/plate-core';
+import { setIndent } from '@shapeci/plate-indent';
 import { KEY_LIST_STYLE_TYPE } from '../createIndentListPlugin';
 import { IndentListOptions } from './indentList';
 

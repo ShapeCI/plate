@@ -1,4 +1,4 @@
-import { getPluginType, PlateEditor, unwrapNodes } from '@udecode/plate-core';
+import { getPluginType, PlateEditor, unwrapNodes } from '@shapeci/plate-core';
 import { ELEMENT_CODE_BLOCK } from '../constants';
 import { getCodeLineType } from '../options';
 

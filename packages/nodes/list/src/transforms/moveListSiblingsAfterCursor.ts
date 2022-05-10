@@ -1,5 +1,5 @@
+import { match, moveChildren, PlateEditor } from '@shapeci/plate-core';
 import { Node, NodeEntry, Path } from '@shapeci/slate';
-import { match, moveChildren, PlateEditor } from '@udecode/plate-core';
 import { getListTypes } from '../queries/getListTypes';
 
 export const moveListSiblingsAfterCursor = (

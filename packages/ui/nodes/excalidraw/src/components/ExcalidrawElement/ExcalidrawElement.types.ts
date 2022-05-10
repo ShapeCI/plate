@@ -1,8 +1,8 @@
 import {
-  ExcalidrawProps,
-  LibraryItems,
+    ExcalidrawProps,
+    LibraryItems
 } from '@excalidraw/excalidraw-next/types/types';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { StyledElementProps } from '@shapeci/plate-styled-components';
 import { CSSProp } from 'styled-components';
 import { ExcalidrawNodeData } from '../../types';
 

@@ -1,4 +1,4 @@
-import { HotkeyPlugin, PlateEditor } from '@udecode/plate-core';
+import { HotkeyPlugin, PlateEditor } from '@shapeci/plate-core';
 
 export interface ResetNodePluginRule extends HotkeyPlugin {
   defaultType?: string;

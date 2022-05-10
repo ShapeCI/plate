@@ -1,4 +1,4 @@
-import { ExcalidrawNodeData } from '@udecode/plate-ui-excalidraw';
+import { ExcalidrawNodeData } from '@shapeci/plate-ui-excalidraw';
 
 export const initialDataExcalidraw: ExcalidrawNodeData = {
   data: {

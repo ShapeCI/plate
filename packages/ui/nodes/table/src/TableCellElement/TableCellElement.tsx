@@ -1,10 +1,10 @@
-import { ReactEditor, useReadOnly } from '@shapeci/slate-react';
-import { getRootProps } from '@udecode/plate-styled-components';
+import { getRootProps } from '@shapeci/plate-styled-components';
 import {
     ELEMENT_TABLE,
     getTableColumnIndex,
     setTableColSize
-} from '@udecode/plate-table';
+} from '@shapeci/plate-table';
+import { ReactEditor, useReadOnly } from '@shapeci/slate-react';
 import clsx from 'clsx';
 import { useAtom } from 'jotai';
 import { HandleStyles, Resizable, ResizableProps } from 're-resizable';

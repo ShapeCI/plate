@@ -1,6 +1,6 @@
+import { getNode, TEditor, WithOverride } from '@shapeci/plate-core';
+import { KEY_INDENT } from '@shapeci/plate-indent';
 import { Editor, Node, PathRef } from '@shapeci/slate';
-import { getNode, TEditor, WithOverride } from '@udecode/plate-core';
-import { KEY_INDENT } from '@udecode/plate-indent';
 import {
     IndentListPlugin,
     KEY_LIST_STYLE_TYPE

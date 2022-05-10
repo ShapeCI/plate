@@ -1,10 +1,10 @@
 import {
-  getPluginType,
-  isCollapsed,
-  isRangeAcrossBlocks,
-  PlateEditor,
-  someNode,
-} from '@udecode/plate-core';
+    getPluginType,
+    isCollapsed,
+    isRangeAcrossBlocks,
+    PlateEditor,
+    someNode
+} from '@shapeci/plate-core';
 import { ELEMENT_LI } from '../createListPlugin';
 
 /**

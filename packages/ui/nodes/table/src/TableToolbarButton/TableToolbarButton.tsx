@@ -1,14 +1,14 @@
-import React from 'react';
 import {
-  getPluginType,
-  getPreventDefaultHandler,
-  someNode,
-  useEventPlateId,
-  usePlateEditorState,
-  withPlateEventProvider,
-} from '@udecode/plate-core';
-import { ELEMENT_TABLE } from '@udecode/plate-table';
-import { ToolbarButton } from '@udecode/plate-ui-toolbar';
+    getPluginType,
+    getPreventDefaultHandler,
+    someNode,
+    useEventPlateId,
+    usePlateEditorState,
+    withPlateEventProvider
+} from '@shapeci/plate-core';
+import { ELEMENT_TABLE } from '@shapeci/plate-table';
+import { ToolbarButton } from '@shapeci/plate-ui-toolbar';
+import React from 'react';
 import { TableToolbarButtonProps } from './TableToolbarButton.types';
 
 export const TableToolbarButton = withPlateEventProvider(

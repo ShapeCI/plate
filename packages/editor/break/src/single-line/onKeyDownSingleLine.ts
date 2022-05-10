@@ -1,4 +1,4 @@
-import { KeyboardHandler } from '@udecode/plate-core';
+import { KeyboardHandler } from '@shapeci/plate-core';
 
 export const onKeyDownSingleLine: KeyboardHandler = () => (event) => {
   if (event.key === 'Enter') {

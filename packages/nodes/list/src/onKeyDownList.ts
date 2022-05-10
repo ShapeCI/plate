@@ -1,4 +1,4 @@
-import { getAbove, HotkeyPlugin, KeyboardHandler } from '@udecode/plate-core';
+import { getAbove, HotkeyPlugin, KeyboardHandler } from '@shapeci/plate-core';
 import isHotkey from 'is-hotkey';
 import { castArray } from 'lodash';
 import { moveListItems, toggleList } from './transforms';

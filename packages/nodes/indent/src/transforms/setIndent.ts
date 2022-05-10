@@ -1,4 +1,3 @@
-import { Transforms } from '@shapeci/slate';
 import {
     AnyObject,
     EditorNodesOptions,
@@ -8,7 +7,8 @@ import {
     setNodes,
     UnhangRangeOptions,
     withoutNormalizing
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Transforms } from '@shapeci/slate';
 import { KEY_INDENT } from '../createIndentPlugin';
 
 export interface SetIndentOptions {

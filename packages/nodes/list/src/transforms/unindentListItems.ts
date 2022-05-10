@@ -1,4 +1,4 @@
-import { PlateEditor } from '@udecode/plate-core';
+import { PlateEditor } from '@shapeci/plate-core';
 import { moveListItems, MoveListItemsOptions } from './moveListItems';
 
 export type UnindentListItemsOptions = Omit<MoveListItemsOptions, 'increase'>;

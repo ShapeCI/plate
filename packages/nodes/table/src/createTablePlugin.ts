@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate-core';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { onKeyDownTable } from './onKeyDownTable';
 import { withTable } from './withTable';
 

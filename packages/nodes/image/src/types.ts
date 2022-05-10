@@ -1,4 +1,4 @@
-import { TDescendant } from '@udecode/plate-core';
+import { TDescendant } from '@shapeci/plate-core';
 
 export interface ImageNodeData {
   url: string;

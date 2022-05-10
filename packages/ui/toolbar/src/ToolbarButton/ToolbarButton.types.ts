@@ -1,7 +1,7 @@
-import { HTMLProps } from 'react';
+import { AnyObject } from '@shapeci/plate-core';
+import { StyledProps } from '@shapeci/plate-styled-components';
 import { TippyProps } from '@tippyjs/react';
-import { AnyObject } from '@udecode/plate-core';
-import { StyledProps } from '@udecode/plate-styled-components';
+import { HTMLProps } from 'react';
 import { CSSProp } from 'styled-components';
 
 export interface ToolbarButtonProps

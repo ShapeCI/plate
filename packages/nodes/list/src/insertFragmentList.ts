@@ -1,4 +1,3 @@
-import { Element, Node, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import {
     findNode,
     getPlugin,
@@ -6,7 +5,8 @@ import {
     PlatePlugin,
     TDescendant,
     TElement
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Element, Node, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import { ELEMENT_LI } from './createListPlugin';
 import { getListItemContentType, getListItemType, isListRoot } from './queries';
 

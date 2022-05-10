@@ -1,5 +1,5 @@
+import { getAbove, KeyboardHandler, TElement } from '@shapeci/plate-core';
 import { Transforms } from '@shapeci/slate';
-import { getAbove, KeyboardHandler, TElement } from '@udecode/plate-core';
 import { getNextTableCell } from './queries/getNextTableCell';
 import { getPreviousTableCell } from './queries/getPreviousTableCell';
 import { getTableCellEntry } from './queries/getTableCellEntry';

@@ -1,20 +1,20 @@
 /** @jsx jsx */
-import { createAlignPlugin } from '@udecode/plate-alignment';
+import { createAlignPlugin } from '@shapeci/plate-alignment';
 import {
-  createPlateEditor,
-  OverrideByKey,
-  PlatePlugin,
-} from '@udecode/plate-core';
-import { createImagePlugin } from '@udecode/plate-image';
-import { createLinkPlugin } from '@udecode/plate-link';
-import { jsx } from '@udecode/plate-test-utils';
+    createPlateEditor,
+    OverrideByKey,
+    PlatePlugin
+} from '@shapeci/plate-core';
+import { createImagePlugin } from '@shapeci/plate-image';
+import { createLinkPlugin } from '@shapeci/plate-link';
+import { jsx } from '@shapeci/plate-test-utils';
 import { CONFIG } from '../../../../../../docs/src/live/config/config';
 import { createBasicElementsPlugin } from '../../../../../nodes/basic-elements/src/createBasicElementsPlugin';
 import { createBasicMarksPlugin } from '../../../../../nodes/basic-marks/src/createBasicMarksPlugin';
 import {
-  ELEMENT_H1,
-  ELEMENT_H2,
-  ELEMENT_H3,
+    ELEMENT_H1,
+    ELEMENT_H2,
+    ELEMENT_H3
 } from '../../../../../nodes/heading/src/constants';
 import { createHorizontalRulePlugin } from '../../../../../nodes/horizontal-rule/src/createHorizontalRulePlugin';
 import { createIndentPlugin } from '../../../../../nodes/indent/src/createIndentPlugin';

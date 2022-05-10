@@ -1,5 +1,5 @@
+import { HeadingToolbar } from '@shapeci/plate-ui-toolbar';
 import React from 'react';
-import { HeadingToolbar } from '@udecode/plate-ui-toolbar';
 
 export interface SearchHighlightToolbarProps {
   icon: any;

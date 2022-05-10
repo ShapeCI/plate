@@ -1,4 +1,3 @@
-import { EditableProps } from '@shapeci/slate-react/dist/components/editable';
 import {
     AutoformatPlugin,
     CodeBlockElement,
@@ -29,11 +28,12 @@ import {
     SoftBreakPlugin,
     TrailingBlockPlugin,
     withProps
-} from '@udecode/plate';
+} from '@shapeci/plate';
 import {
     ELEMENT_EXCALIDRAW,
     ExcalidrawElement
-} from '@udecode/plate-ui-excalidraw';
+} from '@shapeci/plate-ui-excalidraw';
+import { EditableProps } from '@shapeci/slate-react/dist/components/editable';
 import { Partial } from 'rollup-plugin-typescript2/dist/partial';
 import { css } from 'styled-components';
 import { autoformatRules } from './autoformat/autoformatRules';

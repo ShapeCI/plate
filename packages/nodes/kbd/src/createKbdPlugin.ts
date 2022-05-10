@@ -1,4 +1,4 @@
-import { createPluginFactory, onKeyDownToggleMark } from '@udecode/plate-core';
+import { createPluginFactory, onKeyDownToggleMark } from '@shapeci/plate-core';
 
 export const MARK_KBD = 'kbd';
 

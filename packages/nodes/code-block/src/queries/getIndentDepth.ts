@@ -1,4 +1,4 @@
-import { getText, TEditor } from '@udecode/plate-core';
+import { getText, TEditor } from '@shapeci/plate-core';
 import { IndentCodeLineOptions } from '../transforms/indentCodeLine';
 
 export const getIndentDepth = (

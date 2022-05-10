@@ -1,5 +1,5 @@
+import { TEditor } from '@shapeci/plate-core';
 import { Editor, NodeEntry, Path } from '@shapeci/slate';
-import { TEditor } from '@udecode/plate-core';
 import { getCellInNextTableRow } from './getCellInNextTableRow';
 
 export function getNextTableCell(

@@ -1,7 +1,7 @@
+import { setNodes } from '@shapeci/plate-core';
+import { getRootProps } from '@shapeci/plate-styled-components';
 import { Node, Transforms } from '@shapeci/slate';
 import { ReactEditor, useFocused, useReadOnly, useSelected } from '@shapeci/slate-react';
-import { setNodes } from '@udecode/plate-core';
-import { getRootProps } from '@udecode/plate-styled-components';
 import { Resizable, ResizableProps } from 're-resizable';
 import React, {
     ChangeEventHandler,

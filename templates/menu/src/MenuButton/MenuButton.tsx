@@ -1,6 +1,6 @@
-import React, { forwardRef } from 'react';
+import { ChevronDownIcon } from '@shapeci/plate-ui-button';
 import { MenuButton as MenuButtonBase } from '@szhsin/react-menu';
-import { ChevronDownIcon } from '@udecode/plate-ui-button';
+import React, { forwardRef } from 'react';
 import { getMenuButtonStyles } from './MenuButton.styles';
 import { MenuButtonProps } from './MenuButton.types';
 

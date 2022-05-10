@@ -1,10 +1,10 @@
 import {
-  isCollapsed,
-  KeyboardHandler,
-  setNodes,
-  someNode,
-  TElement,
-} from '@udecode/plate-core';
+    isCollapsed,
+    KeyboardHandler,
+    setNodes,
+    someNode,
+    TElement
+} from '@shapeci/plate-core';
 import isHotkey from 'is-hotkey';
 import { ResetNodePlugin } from './types';
 

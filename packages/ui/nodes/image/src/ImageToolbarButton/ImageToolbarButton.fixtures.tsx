@@ -1,8 +1,7 @@
 /** @jsx jsx */
 
-import React from 'react';
-import { PlateEditor } from '@udecode/plate-core';
-import { jsx } from '@udecode/plate-test-utils';
+import { PlateEditor } from '@shapeci/plate-core';
+import { jsx } from '@shapeci/plate-test-utils';
 
 jsx;
 

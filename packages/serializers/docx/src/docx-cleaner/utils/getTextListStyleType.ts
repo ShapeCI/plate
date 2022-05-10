@@ -1,4 +1,4 @@
-import { ListStyleType } from '@udecode/plate-indent-list';
+import { ListStyleType } from '@shapeci/plate-indent-list';
 
 export const getTextListStyleType = (
   text: string

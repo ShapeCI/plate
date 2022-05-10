@@ -1,5 +1,5 @@
+import { getParent, match, PlateEditor, TElement } from '@shapeci/plate-core';
 import { Ancestor, Editor, NodeEntry, Path, Transforms } from '@shapeci/slate';
-import { getParent, match, PlateEditor, TElement } from '@udecode/plate-core';
 import { getListTypes } from '../queries';
 
 // When pasting from e.g. Google Docs, the structure of nested lists like "ul -> ul"

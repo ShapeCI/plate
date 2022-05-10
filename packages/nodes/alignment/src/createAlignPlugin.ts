@@ -1,9 +1,9 @@
 import {
-  createPluginFactory,
-  ELEMENT_DEFAULT,
-  getPluginType,
-  mapInjectPropsToPlugin,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    ELEMENT_DEFAULT,
+    getPluginType,
+    mapInjectPropsToPlugin
+} from '@shapeci/plate-core';
 
 export const KEY_ALIGN = 'align';
 

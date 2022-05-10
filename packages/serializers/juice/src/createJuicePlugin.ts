@@ -1,4 +1,4 @@
-import { createPluginFactory, KEY_DESERIALIZE_HTML } from '@udecode/plate-core';
+import { createPluginFactory, KEY_DESERIALIZE_HTML } from '@shapeci/plate-core';
 import juice from 'juice';
 
 export const KEY_JUICE = 'juice';

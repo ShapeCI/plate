@@ -1,6 +1,6 @@
-import React, { CSSProperties } from 'react';
-import { InjectComponent } from '@udecode/plate-core';
+import { InjectComponent } from '@shapeci/plate-core';
 import clsx from 'clsx';
+import React, { CSSProperties } from 'react';
 import { KEY_LIST_START, KEY_LIST_STYLE_TYPE } from './createIndentListPlugin';
 import { ListStyleType } from './types';
 

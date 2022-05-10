@@ -1,4 +1,3 @@
-import { Editor } from '@shapeci/slate';
 import {
     AutoformatRule,
     ELEMENT_LI,
@@ -8,7 +7,8 @@ import {
     setNodes,
     TElement,
     TodoListItemNodeData
-} from '@udecode/plate';
+} from '@shapeci/plate';
+import { Editor } from '@shapeci/slate';
 import { clearBlockFormat, formatList } from './autoformatUtils';
 
 export const autoformatLists: AutoformatRule[] = [

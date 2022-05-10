@@ -1,12 +1,12 @@
 import {
-  ComboboxState,
-  ComboboxStateById,
-  ComboboxStoreById,
-  NoData,
-  TComboboxItem,
-} from '@udecode/plate-combobox';
-import { RenderFunction } from '@udecode/plate-core';
-import { StyledProps } from '@udecode/plate-styled-components';
+    ComboboxState,
+    ComboboxStateById,
+    ComboboxStoreById,
+    NoData,
+    TComboboxItem
+} from '@shapeci/plate-combobox';
+import { RenderFunction } from '@shapeci/plate-core';
+import { StyledProps } from '@shapeci/plate-styled-components';
 import { CSSProp } from 'styled-components';
 
 export interface ComboboxStyleProps<TData> extends ComboboxProps<TData> {

@@ -1,5 +1,5 @@
+import { getRootProps } from '@shapeci/plate-styled-components';
 import React from 'react';
-import { getRootProps } from '@udecode/plate-styled-components';
 import { getTableRowElementStyles } from './TableRowElement.styles';
 import { TableRowElementProps } from './TableRowElement.types';
 

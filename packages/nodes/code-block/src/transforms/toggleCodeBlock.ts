@@ -1,12 +1,12 @@
 import {
-  getNodes,
-  getPluginType,
-  PlateEditor,
-  setNodes,
-  someNode,
-  TElement,
-  wrapNodes,
-} from '@udecode/plate-core';
+    getNodes,
+    getPluginType,
+    PlateEditor,
+    setNodes,
+    someNode,
+    TElement,
+    wrapNodes
+} from '@shapeci/plate-core';
 import { ELEMENT_CODE_BLOCK } from '../constants';
 import { getCodeLineType } from '../options';
 import { unwrapCodeBlock } from './unwrapCodeBlock';

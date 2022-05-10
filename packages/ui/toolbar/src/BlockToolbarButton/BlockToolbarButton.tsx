@@ -1,12 +1,12 @@
-import React from 'react';
 import {
-  getPreventDefaultHandler,
-  someNode,
-  toggleNodeType,
-  useEventPlateId,
-  usePlateEditorState,
-  withPlateEventProvider,
-} from '@udecode/plate-core';
+    getPreventDefaultHandler,
+    someNode,
+    toggleNodeType,
+    useEventPlateId,
+    usePlateEditorState,
+    withPlateEventProvider
+} from '@shapeci/plate-core';
+import React from 'react';
 import { ToolbarButton } from '../ToolbarButton';
 import { BlockToolbarButtonProps } from './BlockToolbarButton.types';
 

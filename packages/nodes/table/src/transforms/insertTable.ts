@@ -1,4 +1,3 @@
-import { Editor } from '@shapeci/slate';
 import {
     getAbove,
     getPluginType,
@@ -7,7 +6,8 @@ import {
     selectEditor,
     someNode,
     TElement
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor } from '@shapeci/slate';
 import { ELEMENT_TABLE } from '../createTablePlugin';
 import { TablePluginOptions } from '../types';
 import { getEmptyTableNode } from '../utils/getEmptyTableNode';

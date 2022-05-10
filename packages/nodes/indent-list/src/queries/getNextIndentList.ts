@@ -1,5 +1,5 @@
+import { getNode, TEditor } from '@shapeci/plate-core';
 import { NodeEntry, Path } from '@shapeci/slate';
-import { getNode, TEditor } from '@udecode/plate-core';
 import {
     getSiblingIndentList,
     GetSiblingIndentListOptions

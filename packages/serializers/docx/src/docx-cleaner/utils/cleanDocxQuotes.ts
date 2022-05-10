@@ -1,4 +1,4 @@
-import { replaceTagName, traverseHtmlElements } from '@udecode/plate-core';
+import { replaceTagName, traverseHtmlElements } from '@shapeci/plate-core';
 
 /**
  * Replace p.MsoQuote elements with blockquote.

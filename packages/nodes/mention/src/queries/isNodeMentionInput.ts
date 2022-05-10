@@ -1,4 +1,4 @@
-import { getPluginType, PlateEditor, TDescendant } from '@udecode/plate-core';
+import { getPluginType, PlateEditor, TDescendant } from '@shapeci/plate-core';
 import { ELEMENT_MENTION_INPUT } from '../createMentionPlugin';
 import { MentionInputNode } from '../types';
 

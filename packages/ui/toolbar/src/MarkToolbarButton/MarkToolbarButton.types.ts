@@ -1,4 +1,4 @@
-import { ToggleMarkPlugin, WithPlatePlugin } from '@udecode/plate-core';
+import { ToggleMarkPlugin, WithPlatePlugin } from '@shapeci/plate-core';
 import { ToolbarButtonProps } from '../ToolbarButton/ToolbarButton.types';
 
 export interface MarkToolbarButtonProps

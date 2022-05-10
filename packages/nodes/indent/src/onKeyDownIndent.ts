@@ -1,4 +1,4 @@
-import { KeyboardHandler } from '@udecode/plate-core';
+import { KeyboardHandler } from '@shapeci/plate-core';
 import { indent, outdent } from './transforms/index';
 
 export const onKeyDownIndent: KeyboardHandler = (editor) => (e) => {

@@ -1,8 +1,8 @@
 import {
-  createPluginFactory,
-  onKeyDownToggleElement,
-  PlatePlugin,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    onKeyDownToggleElement,
+    PlatePlugin
+} from '@shapeci/plate-core';
 import { KEYS_HEADING } from './constants';
 import { HeadingPlugin, HeadingsPlugin } from './types';
 

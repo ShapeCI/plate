@@ -1,4 +1,3 @@
-import { Editor, Path, Range, Transforms } from '@shapeci/slate';
 import {
     getAbove,
     getParent,
@@ -8,7 +7,8 @@ import {
     PlateEditor,
     TElement,
     wrapNodes
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, Path, Range, Transforms } from '@shapeci/slate';
 import { ELEMENT_LI, ELEMENT_LIC } from '../createListPlugin';
 
 /**

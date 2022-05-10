@@ -1,9 +1,9 @@
 import {
-  getPluginType,
-  insertNodes,
-  PlateEditor,
-  TElement,
-} from '@udecode/plate-core';
+    getPluginType,
+    insertNodes,
+    PlateEditor,
+    TElement
+} from '@shapeci/plate-core';
 import { ELEMENT_IMAGE } from '../createImagePlugin';
 
 export const insertImage = (editor: PlateEditor, url: string | ArrayBuffer) => {

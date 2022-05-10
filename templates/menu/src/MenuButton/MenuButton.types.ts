@@ -1,6 +1,6 @@
-import { SVGProps } from 'react';
+import { StyledProps } from '@shapeci/plate-styled-components';
 import { MenuButtonProps as MenuButtonBaseProps } from '@szhsin/react-menu';
-import { StyledProps } from '@udecode/plate-styled-components';
+import { SVGProps } from 'react';
 import { CSSProp } from 'styled-components';
 
 export interface MenuButtonStyleProps extends MenuButtonProps {}

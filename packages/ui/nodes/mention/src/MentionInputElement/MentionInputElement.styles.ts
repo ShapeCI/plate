@@ -1,4 +1,4 @@
-import { createStyles } from '@udecode/plate-styled-components';
+import { createStyles } from '@shapeci/plate-styled-components';
 import tw, { css } from 'twin.macro';
 import { MentionInputElementStyleProps } from './MentionInputElement.types';
 

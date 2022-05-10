@@ -1,5 +1,5 @@
-import { Data } from '@udecode/plate-combobox';
-import { createStyles } from '@udecode/plate-styled-components';
+import { Data } from '@shapeci/plate-combobox';
+import { createStyles } from '@shapeci/plate-styled-components';
 import { css } from 'styled-components';
 import tw from 'twin.macro';
 import { ComboboxStyleProps } from './Combobox.types';

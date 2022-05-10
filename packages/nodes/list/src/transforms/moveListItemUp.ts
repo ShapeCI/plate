@@ -1,4 +1,3 @@
-import { Editor, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import {
     getAbove,
     getNode,
@@ -7,7 +6,8 @@ import {
     isLastChild,
     PlateEditor,
     TElement
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, NodeEntry, Path, Transforms } from '@shapeci/slate';
 import { ELEMENT_LI } from '../createListPlugin';
 import { hasListChild } from '../queries/hasListChild';
 import { moveListItemsToList } from './moveListItemsToList';

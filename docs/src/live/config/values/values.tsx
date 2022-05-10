@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx hjsx */
-import { ELEMENT_HR, TDescendant } from '@udecode/plate';
-import { hjsx } from '@udecode/plate-test-utils';
+import { ELEMENT_HR, TDescendant } from '@shapeci/plate';
+import { hjsx } from '@shapeci/plate-test-utils';
 import * as faker from 'faker';
 import { initialDataExcalidraw } from './initialDataExcalidraw';
 import { createList, getNodesWithRandomId } from './utils';

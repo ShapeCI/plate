@@ -1,5 +1,5 @@
+import { PlateEditor } from '@shapeci/plate-core';
 import { Range, Transforms } from '@shapeci/slate';
-import { PlateEditor } from '@udecode/plate-core';
 import { KeyboardEventHandler } from './KeyboardEventHandler';
 
 export interface MoveSelectionByOffsetOptions {

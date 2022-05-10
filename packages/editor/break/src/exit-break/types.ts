@@ -1,4 +1,4 @@
-import { QueryNodeOptions } from '@udecode/plate-core';
+import { QueryNodeOptions } from '@shapeci/plate-core';
 
 export interface ExitBreakRule {
   /**

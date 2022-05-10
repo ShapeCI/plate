@@ -1,4 +1,4 @@
-import { createStore } from '@udecode/zustood';
+import { createStore } from '@shapeci/zustood';
 import { castArray } from 'lodash';
 import { isUndefined } from '../../common/utils/types.utils';
 import { PlateProps } from '../../components/Plate';

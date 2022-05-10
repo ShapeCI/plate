@@ -1,4 +1,4 @@
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { StyledElementProps } from '@shapeci/plate-styled-components';
 
 export interface TableRowElementStyleProps extends TableRowElementProps {
   // hovered: boolean;

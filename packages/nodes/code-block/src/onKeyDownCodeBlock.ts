@@ -1,5 +1,5 @@
+import { getNodes, getParent, KeyboardHandler } from '@shapeci/plate-core';
 import { Editor, Transforms } from '@shapeci/slate';
-import { getNodes, getParent, KeyboardHandler } from '@udecode/plate-core';
 import { getCodeLineType } from './options/getCodeLineType';
 import { getCodeLineEntry } from './queries/getCodeLineEntry';
 import { indentCodeLine } from './transforms/indentCodeLine';

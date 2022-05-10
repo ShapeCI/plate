@@ -1,7 +1,7 @@
 import {
-  createPluginFactory,
-  isUrl as isUrlProtocol,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    isUrl as isUrlProtocol
+} from '@shapeci/plate-core';
 import { onKeyDownLink } from './onKeyDownLink';
 import { LinkPlugin } from './types';
 import { withLink } from './withLink';

@@ -1,6 +1,6 @@
+import { RemoveNodeButton } from '@shapeci/plate-ui-button';
+import { Popover } from '@shapeci/plate-ui-popover';
 import React from 'react';
-import { RemoveNodeButton } from '@udecode/plate-ui-button';
-import { Popover } from '@udecode/plate-ui-popover';
 import { TableElementProps } from '../TableElement/TableElement.types';
 
 export const TablePopover = ({

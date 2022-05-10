@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate-core';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { onKeyDownResetNode } from './onKeyDownResetNode';
 import { ResetNodePlugin } from './types';
 

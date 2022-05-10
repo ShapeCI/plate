@@ -1,5 +1,5 @@
+import { TEditor, withoutNormalizing } from '@shapeci/plate-core';
 import { NodeEntry } from '@shapeci/slate';
-import { TEditor, withoutNormalizing } from '@udecode/plate-core';
 import { IndentListPlugin } from './createIndentListPlugin';
 import { normalizeIndentListNotIndented } from './normalizers/normalizeIndentListNotIndented';
 import { normalizeIndentListStart } from './normalizers/normalizeIndentListStart';

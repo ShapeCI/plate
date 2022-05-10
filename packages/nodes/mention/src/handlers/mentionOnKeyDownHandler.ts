@@ -1,10 +1,10 @@
-import { PlateEditor } from '@udecode/plate-core';
+import { PlateEditor } from '@shapeci/plate-core';
 import { findMentionInput } from '../queries';
 import { removeMentionInput } from '../transforms';
 import { KeyboardEventHandler } from './KeyboardEventHandler';
 import {
-  moveSelectionByOffset,
-  MoveSelectionByOffsetOptions,
+    moveSelectionByOffset,
+    MoveSelectionByOffsetOptions
 } from './moveSelectionByOffset';
 
 export const mentionOnKeyDownHandler: (

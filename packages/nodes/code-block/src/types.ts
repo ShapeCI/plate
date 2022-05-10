@@ -1,4 +1,4 @@
-import { HotkeyPlugin, InsertNodesOptions } from '@udecode/plate-core';
+import { HotkeyPlugin, InsertNodesOptions } from '@shapeci/plate-core';
 
 export interface CodeBlockPlugin extends HotkeyPlugin {
   syntax?: boolean;

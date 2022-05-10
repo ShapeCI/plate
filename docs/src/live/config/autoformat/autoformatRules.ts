@@ -1,11 +1,11 @@
 import {
-  autoformatArrow,
-  autoformatLegal,
-  autoformatLegalHtml,
-  autoformatMath,
-  autoformatPunctuation,
-  autoformatSmartQuotes,
-} from '@udecode/plate';
+    autoformatArrow,
+    autoformatLegal,
+    autoformatLegalHtml,
+    autoformatMath,
+    autoformatPunctuation,
+    autoformatSmartQuotes
+} from '@shapeci/plate';
 import { autoformatBlocks } from './autoformatBlocks';
 import { autoformatLists } from './autoformatLists';
 import { autoformatMarks } from './autoformatMarks';

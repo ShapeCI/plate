@@ -1,4 +1,3 @@
-import { Range, Transforms } from '@shapeci/slate';
 import {
     getPluginType,
     getRangeBefore,
@@ -10,8 +9,9 @@ import {
     someNode,
     unwrapNodes,
     WithOverride
-} from '@udecode/plate-core';
-import { withRemoveEmptyNodes } from '@udecode/plate-normalizers';
+} from '@shapeci/plate-core';
+import { withRemoveEmptyNodes } from '@shapeci/plate-normalizers';
+import { Range, Transforms } from '@shapeci/slate';
 import { ELEMENT_LINK } from './createLinkPlugin';
 import { upsertLinkAtSelection } from './transforms/upsertLinkAtSelection';
 import { wrapLink } from './transforms/wrapLink';

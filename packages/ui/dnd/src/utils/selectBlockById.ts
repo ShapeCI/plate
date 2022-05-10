@@ -1,6 +1,6 @@
+import { findNode } from '@shapeci/plate-core';
 import { Editor, Transforms } from '@shapeci/slate';
 import { ReactEditor } from '@shapeci/slate-react';
-import { findNode } from '@udecode/plate-core';
 
 /**
  * Select the block above the selection by id and focus the editor.

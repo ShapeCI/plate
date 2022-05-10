@@ -1,6 +1,6 @@
-import { createPluginFactory } from '@udecode/plate-core';
-import { GetSiblingIndentListOptions } from './queries/getSiblingIndentList';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { injectIndentListComponent } from './injectIndentListComponent';
+import { GetSiblingIndentListOptions } from './queries/getSiblingIndentList';
 import { withIndentList } from './withIndentList';
 
 export const KEY_LIST_STYLE_TYPE = 'listStyleType';

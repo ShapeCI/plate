@@ -1,60 +1,60 @@
 import {
-  ELEMENT_BLOCKQUOTE,
-  ELEMENT_CODE_BLOCK,
-  ELEMENT_CODE_LINE,
-  ELEMENT_CODE_SYNTAX,
-  ELEMENT_H1,
-  ELEMENT_H2,
-  ELEMENT_H3,
-  ELEMENT_H4,
-  ELEMENT_H5,
-  ELEMENT_H6,
-  ELEMENT_HR,
-  ELEMENT_IMAGE,
-  ELEMENT_LI,
-  ELEMENT_LINK,
-  ELEMENT_MEDIA_EMBED,
-  ELEMENT_MENTION,
-  ELEMENT_MENTION_INPUT,
-  ELEMENT_OL,
-  ELEMENT_PARAGRAPH,
-  ELEMENT_TABLE,
-  ELEMENT_TD,
-  ELEMENT_TH,
-  ELEMENT_TODO_LI,
-  ELEMENT_TR,
-  ELEMENT_UL,
-  MARK_BOLD,
-  MARK_CODE,
-  MARK_HIGHLIGHT,
-  MARK_ITALIC,
-  MARK_KBD,
-  MARK_SEARCH_HIGHLIGHT,
-  MARK_STRIKETHROUGH,
-  MARK_SUBSCRIPT,
-  MARK_SUPERSCRIPT,
-  MARK_UNDERLINE,
-  PlatePluginComponent,
-  withProps,
-} from '@udecode/plate-headless';
-import { StyledElement, StyledLeaf } from '@udecode/plate-styled-components';
-import { BlockquoteElement } from '@udecode/plate-ui-block-quote';
+    ELEMENT_BLOCKQUOTE,
+    ELEMENT_CODE_BLOCK,
+    ELEMENT_CODE_LINE,
+    ELEMENT_CODE_SYNTAX,
+    ELEMENT_H1,
+    ELEMENT_H2,
+    ELEMENT_H3,
+    ELEMENT_H4,
+    ELEMENT_H5,
+    ELEMENT_H6,
+    ELEMENT_HR,
+    ELEMENT_IMAGE,
+    ELEMENT_LI,
+    ELEMENT_LINK,
+    ELEMENT_MEDIA_EMBED,
+    ELEMENT_MENTION,
+    ELEMENT_MENTION_INPUT,
+    ELEMENT_OL,
+    ELEMENT_PARAGRAPH,
+    ELEMENT_TABLE,
+    ELEMENT_TD,
+    ELEMENT_TH,
+    ELEMENT_TODO_LI,
+    ELEMENT_TR,
+    ELEMENT_UL,
+    MARK_BOLD,
+    MARK_CODE,
+    MARK_HIGHLIGHT,
+    MARK_ITALIC,
+    MARK_KBD,
+    MARK_SEARCH_HIGHLIGHT,
+    MARK_STRIKETHROUGH,
+    MARK_SUBSCRIPT,
+    MARK_SUPERSCRIPT,
+    MARK_UNDERLINE,
+    PlatePluginComponent,
+    withProps
+} from '@shapeci/plate-headless';
+import { StyledElement, StyledLeaf } from '@shapeci/plate-styled-components';
+import { BlockquoteElement } from '@shapeci/plate-ui-block-quote';
 import {
-  CodeBlockElement,
-  CodeLineElement,
-  CodeSyntaxLeaf,
-} from '@udecode/plate-ui-code-block';
-import { HrElement } from '@udecode/plate-ui-horizontal-rule';
-import { ImageElement } from '@udecode/plate-ui-image';
-import { LinkElement } from '@udecode/plate-ui-link';
-import { TodoListElement } from '@udecode/plate-ui-list';
-import { MediaEmbedElement } from '@udecode/plate-ui-media-embed';
-import { MentionElement, MentionInputElement } from '@udecode/plate-ui-mention';
+    CodeBlockElement,
+    CodeLineElement,
+    CodeSyntaxLeaf
+} from '@shapeci/plate-ui-code-block';
+import { HrElement } from '@shapeci/plate-ui-horizontal-rule';
+import { ImageElement } from '@shapeci/plate-ui-image';
+import { LinkElement } from '@shapeci/plate-ui-link';
+import { TodoListElement } from '@shapeci/plate-ui-list';
+import { MediaEmbedElement } from '@shapeci/plate-ui-media-embed';
+import { MentionElement, MentionInputElement } from '@shapeci/plate-ui-mention';
 import {
-  TableCellElement,
-  TableElement,
-  TableRowElement,
-} from '@udecode/plate-ui-table';
+    TableCellElement,
+    TableElement,
+    TableRowElement
+} from '@shapeci/plate-ui-table';
 import { css } from 'styled-components';
 import tw from 'twin.macro';
 import { DefaultPlatePluginKey } from '../types/DefaultPlatePluginKey';

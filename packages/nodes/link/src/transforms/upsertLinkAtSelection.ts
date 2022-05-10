@@ -1,4 +1,3 @@
-import { Editor, Transforms } from '@shapeci/slate';
 import {
     getPluginType,
     insertNodes,
@@ -6,7 +5,8 @@ import {
     PlateEditor,
     TElement,
     unwrapNodes
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, Transforms } from '@shapeci/slate';
 import { ELEMENT_LINK } from '../createLinkPlugin';
 import { wrapLink } from './wrapLink';
 

@@ -1,4 +1,4 @@
-import { isOlSymbol } from '@udecode/plate-core';
+import { isOlSymbol } from '@shapeci/plate-core';
 import { getDocxListNode } from './getDocxListNode';
 
 export const isDocxOl = (element: Element): boolean => {

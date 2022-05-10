@@ -1,5 +1,3 @@
-import { Editor, Transforms } from '@shapeci/slate';
-import { HistoryEditor } from '@shapeci/slate-history';
 import {
     comboboxActions,
     ComboboxOnSelectItem,
@@ -7,13 +5,15 @@ import {
     Data,
     NoData,
     TComboboxItem
-} from '@udecode/plate-combobox';
+} from '@shapeci/plate-combobox';
 import {
     getBlockAbove,
     getPlugin,
     insertNodes,
     PlatePluginKey
-} from '@udecode/plate-core';
+} from '@shapeci/plate-core';
+import { Editor, Transforms } from '@shapeci/slate';
+import { HistoryEditor } from '@shapeci/slate-history';
 import { ELEMENT_MENTION, ELEMENT_MENTION_INPUT } from './createMentionPlugin';
 import { MentionNode, MentionNodeData, MentionPlugin } from './types';
 

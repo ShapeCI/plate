@@ -1,5 +1,5 @@
-import { MediaEmbedNodeData } from '@udecode/plate-media-embed';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { MediaEmbedNodeData } from '@shapeci/plate-media-embed';
+import { StyledElementProps } from '@shapeci/plate-styled-components';
 import { CSSProp } from 'styled-components';
 
 export interface MediaEmbedElementStyles {

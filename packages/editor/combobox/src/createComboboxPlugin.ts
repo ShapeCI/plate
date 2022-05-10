@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate-core';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { onChangeCombobox } from './onChangeCombobox';
 import { onKeyDownCombobox } from './onKeyDownCombobox';
 

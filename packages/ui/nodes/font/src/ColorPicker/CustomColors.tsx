@@ -1,12 +1,12 @@
-import React, {
-  ReactNode,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
-import { Button } from '@udecode/plate-ui-button';
+import { Button } from '@shapeci/plate-ui-button';
 import debounce from 'lodash/debounce';
+import React, {
+    ReactNode,
+    useCallback,
+    useEffect,
+    useMemo,
+    useState
+} from 'react';
 import tw from 'twin.macro';
 import { ColorInput } from './ColorInput';
 import { Colors } from './Colors';

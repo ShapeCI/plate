@@ -1,7 +1,7 @@
+import { setNodes, TElement } from '@shapeci/plate-core';
+import { TodoListItemNodeData } from '@shapeci/plate-list';
+import { getRootProps } from '@shapeci/plate-styled-components';
 import { ReactEditor, useReadOnly } from '@shapeci/slate-react';
-import { setNodes, TElement } from '@udecode/plate-core';
-import { TodoListItemNodeData } from '@udecode/plate-list';
-import { getRootProps } from '@udecode/plate-styled-components';
 import clsx from 'clsx';
 import React from 'react';
 import { getTodoListElementStyles } from './TodoListElement.styles';

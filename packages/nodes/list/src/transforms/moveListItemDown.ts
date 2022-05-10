@@ -1,5 +1,5 @@
+import { match, PlateEditor, TElement, wrapNodes } from '@shapeci/plate-core';
 import { Ancestor, Editor, Element, NodeEntry, Path, Transforms } from '@shapeci/slate';
-import { match, PlateEditor, TElement, wrapNodes } from '@udecode/plate-core';
 import { getListTypes } from '../queries';
 
 export interface MoveListItemDownOptions {

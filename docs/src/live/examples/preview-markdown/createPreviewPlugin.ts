@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate';
+import { createPluginFactory } from '@shapeci/plate';
 import { decoratePreview } from './decoratePreview';
 
 export const createPreviewPlugin = createPluginFactory({

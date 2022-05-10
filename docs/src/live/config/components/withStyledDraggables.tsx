@@ -1,25 +1,25 @@
-import React from 'react';
+import {
+    ELEMENT_BLOCKQUOTE,
+    ELEMENT_CODE_BLOCK,
+    ELEMENT_H1,
+    ELEMENT_H2,
+    ELEMENT_H3,
+    ELEMENT_H4,
+    ELEMENT_H5,
+    ELEMENT_H6,
+    ELEMENT_IMAGE,
+    ELEMENT_MEDIA_EMBED,
+    ELEMENT_OL,
+    ELEMENT_PARAGRAPH,
+    ELEMENT_TABLE,
+    ELEMENT_TODO_LI,
+    ELEMENT_UL,
+    grabberTooltipProps,
+    withDraggables
+} from '@shapeci/plate';
 import { DragIndicator } from '@styled-icons/material/DragIndicator';
 import Tippy from '@tippyjs/react';
-import {
-  ELEMENT_BLOCKQUOTE,
-  ELEMENT_CODE_BLOCK,
-  ELEMENT_H1,
-  ELEMENT_H2,
-  ELEMENT_H3,
-  ELEMENT_H4,
-  ELEMENT_H5,
-  ELEMENT_H6,
-  ELEMENT_IMAGE,
-  ELEMENT_MEDIA_EMBED,
-  ELEMENT_OL,
-  ELEMENT_PARAGRAPH,
-  ELEMENT_TABLE,
-  ELEMENT_TODO_LI,
-  ELEMENT_UL,
-  grabberTooltipProps,
-  withDraggables,
-} from '@udecode/plate';
+import React from 'react';
 import { css } from 'styled-components';
 import tw from 'twin.macro';
 

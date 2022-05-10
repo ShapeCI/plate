@@ -1,44 +1,3 @@
-import { createEditor, Editor, Transforms } from '@shapeci/slate';
-import { Editable, ReactEditor, Slate, withReact } from '@shapeci/slate-react';
-import { CodeAlt } from '@styled-icons/boxicons-regular/CodeAlt';
-import { CodeBlock } from '@styled-icons/boxicons-regular/CodeBlock';
-import { Highlight } from '@styled-icons/boxicons-regular/Highlight';
-import { Subscript } from '@styled-icons/foundation/Subscript';
-import { Superscript } from '@styled-icons/foundation/Superscript';
-import { FormatIndentDecrease } from '@styled-icons/material';
-import { BorderAll } from '@styled-icons/material/BorderAll';
-import { BorderBottom } from '@styled-icons/material/BorderBottom';
-import { BorderClear } from '@styled-icons/material/BorderClear';
-import { BorderLeft } from '@styled-icons/material/BorderLeft';
-import { BorderRight } from '@styled-icons/material/BorderRight';
-import { BorderTop } from '@styled-icons/material/BorderTop';
-import { Check } from '@styled-icons/material/Check';
-import { FontDownload } from '@styled-icons/material/FontDownload';
-import { FormatAlignCenter } from '@styled-icons/material/FormatAlignCenter';
-import { FormatAlignJustify } from '@styled-icons/material/FormatAlignJustify';
-import { FormatAlignLeft } from '@styled-icons/material/FormatAlignLeft';
-import { FormatAlignRight } from '@styled-icons/material/FormatAlignRight';
-import { FormatBold } from '@styled-icons/material/FormatBold';
-import { FormatColorText } from '@styled-icons/material/FormatColorText';
-import { FormatIndentIncrease } from '@styled-icons/material/FormatIndentIncrease';
-import { FormatItalic } from '@styled-icons/material/FormatItalic';
-import { FormatListBulleted } from '@styled-icons/material/FormatListBulleted';
-import { FormatListNumbered } from '@styled-icons/material/FormatListNumbered';
-import { FormatQuote } from '@styled-icons/material/FormatQuote';
-import { FormatStrikethrough } from '@styled-icons/material/FormatStrikethrough';
-import { FormatUnderlined } from '@styled-icons/material/FormatUnderlined';
-import { Image } from '@styled-icons/material/Image';
-import { Keyboard } from '@styled-icons/material/Keyboard';
-import { LineWeight } from '@styled-icons/material/LineWeight';
-import { Link } from '@styled-icons/material/Link';
-import { Looks3 } from '@styled-icons/material/Looks3';
-import { Looks4 } from '@styled-icons/material/Looks4';
-import { Looks5 } from '@styled-icons/material/Looks5';
-import { Looks6 } from '@styled-icons/material/Looks6';
-import { LooksOne } from '@styled-icons/material/LooksOne';
-import { LooksTwo } from '@styled-icons/material/LooksTwo';
-import { OndemandVideo } from '@styled-icons/material/OndemandVideo';
-import { Search } from '@styled-icons/material/Search';
 import {
     addColumn,
     addRow,
@@ -185,12 +144,53 @@ import {
     usePlateSelectors,
     withProps,
     withStyledProps
-} from '@udecode/plate';
+} from '@shapeci/plate';
 import {
     createExcalidrawPlugin,
     ELEMENT_EXCALIDRAW,
     ExcalidrawElement
-} from '@udecode/plate-ui-excalidraw';
+} from '@shapeci/plate-ui-excalidraw';
+import { createEditor, Editor, Transforms } from '@shapeci/slate';
+import { Editable, ReactEditor, Slate, withReact } from '@shapeci/slate-react';
+import { CodeAlt } from '@styled-icons/boxicons-regular/CodeAlt';
+import { CodeBlock } from '@styled-icons/boxicons-regular/CodeBlock';
+import { Highlight } from '@styled-icons/boxicons-regular/Highlight';
+import { Subscript } from '@styled-icons/foundation/Subscript';
+import { Superscript } from '@styled-icons/foundation/Superscript';
+import { FormatIndentDecrease } from '@styled-icons/material';
+import { BorderAll } from '@styled-icons/material/BorderAll';
+import { BorderBottom } from '@styled-icons/material/BorderBottom';
+import { BorderClear } from '@styled-icons/material/BorderClear';
+import { BorderLeft } from '@styled-icons/material/BorderLeft';
+import { BorderRight } from '@styled-icons/material/BorderRight';
+import { BorderTop } from '@styled-icons/material/BorderTop';
+import { Check } from '@styled-icons/material/Check';
+import { FontDownload } from '@styled-icons/material/FontDownload';
+import { FormatAlignCenter } from '@styled-icons/material/FormatAlignCenter';
+import { FormatAlignJustify } from '@styled-icons/material/FormatAlignJustify';
+import { FormatAlignLeft } from '@styled-icons/material/FormatAlignLeft';
+import { FormatAlignRight } from '@styled-icons/material/FormatAlignRight';
+import { FormatBold } from '@styled-icons/material/FormatBold';
+import { FormatColorText } from '@styled-icons/material/FormatColorText';
+import { FormatIndentIncrease } from '@styled-icons/material/FormatIndentIncrease';
+import { FormatItalic } from '@styled-icons/material/FormatItalic';
+import { FormatListBulleted } from '@styled-icons/material/FormatListBulleted';
+import { FormatListNumbered } from '@styled-icons/material/FormatListNumbered';
+import { FormatQuote } from '@styled-icons/material/FormatQuote';
+import { FormatStrikethrough } from '@styled-icons/material/FormatStrikethrough';
+import { FormatUnderlined } from '@styled-icons/material/FormatUnderlined';
+import { Image } from '@styled-icons/material/Image';
+import { Keyboard } from '@styled-icons/material/Keyboard';
+import { LineWeight } from '@styled-icons/material/LineWeight';
+import { Link } from '@styled-icons/material/Link';
+import { Looks3 } from '@styled-icons/material/Looks3';
+import { Looks4 } from '@styled-icons/material/Looks4';
+import { Looks5 } from '@styled-icons/material/Looks5';
+import { Looks6 } from '@styled-icons/material/Looks6';
+import { LooksOne } from '@styled-icons/material/LooksOne';
+import { LooksTwo } from '@styled-icons/material/LooksTwo';
+import { OndemandVideo } from '@styled-icons/material/OndemandVideo';
+import { Search } from '@styled-icons/material/Search';
 import 'prismjs/themes/prism.css';
 import React, { useCallback } from 'react';
 import { DndProvider } from 'react-dnd';

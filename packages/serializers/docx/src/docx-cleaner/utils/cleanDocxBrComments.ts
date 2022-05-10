@@ -1,8 +1,8 @@
 import {
-  isHtmlComment,
-  removeHtmlNodesBetweenComments,
-  traverseHtmlElements,
-} from '@udecode/plate-core';
+    isHtmlComment,
+    removeHtmlNodesBetweenComments,
+    traverseHtmlElements
+} from '@shapeci/plate-core';
 
 /**
  * Remove HTML nodes between comments in the next sibling after BR.

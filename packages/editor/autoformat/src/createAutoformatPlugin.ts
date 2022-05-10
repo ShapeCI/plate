@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate-core';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { AutoformatPlugin } from './types';
 import { withAutoformat } from './withAutoformat';
 

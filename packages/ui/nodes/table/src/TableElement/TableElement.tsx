@@ -1,8 +1,8 @@
-import React from 'react';
-import { withProviders } from '@udecode/plate-core';
-import { getRootProps } from '@udecode/plate-styled-components';
-import { ELEMENT_TABLE } from '@udecode/plate-table';
+import { withProviders } from '@shapeci/plate-core';
+import { getRootProps } from '@shapeci/plate-styled-components';
+import { ELEMENT_TABLE } from '@shapeci/plate-table';
 import { Provider } from 'jotai';
+import React from 'react';
 import { useTableColSizes } from '../hooks/useTableColSizes';
 import { TablePopover } from '../TablePopover/TablePopover';
 import { getTableElementStyles } from './TableElement.styles';

@@ -1,5 +1,5 @@
+import { PlatePluginComponent } from '@shapeci/plate-core';
 import React from 'react';
-import { PlatePluginComponent } from '@udecode/plate-core';
 
 export const CodeSyntaxLeaf: PlatePluginComponent = ({
   attributes,

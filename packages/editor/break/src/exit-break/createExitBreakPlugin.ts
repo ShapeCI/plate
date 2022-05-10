@@ -1,4 +1,4 @@
-import { createPluginFactory } from '@udecode/plate-core';
+import { createPluginFactory } from '@shapeci/plate-core';
 import { onKeyDownExitBreak } from './onKeyDownExitBreak';
 import { ExitBreakPlugin } from './types';
 

@@ -1,9 +1,9 @@
-import React from 'react';
-import { LinkNodeData } from '@udecode/plate-link';
+import { LinkNodeData } from '@shapeci/plate-link';
 import {
-  getRootProps,
-  StyledElementProps,
-} from '@udecode/plate-styled-components';
+    getRootProps,
+    StyledElementProps
+} from '@shapeci/plate-styled-components';
+import React from 'react';
 import { getLinkElementStyles } from './LinkElement.styles';
 
 export const LinkElement = (props: StyledElementProps<LinkNodeData>) => {

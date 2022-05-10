@@ -1,13 +1,13 @@
-import React from 'react';
 import {
-  getPluginType,
-  someNode,
-  useEventPlateId,
-  usePlateEditorState,
-  withPlateEventProvider,
-} from '@udecode/plate-core';
-import { ELEMENT_LINK, getAndUpsertLink } from '@udecode/plate-link';
-import { ToolbarButton, ToolbarButtonProps } from '@udecode/plate-ui-toolbar';
+    getPluginType,
+    someNode,
+    useEventPlateId,
+    usePlateEditorState,
+    withPlateEventProvider
+} from '@shapeci/plate-core';
+import { ELEMENT_LINK, getAndUpsertLink } from '@shapeci/plate-link';
+import { ToolbarButton, ToolbarButtonProps } from '@shapeci/plate-ui-toolbar';
+import React from 'react';
 
 export interface LinkToolbarButtonProps extends ToolbarButtonProps {
   /**

@@ -1,4 +1,4 @@
-import { isUrl } from '@udecode/plate-core';
+import { isUrl } from '@shapeci/plate-core';
 
 const imageExtensions = [
   'ase',

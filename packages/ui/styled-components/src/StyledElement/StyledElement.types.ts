@@ -1,5 +1,5 @@
+import { PlateRenderElementProps } from '@shapeci/plate-core';
 import { Element } from '@shapeci/slate';
-import { PlateRenderElementProps } from '@udecode/plate-core';
 import { HTMLAttributes } from 'react';
 import { StyledProps } from '../types/StyledProps';
 

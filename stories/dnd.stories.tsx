@@ -1,26 +1,25 @@
-import './dnd.css';
-import React, { useMemo, useState } from 'react';
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
+import { createBlockquotePlugin } from '@shapeci/plate-block-quote';
+import { createCodeBlockPlugin } from '@shapeci/plate-code-block';
+import { createFindReplacePlugin } from '@shapeci/plate-find-replace';
+import { createHeadingPlugin } from '@shapeci/plate-heading';
+import { createImagePlugin } from '@shapeci/plate-image';
+import { createLinkPlugin } from '@shapeci/plate-link';
+import { createParagraphPlugin } from '@shapeci/plate-paragraph';
+import { HeadingToolbar } from '@shapeci/plate-ui-toolbar';
 import { Meta } from '@storybook/react/types-6-0';
 import { Image } from '@styled-icons/material/Image';
 import { Link } from '@styled-icons/material/Link';
 import { Search } from '@styled-icons/material/Search';
-import { createBlockquotePlugin } from '@udecode/plate-block-quote';
-import { createCodeBlockPlugin } from '@udecode/plate-code-block';
-import { createFindReplacePlugin } from '@udecode/plate-find-replace';
-import { createHeadingPlugin } from '@udecode/plate-heading';
-import { createImagePlugin } from '@udecode/plate-image';
-import { createLinkPlugin } from '@udecode/plate-link';
-import { createParagraphPlugin } from '@udecode/plate-paragraph';
-import { HeadingToolbar } from '@udecode/plate-ui-toolbar';
+import React, { useMemo, useState } from 'react';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 import {
-  AlignToolbarButtons,
-  BasicElementToolbarButtons,
-  BasicMarkToolbarButtons,
-  ListToolbarButtons,
-  MarkBallonToolbar,
-  TableToolbarButtons,
+    AlignToolbarButtons,
+    BasicElementToolbarButtons,
+    BasicMarkToolbarButtons,
+    ListToolbarButtons,
+    MarkBallonToolbar,
+    TableToolbarButtons
 } from '../docs/src/live/config/components/Toolbars';
 import { withStyledDraggables } from '../docs/src/live/config/components/withStyledDraggables';
 import { withStyledPlaceHolders } from '../docs/src/live/config/components/withStyledPlaceHolders';
@@ -57,6 +56,7 @@ import { ImageToolbarButton } from '../packages/ui/nodes/image/src/ImageToolbarB
 import { LinkToolbarButton } from '../packages/ui/nodes/link/src/LinkToolbarButton/LinkToolbarButton';
 import { MentionCombobox } from '../packages/ui/nodes/mention/src/MentionCombobox/MentionCombobox';
 import { createPlateUI } from '../packages/ui/plate/src/utils/createPlateUI';
+import './dnd.css';
 
 export default {
   title: 'Drag & Drop',

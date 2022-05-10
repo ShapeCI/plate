@@ -1,22 +1,22 @@
 import {
-  cleanHtmlBrElements,
-  cleanHtmlEmptyElements,
-  cleanHtmlFontElements,
-  cleanHtmlLinkElements,
-  cleanHtmlTextNodes,
-  copyBlockMarksToSpanChild,
-  postCleanHtml,
-  preCleanHtml,
-} from '@udecode/plate-core';
+    cleanHtmlBrElements,
+    cleanHtmlEmptyElements,
+    cleanHtmlFontElements,
+    cleanHtmlLinkElements,
+    cleanHtmlTextNodes,
+    copyBlockMarksToSpanChild,
+    postCleanHtml,
+    preCleanHtml
+} from '@shapeci/plate-core';
 import {
-  cleanDocxBrComments,
-  cleanDocxEmptyParagraphs,
-  cleanDocxFootnotes,
-  cleanDocxImageElements,
-  cleanDocxListElements,
-  cleanDocxQuotes,
-  cleanDocxSpans,
-  isDocxContent,
+    cleanDocxBrComments,
+    cleanDocxEmptyParagraphs,
+    cleanDocxFootnotes,
+    cleanDocxImageElements,
+    cleanDocxListElements,
+    cleanDocxQuotes,
+    cleanDocxSpans,
+    isDocxContent
 } from './utils';
 
 export const cleanDocx = (html: string, rtf: string): string => {

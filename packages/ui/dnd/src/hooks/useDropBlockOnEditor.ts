@@ -1,6 +1,6 @@
+import { findNode, isExpanded } from '@shapeci/plate-core';
 import { Path, Transforms } from '@shapeci/slate';
 import { ReactEditor } from '@shapeci/slate-react';
-import { findNode, isExpanded } from '@udecode/plate-core';
 import { DropTargetMonitor, useDrop } from 'react-dnd';
 import { DragItemBlock } from '../types';
 import { getHoverDirection } from '../utils/getHoverDirection';

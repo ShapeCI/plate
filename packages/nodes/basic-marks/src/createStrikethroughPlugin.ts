@@ -1,9 +1,9 @@
 import {
-  createPluginFactory,
-  onKeyDownToggleMark,
-  someHtmlElement,
-  ToggleMarkPlugin,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    onKeyDownToggleMark,
+    someHtmlElement,
+    ToggleMarkPlugin
+} from '@shapeci/plate-core';
 
 export const MARK_STRIKETHROUGH = 'strikethrough';
 

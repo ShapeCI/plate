@@ -1,4 +1,4 @@
-import { isCollapsed, WithOverride } from '@udecode/plate-core';
+import { isCollapsed, WithOverride } from '@shapeci/plate-core';
 import { autoformatBlock } from './transforms/autoformatBlock';
 import { autoformatMark } from './transforms/autoformatMark';
 import { autoformatText } from './transforms/autoformatText';

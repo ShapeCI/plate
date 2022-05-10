@@ -1,7 +1,7 @@
-import { RenderFunction } from '@udecode/plate-core';
-import { StyledElementProps } from '@udecode/plate-styled-components';
-import { TableNodeData } from '@udecode/plate-table';
-import { PopoverProps } from '@udecode/plate-ui-popover';
+import { RenderFunction } from '@shapeci/plate-core';
+import { StyledElementProps } from '@shapeci/plate-styled-components';
+import { TableNodeData } from '@shapeci/plate-table';
+import { PopoverProps } from '@shapeci/plate-ui-popover';
 import { CSSProp } from 'styled-components';
 
 export interface TableElementStyleProps extends TableElementProps {}

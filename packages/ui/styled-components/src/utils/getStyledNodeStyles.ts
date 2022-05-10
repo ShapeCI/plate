@@ -1,4 +1,4 @@
-import { AnyObject } from '@udecode/plate-core';
+import { AnyObject } from '@shapeci/plate-core';
 import { StyledProps } from '../types/StyledProps';
 import { createStyles } from './createStyles';
 

@@ -1,11 +1,11 @@
 import {
-  getNode,
-  insertNodes,
-  isElement,
-  setNodes,
-  TElement,
-  WithOverride,
-} from '@udecode/plate-core';
+    getNode,
+    insertNodes,
+    isElement,
+    setNodes,
+    TElement,
+    WithOverride
+} from '@shapeci/plate-core';
 import { NormalizeTypesPlugin } from './createNormalizeTypesPlugin';
 
 export const withNormalizeTypes: WithOverride<{}, NormalizeTypesPlugin> = (

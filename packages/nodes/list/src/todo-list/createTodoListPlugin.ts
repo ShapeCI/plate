@@ -1,8 +1,8 @@
 import {
-  createPluginFactory,
-  HotkeyPlugin,
-  onKeyDownToggleElement,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    HotkeyPlugin,
+    onKeyDownToggleElement
+} from '@shapeci/plate-core';
 
 export const ELEMENT_TODO_LI = 'action_item';
 

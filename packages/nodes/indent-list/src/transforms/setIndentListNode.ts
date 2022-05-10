@@ -1,6 +1,6 @@
+import { setNodes, TEditor } from '@shapeci/plate-core';
+import { KEY_INDENT } from '@shapeci/plate-indent';
 import { Path } from '@shapeci/slate';
-import { setNodes, TEditor } from '@udecode/plate-core';
-import { KEY_INDENT } from '@udecode/plate-indent';
 import { KEY_LIST_STYLE_TYPE } from '../createIndentListPlugin';
 import { ListStyleType } from '../types';
 

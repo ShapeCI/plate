@@ -1,8 +1,8 @@
 import {
-  createPluginFactory,
-  ELEMENT_DEFAULT,
-  getPluginType,
-} from '@udecode/plate-core';
+    createPluginFactory,
+    ELEMENT_DEFAULT,
+    getPluginType
+} from '@shapeci/plate-core';
 import { onKeyDownIndent } from './onKeyDownIndent';
 import { IndentPlugin } from './types';
 import { withIndent } from './withIndent';

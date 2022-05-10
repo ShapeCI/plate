@@ -1,5 +1,5 @@
-import { MentionNode, MentionNodeData } from '@udecode/plate-mention';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { MentionNode, MentionNodeData } from '@shapeci/plate-mention';
+import { StyledElementProps } from '@shapeci/plate-styled-components';
 
 export interface MentionElementStyleProps extends MentionElementProps {
   selected?: boolean;

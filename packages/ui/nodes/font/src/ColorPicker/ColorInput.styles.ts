@@ -1,5 +1,5 @@
+import { createStyles, StyledProps } from '@shapeci/plate-styled-components';
 import { ChangeEvent } from 'react';
-import { createStyles, StyledProps } from '@udecode/plate-styled-components';
 import { css, CSSProp } from 'styled-components';
 
 export type ColorInputStyles = {

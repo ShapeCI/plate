@@ -1,8 +1,8 @@
 import {
-  ELEMENT_DEFAULT,
-  getPluginType,
-  PlateEditor,
-} from '@udecode/plate-core';
+    ELEMENT_DEFAULT,
+    getPluginType,
+    PlateEditor
+} from '@shapeci/plate-core';
 import { ELEMENT_TD, ELEMENT_TH } from '../createTablePlugin';
 import { TablePluginOptions } from '../types';
 
