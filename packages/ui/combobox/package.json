@@ -32,10 +32,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@udecode/plate-combobox": "10.6.0",
-    "@udecode/plate-core": "10.5.3",
-    "@udecode/plate-ui-popper": "10.5.3",
-    "@udecode/plate-styled-components": "10.5.3"
+    "@shapeci/plate-combobox": "1.0.0",
+    "@shapeci/plate-core": "1.0.0",
+    "@shapeci/plate-ui-popper": "1.0.0",
+    "@shapeci/plate-styled-components": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

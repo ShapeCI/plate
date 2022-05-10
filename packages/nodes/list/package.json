@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@udecode/plate-core": "10.5.3",
-    "@udecode/plate-reset-node": "10.5.3"
+    "@shapeci/plate-core": "1.0.0",
+    "@shapeci/plate-reset-node": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

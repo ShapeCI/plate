@@ -33,8 +33,8 @@
     "rollup": "rollup -c=../../rollup.config.js"
   },
   "dependencies": {
-    "@udecode/plate-headless": "10.7.0",
-    "@udecode/plate-ui": "10.8.0"
+    "@shapeci/plate-headless": "1.0.0",
+    "@shapeci/plate-ui": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

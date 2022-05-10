@@ -32,10 +32,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@udecode/plate-line-height": "10.5.3",
-    "@udecode/plate-core": "10.5.3",
-    "@udecode/plate-styled-components": "10.5.3",
-    "@udecode/plate-ui-toolbar": "10.5.3"
+    "@shapeci/plate-line-height": "1.0.0",
+    "@shapeci/plate-core": "1.0.0",
+    "@shapeci/plate-styled-components": "1.0.0",
+    "@shapeci/plate-ui-toolbar": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
