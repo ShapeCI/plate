@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-ui-excalidraw",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Excalidraw plugin for Plate",
   "keywords": [
     "slate",

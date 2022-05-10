@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-alignment",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Text alignment plugin for Plate",
   "keywords": [
     "slate",

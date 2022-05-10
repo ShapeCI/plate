@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-line-height",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Line height plugin for Plate",
   "keywords": [
     "slate",

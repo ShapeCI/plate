@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-select",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Select plugins for Plate",
   "keywords": [
     "slate",

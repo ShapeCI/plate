@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-serializer-csv",
-  "version": "10.6.3",
+  "version": "1.0.0",
   "description": "CSV serializer plugin for Plate",
   "keywords": [
     "slate",

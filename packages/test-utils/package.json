@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-test-utils",
-  "version": "10.1.0",
+  "version": "1.0.0",
   "description": "Testing utilities for Plate",
   "keywords": [
     "slate",

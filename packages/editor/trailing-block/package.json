@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-trailing-block",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Trailing-block plugin for Plate",
   "keywords": [
     "slate",

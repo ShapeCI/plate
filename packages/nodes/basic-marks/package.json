@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-basic-marks",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Basic marks plugin for Plate",
   "keywords": [
     "slate",

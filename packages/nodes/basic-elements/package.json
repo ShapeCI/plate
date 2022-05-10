@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-basic-elements",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Basic elements plugin for Plate",
   "keywords": [
     "slate",

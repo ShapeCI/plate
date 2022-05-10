@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-ui-find-replace",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Find and replace UI for Plate",
   "keywords": [
     "slate",

@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-table",
-  "version": "10.6.3",
+  "version": "1.0.0",
   "description": "Table plugin for Plate",
   "keywords": [
     "slate",

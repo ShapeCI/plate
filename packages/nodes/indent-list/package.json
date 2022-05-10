@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-indent-list",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Indent list plugin for Plate",
   "keywords": [
     "slate",

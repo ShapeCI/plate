@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-mention",
-  "version": "10.6.0",
+  "version": "1.0.0",
   "description": "Mention plugin for Plate",
   "keywords": [
     "slate",

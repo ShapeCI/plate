@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-paragraph",
-  "version": "10.5.3",
+  "version": "1.0.0",
   "description": "Paragraph plugin for Plate",
   "keywords": [
     "slate",

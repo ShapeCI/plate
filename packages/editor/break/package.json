@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-break",
-  "version": "10.6.1",
+  "version": "1.0.0",
   "description": "Insert break plugins for Plate",
   "keywords": [
     "slate",

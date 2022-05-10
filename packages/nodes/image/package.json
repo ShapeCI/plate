@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-image",
-  "version": "10.7.0",
+  "version": "1.0.0",
   "description": "Image plugin for Plate",
   "keywords": [
     "slate",
