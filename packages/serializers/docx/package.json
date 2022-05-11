@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "https://github.com/shapeci/plate.git",
     "directory": "packages/serializers/docx"
   },
   "license": "MIT",
@@ -53,5 +53,6 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
-  }
+  },
+  "gitHead": "ae0dcf6b1bad5c190681490dada41f0ef5bd1466"
 }

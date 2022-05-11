@@ -48,5 +48,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
   },
-  "gitHead": "9f660a54cbd931cd20a6ad99e9319dbebfc7e1af"
+  "gitHead": "ae0dcf6b1bad5c190681490dada41f0ef5bd1466"
 }
