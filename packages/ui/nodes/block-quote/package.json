@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-ui-block-quote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Block quote UI for Plate",
   "keywords": [
     "slate",
@@ -32,9 +32,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-block-quote": "^1.0.0",
-    "@shapeci/plate-core": "^1.0.0",
-    "@shapeci/plate-styled-components": "^1.0.0"
+    "@shapeci/plate-block-quote": "^1.0.1",
+    "@shapeci/plate-core": "^1.0.1",
+    "@shapeci/plate-styled-components": "^1.0.1"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",

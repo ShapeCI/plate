@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The core architecture of Plate – a plugin system for slate",
   "keywords": [
     "wysiwyg",

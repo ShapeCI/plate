@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-juice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HTML juice plugin for Plate",
   "keywords": [
     "slate",
@@ -32,7 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.0",
+    "@shapeci/plate-core": "^1.0.1",
     "juice": "8.0.0"
   },
   "peerDependencies": {

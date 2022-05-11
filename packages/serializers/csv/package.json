@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-serializer-csv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSV serializer plugin for Plate",
   "keywords": [
     "slate",
@@ -34,8 +34,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.0",
-    "@shapeci/plate-table": "^1.0.0",
+    "@shapeci/plate-core": "^1.0.1",
+    "@shapeci/plate-table": "^1.0.1",
     "papaparse": "^5.3.1"
   },
   "devDependencies": {

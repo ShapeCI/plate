@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-ui-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Table UI for Plate",
   "keywords": [
     "slate",
@@ -32,12 +32,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.0",
-    "@shapeci/plate-styled-components": "^1.0.0",
-    "@shapeci/plate-table": "^1.0.0",
-    "@shapeci/plate-ui-button": "^1.0.0",
-    "@shapeci/plate-ui-popover": "^1.0.0",
-    "@shapeci/plate-ui-toolbar": "^1.0.0",
+    "@shapeci/plate-core": "^1.0.1",
+    "@shapeci/plate-styled-components": "^1.0.1",
+    "@shapeci/plate-table": "^1.0.1",
+    "@shapeci/plate-ui-button": "^1.0.1",
+    "@shapeci/plate-ui-popover": "^1.0.1",
+    "@shapeci/plate-ui-toolbar": "^1.0.1",
     "jotai": "^1.4.0",
     "re-resizable": "^6.9.1"
   },

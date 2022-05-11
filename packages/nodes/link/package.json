@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-link",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Link plugin for Plate",
   "keywords": [
     "slate",
@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.0",
-    "@shapeci/plate-normalizers": "^1.0.0"
+    "@shapeci/plate-core": "^1.0.1",
+    "@shapeci/plate-normalizers": "^1.0.1"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",

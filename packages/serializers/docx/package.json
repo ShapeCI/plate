@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-serializer-docx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Docx serializer plugin for Plate",
   "keywords": [
     "slate",
@@ -34,13 +34,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.0",
-    "@shapeci/plate-heading": "^1.0.0",
-    "@shapeci/plate-image": "^1.0.0",
-    "@shapeci/plate-indent": "^1.0.0",
-    "@shapeci/plate-indent-list": "^1.0.0",
-    "@shapeci/plate-paragraph": "^1.0.0",
-    "@shapeci/plate-table": "^1.0.0",
+    "@shapeci/plate-core": "^1.0.1",
+    "@shapeci/plate-heading": "^1.0.1",
+    "@shapeci/plate-image": "^1.0.1",
+    "@shapeci/plate-indent": "^1.0.1",
+    "@shapeci/plate-indent-list": "^1.0.1",
+    "@shapeci/plate-paragraph": "^1.0.1",
+    "@shapeci/plate-table": "^1.0.1",
     "validator": "13.7.0"
   },
   "peerDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-ui-code-block",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Code block UI for Plate",
   "keywords": [
     "slate",
@@ -32,10 +32,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-code-block": "^1.0.0",
-    "@shapeci/plate-core": "^1.0.0",
-    "@shapeci/plate-styled-components": "^1.0.0",
-    "@shapeci/plate-ui-toolbar": "^1.0.0"
+    "@shapeci/plate-code-block": "^1.0.1",
+    "@shapeci/plate-core": "^1.0.1",
+    "@shapeci/plate-styled-components": "^1.0.1",
+    "@shapeci/plate-ui-toolbar": "^1.0.1"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",

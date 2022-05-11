@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-ui-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Image UI for Plate",
   "keywords": [
     "slate",
@@ -32,10 +32,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.0",
-    "@shapeci/plate-image": "^1.0.0",
-    "@shapeci/plate-styled-components": "^1.0.0",
-    "@shapeci/plate-ui-toolbar": "^1.0.0",
+    "@shapeci/plate-core": "^1.0.1",
+    "@shapeci/plate-image": "^1.0.1",
+    "@shapeci/plate-styled-components": "^1.0.1",
+    "@shapeci/plate-ui-toolbar": "^1.0.1",
     "re-resizable": "^6.9.0",
     "react-textarea-autosize": "^8.3.3"
   },

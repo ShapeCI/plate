@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-ui-combobox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Combobox UI for Plate",
   "keywords": [
     "slate",
@@ -32,10 +32,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-combobox": "^1.0.0",
-    "@shapeci/plate-core": "^1.0.0",
-    "@shapeci/plate-styled-components": "^1.0.0",
-    "@shapeci/plate-ui-popper": "^1.0.0"
+    "@shapeci/plate-combobox": "^1.0.1",
+    "@shapeci/plate-core": "^1.0.1",
+    "@shapeci/plate-styled-components": "^1.0.1",
+    "@shapeci/plate-ui-popper": "^1.0.1"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",
