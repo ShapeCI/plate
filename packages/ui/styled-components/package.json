@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-styled-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Standard UI for Plate",
   "keywords": [
     "slate",
@@ -32,7 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.1",
+    "@shapeci/plate-core": "^1.0.2",
     "clsx": "^1.1.1"
   },
   "devDependencies": {

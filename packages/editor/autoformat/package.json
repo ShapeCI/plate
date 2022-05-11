@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-autoformat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Autoformatting plugin for Plate",
   "keywords": [
     "slate",
@@ -32,7 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.1"
+    "@shapeci/plate-core": "^1.0.2"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",

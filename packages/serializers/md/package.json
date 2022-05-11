@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-serializer-md",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Markdown serializer plugin for Plate",
   "keywords": [
     "slate",
@@ -35,13 +35,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-block-quote": "^1.0.1",
-    "@shapeci/plate-code-block": "^1.0.1",
-    "@shapeci/plate-core": "^1.0.1",
-    "@shapeci/plate-heading": "^1.0.1",
-    "@shapeci/plate-link": "^1.0.1",
-    "@shapeci/plate-list": "^1.0.1",
-    "@shapeci/plate-paragraph": "^1.0.1",
+    "@shapeci/plate-block-quote": "^1.0.2",
+    "@shapeci/plate-code-block": "^1.0.2",
+    "@shapeci/plate-core": "^1.0.2",
+    "@shapeci/plate-heading": "^1.0.2",
+    "@shapeci/plate-link": "^1.0.2",
+    "@shapeci/plate-list": "^1.0.2",
+    "@shapeci/plate-paragraph": "^1.0.2",
     "remark-parse": "^9.0.0",
     "remark-slate": "^1.4.0",
     "unified": "^9.2.0"
