@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-combobox",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Combobox for Plate",
   "keywords": [
     "slate",
@@ -32,7 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.2",
+    "@shapeci/plate-core": "^1.0.3",
     "@udecode/zustood": "1.0.0",
     "downshift": "6.1.7",
     "zustand": "3.7.0"

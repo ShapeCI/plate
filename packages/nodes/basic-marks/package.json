@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-basic-marks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Basic marks plugin for Plate",
   "keywords": [
     "slate",
@@ -31,7 +31,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.2"
+    "@shapeci/plate-core": "^1.0.3"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",

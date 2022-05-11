@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-ui-popover",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Popover UI for Plate",
   "keywords": [
     "slate",
@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.2",
-    "@shapeci/plate-styled-components": "^1.0.2",
+    "@shapeci/plate-core": "^1.0.3",
+    "@shapeci/plate-styled-components": "^1.0.3",
     "@tippyjs/react": "^4.2.5"
   },
   "peerDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@shapeci/plate-ui-alignment",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Text alignment UI for Plate",
   "keywords": [
     "slate",
@@ -32,10 +32,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-alignment": "^1.0.2",
-    "@shapeci/plate-core": "^1.0.2",
-    "@shapeci/plate-styled-components": "^1.0.2",
-    "@shapeci/plate-ui-toolbar": "^1.0.2"
+    "@shapeci/plate-alignment": "^1.0.3",
+    "@shapeci/plate-core": "^1.0.3",
+    "@shapeci/plate-styled-components": "^1.0.3",
+    "@shapeci/plate-ui-toolbar": "^1.0.3"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",
