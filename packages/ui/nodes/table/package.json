@@ -32,21 +32,21 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "1.0.0",
-    "@shapeci/plate-styled-components": "1.0.0",
-    "@shapeci/plate-table": "1.0.0",
-    "@shapeci/plate-ui-toolbar": "1.0.0",
-    "@shapeci/plate-ui-button": "1.0.0",
-    "@shapeci/plate-ui-popover": "1.0.0",
+    "@shapeci/plate-core": "^1.0.0",
+    "@shapeci/plate-styled-components": "^1.0.0",
+    "@shapeci/plate-table": "^1.0.0",
+    "@shapeci/plate-ui-button": "^1.0.0",
+    "@shapeci/plate-ui-popover": "^1.0.0",
+    "@shapeci/plate-ui-toolbar": "^1.0.0",
     "jotai": "^1.4.0",
     "re-resizable": "^6.9.1"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0",
     "@shapeci/slate": "1.0.0",
     "@shapeci/slate-history": "1.0.2",
     "@shapeci/slate-react": "1.0.1",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
     "styled-components": ">=5.0.0"
   },
   "publishConfig": {

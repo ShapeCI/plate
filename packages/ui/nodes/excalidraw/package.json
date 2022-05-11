@@ -33,15 +33,15 @@
   },
   "dependencies": {
     "@excalidraw/excalidraw-next": "0.8.0-69b6fbb",
-    "@shapeci/plate-core": "1.0.0",
-    "@shapeci/plate-styled-components": "1.0.0"
+    "@shapeci/plate-core": "^1.0.0",
+    "@shapeci/plate-styled-components": "^1.0.0"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0",
     "@shapeci/slate": "1.0.0",
     "@shapeci/slate-history": "1.0.2",
     "@shapeci/slate-react": "1.0.1",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
     "styled-components": ">=5.0.0"
   },
   "publishConfig": {

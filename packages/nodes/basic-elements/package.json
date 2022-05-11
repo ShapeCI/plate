@@ -32,18 +32,18 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-block-quote": "1.0.0",
-    "@shapeci/plate-code-block": "1.0.0",
-    "@shapeci/plate-core": "1.0.0",
-    "@shapeci/plate-heading": "1.0.0",
-    "@shapeci/plate-paragraph": "1.0.0"
+    "@shapeci/plate-block-quote": "^1.0.0",
+    "@shapeci/plate-code-block": "^1.0.0",
+    "@shapeci/plate-core": "^1.0.0",
+    "@shapeci/plate-heading": "^1.0.0",
+    "@shapeci/plate-paragraph": "^1.0.0"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0",
     "@shapeci/slate": "1.0.0",
     "@shapeci/slate-history": "1.0.2",
-    "@shapeci/slate-react": "1.0.1"
+    "@shapeci/slate-react": "1.0.1",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"

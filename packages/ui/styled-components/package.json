@@ -32,19 +32,19 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "1.0.0",
+    "@shapeci/plate-core": "^1.0.0",
     "clsx": "^1.1.1"
   },
   "devDependencies": {
     "twin.macro": "2.8.2"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0",
-    "react-is": ">=16.8.0",
     "@shapeci/slate": "1.0.0",
     "@shapeci/slate-history": "1.0.2",
     "@shapeci/slate-react": "1.0.1",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "react-is": ">=16.8.0",
     "styled-components": ">=5.0.0"
   },
   "publishConfig": {

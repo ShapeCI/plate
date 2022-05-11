@@ -34,19 +34,19 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shapeci/plate-core": "1.0.0",
-    "@shapeci/plate-table": "1.0.0",
+    "@shapeci/plate-core": "^1.0.0",
+    "@shapeci/plate-table": "^1.0.0",
     "papaparse": "^5.3.1"
   },
   "devDependencies": {
     "@types/papaparse": "^5"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0",
     "@shapeci/slate": "1.0.0",
     "@shapeci/slate-hyperscript": "1.0.1",
-    "@shapeci/slate-react": "1.0.1"
+    "@shapeci/slate-react": "1.0.1",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
