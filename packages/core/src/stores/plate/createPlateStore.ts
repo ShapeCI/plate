@@ -1,8 +1,8 @@
 import { createEditor } from '@shapeci/slate';
-import { createStore } from '@shapeci/zustood';
+import { createStore } from '@udecode/zustood';
 import { ELEMENT_DEFAULT } from '../../common/types/node.types';
 import { withPlate } from '../../plugins/withPlate';
-import { PlateChangeKey, PlateStoreState } from '../../types/PlateStore';
+import { PlateChangeKey,PlateStoreState } from '../../types/PlateStore';
 
 export const createPlateStore = (state: Partial<PlateStoreState> = {}) =>
   createStore(`plate-${state.id}`)({

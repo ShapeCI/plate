@@ -1,12 +1,11 @@
-import { createStore } from '@shapeci/zustood';
+import { createStore } from '@udecode/zustood';
 import { castArray } from 'lodash';
 import { isUndefined } from '../../common/utils/types.utils';
 import { PlateProps } from '../../components/Plate';
-import { PlatesStoreState, PlateStoreState } from '../../types/PlateStore';
+import { PlatesStoreState,PlateStoreState } from '../../types/PlateStore';
 import { eventEditorActions } from '../event-editor/event-editor.store';
 import { createPlateStore } from './createPlateStore';
-import { getPlateStore, usePlateStore } from './usePlateStore';
-
+import { getPlateStore,usePlateStore } from './usePlateStore';
 export const setPlateState = (
   draft: Partial<PlateStoreState>,
   state: PlateProps

@@ -1,4 +1,4 @@
-import { createStore } from '@shapeci/zustood';
+import { createStore } from '@udecode/zustood';
 
 export type EventEditorState = {
   /**

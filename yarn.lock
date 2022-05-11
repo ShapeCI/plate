@@ -5038,12 +5038,12 @@
     "@typescript-eslint/types" "4.22.1"
     eslint-visitor-keys "^2.0.0"
 
-"@udecode/zustood@0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@udecode/zustood/-/zustood-0.4.4.tgz#0f3467f1ec3656623c16bb803d64e6dc55ea7b42"
-  integrity sha512-OtkRGu8TKBkidOOf28TY4tqYJRhMAiVt+BF6lHbF/FnXRmOa8eLal8Q/k9sqQcGzQAHBaZYcx0pR1+wlQzaurg==
+"@udecode/zustood@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@udecode/zustood/-/zustood-1.0.0.tgz#be008dc25dd780f5d1d4d2c8350dd53792cfe2b7"
+  integrity sha512-E69tPZIiRKiqFWQoxWyLUz9731v1+gwJfHIVYYNHy2QVftPd6R5XnP89asADpeoDCYG2/Kojdc1lRwVqr3WndQ==
   dependencies:
-    immer "9.0.6"
+    immer "^9.0.6"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -10326,7 +10326,7 @@ immer@8.0.1:
   resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
   integrity sha512-aqXhGP7//Gui2+UrEtvxZxSquQVXTpZ7KDxfCcKAF3Vysvw0CViVaW9RZ1j1xlIYqaaaipBoqdqeibkc18PNvA==
 
-immer@9.0.6, immer@^9.0.6:
+immer@^9.0.6:
   version "9.0.6"
   resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.6.tgz#7a96bf2674d06c8143e327cbf73539388ddf1a73"
   integrity sha512-G95ivKpy+EvVAnAab4fVa4YGYn24J1SpEktnJX7JJ45Bd7xqME/SCplFzYFmTbrkwZbQ4xJK1xMTUYBkN6pWsQ==
