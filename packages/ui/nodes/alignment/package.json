@@ -9,7 +9,7 @@
   ],
   "homepage": "https://plate.udecode.io",
   "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
+    "url": "https://github.com/shapeci/plate/issues"
   },
   "repository": {
     "type": "git",
@@ -48,5 +48,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
   },
-  "gitHead": "ae0dcf6b1bad5c190681490dada41f0ef5bd1466"
+  "gitHead": "b0741d4e6a91fe629a10c26e624cfb3ce519af74"
 }
