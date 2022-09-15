@@ -1,16 +1,17 @@
 import {
-    getPluginType,
-    isCollapsed,
-    isRangeAcrossBlocks,
-    PlateEditor,
-    someNode
-} from '@shapeci/plate-core';
+  getPluginType,
+  isCollapsed,
+  isRangeAcrossBlocks,
+  PlateEditor,
+  someNode,
+  Value,
+} from '@udecode/plate-core';
 import { ELEMENT_LI } from '../createListPlugin';
 
 /**
  * Is selection across blocks with list items
  */
-export const isAcrossListItems = (editor: PlateEditor) => {
+export const isAcrossListItems = <V extends Value>(editor: PlateEditor<V>) => {
   const { selection } = editor;
 
   if (!selection || isCollapsed(selection)) {

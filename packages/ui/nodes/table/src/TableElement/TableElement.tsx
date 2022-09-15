@@ -1,23 +1,28 @@
-import { withProviders } from '@shapeci/plate-core';
-import { getRootProps } from '@shapeci/plate-styled-components';
-import { ELEMENT_TABLE } from '@shapeci/plate-table';
-import { Provider } from 'jotai';
 import React from 'react';
+import { Value } from '@udecode/plate-core';
+import { getRootProps } from '@udecode/plate-styled-components';
+import { useSelectedCells } from '../hooks/useSelectedCells';
 import { useTableColSizes } from '../hooks/useTableColSizes';
+import { useTableStore } from '../table.atoms';
 import { TablePopover } from '../TablePopover/TablePopover';
 import { getTableElementStyles } from './TableElement.styles';
 import { TableElementProps } from './TableElement.types';
 
-export const TableElementBase = ({
+export const TableElement = <V extends Value>({
   transformColSizes,
-  onRenderContainer: Popover = TablePopover,
+  popoverProps,
   ...props
-}: TableElementProps) => {
+}: TableElementProps<V>) => {
   const { attributes, children, nodeProps, element } = props;
 
   const rootProps = getRootProps(props);
 
-  const { root, tbody } = getTableElementStyles(props);
+  const selectedCells = useTableStore().get.selectedCells();
+
+  const { root, tbody } = getTableElementStyles({
+    ...props,
+    isSelectingCell: !!selectedCells,
+  });
 
   let colSizes = useTableColSizes(element);
 
@@ -25,28 +30,27 @@ export const TableElementBase = ({
     colSizes = transformColSizes(colSizes);
   }
 
+  useSelectedCells();
+
   return (
-    <Popover {...props}>
-      <table
-        {...attributes}
-        css={root.css}
-        className={root.className}
-        {...rootProps}
-        {...nodeProps}
-      >
-        <colgroup>
-          {colSizes.map((width, index) => (
-            <col key={index} style={width ? { width } : undefined} />
-          ))}
-        </colgroup>
+    <table
+      {...attributes}
+      css={root.css}
+      className={root.className}
+      {...rootProps}
+      {...nodeProps}
+    >
+      <colgroup contentEditable={false}>
+        {colSizes.map((width, index) => (
+          <col key={index} style={width ? { width } : undefined} />
+        ))}
+      </colgroup>
+
+      <TablePopover {...popoverProps}>
         <tbody css={tbody?.css} className={tbody?.className}>
           {children}
         </tbody>
-      </table>
-    </Popover>
+      </TablePopover>
+    </table>
   );
 };
-
-export const TableElement = withProviders([Provider, { scope: ELEMENT_TABLE }])(
-  TableElementBase
-);

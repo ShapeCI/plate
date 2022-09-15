@@ -1,22 +1,26 @@
-import { TEditor, withoutNormalizing } from '@shapeci/plate-core';
-import { NodeEntry } from '@shapeci/slate';
-import { IndentListPlugin } from './createIndentListPlugin';
+import {
+  ENodeEntry,
+  TEditor,
+  TElement,
+  Value,
+  withoutNormalizing,
+} from '@udecode/plate-core';
 import { normalizeIndentListNotIndented } from './normalizers/normalizeIndentListNotIndented';
 import { normalizeIndentListStart } from './normalizers/normalizeIndentListStart';
 
-export const normalizeIndentList = (
-  editor: TEditor,
+export const normalizeIndentList = <V extends Value>(
+  editor: TEditor<V>,
   { getSiblingIndentListOptions }: IndentListPlugin = {}
 ) => {
   const { normalizeNode } = editor;
 
-  return ([node, path]: NodeEntry) => {
+  return ([node, path]: ENodeEntry<V>) => {
     const normalized = withoutNormalizing(editor, () => {
       if (normalizeIndentListNotIndented(editor, [node, path])) return true;
       if (
-        normalizeIndentListStart(
+        normalizeIndentListStart<TElement, Value>(
           editor,
-          [node, path],
+          [node as TElement, path],
           getSiblingIndentListOptions
         )
       )

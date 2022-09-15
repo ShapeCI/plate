@@ -1,8 +1,10 @@
-import { TodoListItemNodeData } from '@shapeci/plate-list';
-import { StyledElementProps } from '@shapeci/plate-styled-components';
+import { Value } from '@udecode/plate-core';
+import { TTodoListItemElement } from '@udecode/plate-list';
+import { StyledElementProps } from '@udecode/plate-styled-components';
 import { CSSProp } from 'styled-components';
 
-export interface TodoListElementStyleProps extends TodoListElementProps {
+export interface TodoListElementStyleProps<V extends Value>
+  extends TodoListElementProps<V> {
   checked?: boolean;
 }
 
@@ -13,7 +15,8 @@ export interface TodoListElementStyles {
   rootChecked?: CSSProp;
 }
 
-export type TodoListElementProps = StyledElementProps<
-  TodoListItemNodeData,
+export type TodoListElementProps<V extends Value> = StyledElementProps<
+  V,
+  TTodoListItemElement,
   TodoListElementStyles
 >;

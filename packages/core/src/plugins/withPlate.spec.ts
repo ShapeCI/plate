@@ -1,13 +1,14 @@
-import { createEditor } from '@shapeci/slate';
 import { createHeadingPlugin } from '../../../nodes/heading/src/createHeadingPlugin';
 import { createParagraphPlugin } from '../../../nodes/paragraph/src/createParagraphPlugin';
-import { PlatePlugin } from '../types/plugins/PlatePlugin';
-import { getPlugin } from '../utils/getPlugin';
+import { PlatePlugin } from '../types/plugin/PlatePlugin';
+import { getPlugin } from '../utils/plate/getPlugin';
+import { createTEditor } from '../utils/slate/createTEditor';
+import { KEY_DESERIALIZE_HTML } from './html-deserializer/createDeserializeHtmlPlugin';
 import { KEY_DESERIALIZE_AST } from './createDeserializeAstPlugin';
 import { KEY_EVENT_EDITOR } from './createEventEditorPlugin';
 import { KEY_INLINE_VOID } from './createInlineVoidPlugin';
 import { KEY_INSERT_DATA } from './createInsertDataPlugin';
-import { KEY_DESERIALIZE_HTML } from './html-deserializer/createDeserializeHtmlPlugin';
+import { KEY_PREV_SELECTION } from './createPrevSelectionPlugin';
 import { withPlate } from './withPlate';
 
 const coreKeys = [
@@ -16,6 +17,7 @@ const coreKeys = [
   KEY_EVENT_EDITOR,
   KEY_INLINE_VOID,
   KEY_INSERT_DATA,
+  KEY_PREV_SELECTION,
   KEY_DESERIALIZE_HTML,
   KEY_DESERIALIZE_AST,
 ];
@@ -23,7 +25,7 @@ const coreKeys = [
 describe('withPlate', () => {
   describe('when default plugins', () => {
     it('should be', () => {
-      const editor = withPlate(createEditor(), { id: '1' });
+      const editor = withPlate(createTEditor(), { id: '1' });
 
       expect(editor.id).toBe('1');
       expect(editor.history).toBeDefined();
@@ -47,7 +49,7 @@ describe('withPlate', () => {
         }
       );
 
-      const editor = withPlate(createEditor(), {
+      const editor = withPlate(createTEditor(), {
         id: '1',
         plugins: [pluginP, pluginA, pluginB],
       });
@@ -88,7 +90,7 @@ describe('withPlate', () => {
 
       const plugins = [pluginInput];
 
-      const editor = withPlate(createEditor(), { id: '1', plugins });
+      const editor = withPlate(createTEditor(), { id: '1', plugins });
 
       const { type, inject } = getPlugin(editor, 'a');
 
@@ -139,7 +141,10 @@ describe('withPlate', () => {
         }),
       };
 
-      const editor = withPlate(createEditor(), { id: '1', plugins: [pluginA] });
+      const editor = withPlate(createTEditor(), {
+        id: '1',
+        plugins: [pluginA],
+      });
 
       const outputPluginAA = getPlugin(editor, 'aa');
       const outputPluginAB = getPlugin(editor, 'ab');
@@ -174,7 +179,7 @@ describe('withPlate', () => {
 
   describe('when then in nested plugins', () => {
     it('should deep merge the plugins', () => {
-      const editor = withPlate(createEditor(), {
+      const editor = withPlate(createTEditor(), {
         id: '1',
         plugins: [
           {
@@ -234,7 +239,7 @@ describe('withPlate', () => {
 
   describe('when plugin has overridesByKey', () => {
     it('should be', () => {
-      const editor = withPlate(createEditor(), {
+      const editor = withPlate(createTEditor(), {
         id: '1',
         plugins: [
           {

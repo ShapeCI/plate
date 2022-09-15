@@ -1,10 +1,10 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@1.6.0/schema.json",
-  "changelog": ["@udecode/changelog-config", { "repo": "udecode/plate" }],
+  "changelog": ["./changelog-config", { "repo": "udecode/plate" }],
   "commit": false,
   "linked": [["@udecode/plate*"]],
   "registry": "https://npm.pkg.github.com/shapeci",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": []
+  "ignore": ["examples*"]
 }

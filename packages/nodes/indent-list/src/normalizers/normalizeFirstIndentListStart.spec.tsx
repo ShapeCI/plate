@@ -1,7 +1,6 @@
 /** @jsx jsx */
 
-import { Editor } from '@shapeci/slate';
-import { createPlateEditor } from '@udecode/plate-core';
+import { createPlateEditor, PlateEditor } from '@udecode/plate-core';
 import { createIndentPlugin } from '@udecode/plate-indent';
 import { jsx } from '@udecode/plate-test-utils';
 import { createParagraphPlugin } from '../../../paragraph/src/createParagraphPlugin';
@@ -16,7 +15,7 @@ const input = ((
       2
     </hp>
   </editor>
-) as any) as Editor;
+) as any) as PlateEditor;
 
 const output = ((
   <editor>
@@ -25,7 +24,7 @@ const output = ((
       2
     </hp>
   </editor>
-) as any) as Editor;
+) as any) as PlateEditor;
 
 it('should be', async () => {
   const editor = createPlateEditor({

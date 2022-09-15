@@ -1,10 +1,11 @@
 import {
-    ELEMENT_DEFAULT,
-    getPluginType,
-    isBlockAboveEmpty,
-    mockPlugin,
-    PlateEditor
-} from '@shapeci/plate-core';
+  ELEMENT_DEFAULT,
+  getPluginType,
+  isBlockAboveEmpty,
+  mockPlugin,
+  PlateEditor,
+  Value,
+} from '@udecode/plate-core';
 import {
     onKeyDownResetNode,
     ResetNodePlugin,
@@ -16,7 +17,7 @@ import { insertListItem } from './transforms/insertListItem';
 import { moveListItemUp } from './transforms/moveListItemUp';
 import { unwrapList } from './transforms/unwrapList';
 
-export const insertBreakList = (editor: PlateEditor) => {
+export const insertBreakList = <V extends Value>(editor: PlateEditor<V>) => {
   if (!editor.selection) return;
 
   const res = getListItemEntry(editor, {});
@@ -38,7 +39,7 @@ export const insertBreakList = (editor: PlateEditor) => {
   }
 
   const didReset = onKeyDownResetNode(
-    editor,
+    editor as any,
     mockPlugin<ResetNodePlugin>({
       options: {
         rules: [
@@ -46,7 +47,7 @@ export const insertBreakList = (editor: PlateEditor) => {
             types: [getPluginType(editor, ELEMENT_LI)],
             defaultType: getPluginType(editor, ELEMENT_DEFAULT),
             predicate: () => !moved && isBlockAboveEmpty(editor),
-            onReset: (_editor) => unwrapList(_editor as PlateEditor),
+            onReset: (_editor) => unwrapList(_editor),
           },
         ],
       },

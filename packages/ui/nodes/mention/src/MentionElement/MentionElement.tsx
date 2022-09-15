@@ -2,17 +2,21 @@ import { getHandler } from '@shapeci/plate-core';
 import { getRootProps } from '@shapeci/plate-styled-components';
 import { useFocused, useSelected } from '@shapeci/slate-react';
 import React from 'react';
+import { getHandler, Value } from '@udecode/plate-core';
+import { getRootProps } from '@udecode/plate-styled-components';
+import { useFocused, useSelected } from 'slate-react';
 import { getMentionElementStyles } from './MentionElement.styles';
 import { MentionElementProps } from './MentionElement.types';
 
-export const MentionElement = (props: MentionElementProps) => {
+export const MentionElement = <V extends Value>(
+  props: MentionElementProps<V>
+) => {
   const {
     attributes,
     children,
     nodeProps,
     element,
     prefix,
-    as,
     onClick,
     renderLabel,
   } = props;
@@ -27,7 +31,6 @@ export const MentionElement = (props: MentionElementProps) => {
   return (
     <span
       {...attributes}
-      as={as}
       data-slate-value={element.value}
       className={styles.root.className}
       css={styles.root.css}

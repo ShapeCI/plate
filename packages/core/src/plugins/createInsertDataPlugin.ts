@@ -1,12 +1,18 @@
-import { WithOverride } from '../types/plugins/WithOverride';
-import { createPluginFactory } from '../utils/createPluginFactory';
-import { getInjectedPlugins } from '../utils/getInjectedPlugins';
-import { pipeInsertDataQuery } from '../utils/pipeInsertDataQuery';
-import { pipeInsertFragment } from '../utils/pipeInsertFragment';
-import { pipeTransformData } from '../utils/pipeTransformData';
-import { pipeTransformFragment } from '../utils/pipeTransformFragment';
+import { Value } from '../slate/editor/TEditor';
+import { PlateEditor } from '../types/plate/PlateEditor';
+import { createPluginFactory } from '../utils/plate/createPluginFactory';
+import { getInjectedPlugins } from '../utils/plate/getInjectedPlugins';
+import { pipeInsertDataQuery } from '../utils/plate/pipeInsertDataQuery';
+import { pipeInsertFragment } from '../utils/plate/pipeInsertFragment';
+import { pipeTransformData } from '../utils/plate/pipeTransformData';
+import { pipeTransformFragment } from '../utils/plate/pipeTransformFragment';
 
-export const withInsertData: WithOverride = (editor) => {
+export const withInsertData = <
+  V extends Value = Value,
+  E extends PlateEditor<V> = PlateEditor<V>
+>(
+  editor: E
+) => {
   const { insertData } = editor;
 
   editor.insertData = (dataTransfer) => {
@@ -14,7 +20,7 @@ export const withInsertData: WithOverride = (editor) => {
       const insertDataOptions = plugin.editor.insertData;
       if (!insertDataOptions) return false;
 
-      const injectedPlugins = getInjectedPlugins(editor, plugin);
+      const injectedPlugins = getInjectedPlugins<{}, V>(editor, plugin);
       const { format, getFragment } = insertDataOptions;
       if (!format) return false;
 
@@ -22,7 +28,7 @@ export const withInsertData: WithOverride = (editor) => {
       if (!data) return;
 
       if (
-        !pipeInsertDataQuery(injectedPlugins, {
+        !pipeInsertDataQuery<{}, V>(injectedPlugins, {
           data,
           dataTransfer,
         })

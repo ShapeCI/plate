@@ -1,31 +1,33 @@
 import {
-    getPluginInjectProps,
-    PlateEditor,
-    PlatePluginKey,
-    setNodes,
-    SetNodesOptions,
-    TNodeMatch,
-    unsetNodes
-} from '@shapeci/plate-core';
-import { Editor } from '@shapeci/slate';
+  ENode,
+  getPluginInjectProps,
+  isBlock,
+  PlateEditor,
+  PlatePluginKey,
+  setElements,
+  SetNodesOptions,
+  TNodeMatch,
+  unsetNodes,
+  Value,
+} from '@udecode/plate-core';
 import { KEY_ALIGN } from '../createAlignPlugin';
 import { Alignment } from '../types';
 
-export const setAlign = (
-  editor: PlateEditor,
+export const setAlign = <V extends Value>(
+  editor: PlateEditor<V>,
   {
     key = KEY_ALIGN,
     value,
     setNodesOptions,
-  }: { value: Alignment; setNodesOptions?: SetNodesOptions } & PlatePluginKey
+  }: { value: Alignment; setNodesOptions?: SetNodesOptions<V> } & PlatePluginKey
 ) => {
   const { validTypes, defaultNodeValue, nodeKey } = getPluginInjectProps(
     editor,
     key
   );
 
-  const match: TNodeMatch = (n) =>
-    Editor.isBlock(editor, n) && !!validTypes && validTypes.includes(n.type);
+  const match: TNodeMatch<ENode<Value>> = (n) =>
+    isBlock(editor, n) && !!validTypes && validTypes.includes(n.type);
 
   if (value === defaultNodeValue) {
     unsetNodes(editor, nodeKey!, {
@@ -33,11 +35,11 @@ export const setAlign = (
       ...setNodesOptions,
     });
   } else {
-    setNodes(
+    setElements(
       editor,
       { [nodeKey!]: value },
       {
-        match,
+        match: match as any,
         ...setNodesOptions,
       }
     );

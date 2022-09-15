@@ -1,54 +1,42 @@
-import { withPlateEventProvider } from '@shapeci/plate-core';
-import { PortalBody } from '@shapeci/plate-styled-components';
-import { UsePopperPositionOptions } from '@shapeci/plate-ui-popper';
-import React, { useRef } from 'react';
+import React from 'react';
+import { PortalBody } from '@udecode/plate-styled-components';
 import { ToolbarBase } from '../Toolbar/Toolbar';
 import { getBalloonToolbarStyles } from './BalloonToolbar.styles';
 import { BalloonToolbarProps } from './BalloonToolbar.types';
-import { useBalloonToolbarPopper } from './useBalloonToolbarPopper';
+import { useFloatingToolbar } from './useFloatingToolbar';
 
-export const BalloonToolbar = withPlateEventProvider(
-  (props: BalloonToolbarProps) => {
-    const {
-      children,
-      theme = 'dark',
-      arrow = false,
-      portalElement,
-      popperOptions: _popperOptions = {},
-    } = props;
+export const BalloonToolbar = (props: BalloonToolbarProps) => {
+  const {
+    children,
+    theme = 'dark',
+    arrow = false,
+    portalElement,
+    floatingOptions,
+  } = props;
 
-    const popperRef = useRef<HTMLDivElement>(null);
+  const { floating, style, placement, open } = useFloatingToolbar({
+    floatingOptions,
+  });
 
-    const popperOptions: UsePopperPositionOptions = {
-      popperElement: popperRef.current,
-      placement: 'top' as any,
-      offset: [0, 8],
-      ..._popperOptions,
-    };
+  const styles = getBalloonToolbarStyles({
+    placement,
+    theme,
+    arrow,
+    ...props,
+  });
 
-    const { styles: popperStyles, attributes } = useBalloonToolbarPopper(
-      popperOptions
-    );
+  if (!open) return null;
 
-    const styles = getBalloonToolbarStyles({
-      popperOptions,
-      theme,
-      arrow,
-      ...props,
-    });
-
-    return (
-      <PortalBody element={portalElement}>
-        <ToolbarBase
-          ref={popperRef}
-          css={styles.root.css}
-          className={styles.root.className}
-          style={popperStyles.popper}
-          {...attributes.popper}
-        >
-          {children}
-        </ToolbarBase>
-      </PortalBody>
-    );
-  }
-);
+  return (
+    <PortalBody element={portalElement}>
+      <ToolbarBase
+        css={styles.root.css}
+        className={styles.root.className}
+        ref={floating}
+        style={style}
+      >
+        {children}
+      </ToolbarBase>
+    </PortalBody>
+  );
+};

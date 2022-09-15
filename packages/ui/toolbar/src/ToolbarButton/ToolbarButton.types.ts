@@ -1,13 +1,14 @@
 import { AnyObject } from '@shapeci/plate-core';
 import { StyledProps } from '@shapeci/plate-styled-components';
 import { TippyProps } from '@tippyjs/react';
-import { HTMLProps } from 'react';
+import { AnyObject, PlateId } from '@udecode/plate-core';
+import { StyledProps } from '@udecode/plate-styled-components';
 import { CSSProp } from 'styled-components';
 
 export interface ToolbarButtonProps
   extends StyledProps<{ active?: CSSProp }>,
     AnyObject {
-  id?: string;
+  id?: PlateId;
 
   /**
    * Is it active.

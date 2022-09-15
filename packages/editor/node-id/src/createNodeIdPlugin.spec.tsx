@@ -2,10 +2,11 @@
 
 import { Transforms } from '@shapeci/slate';
 import {
-    createPlateEditor,
-    insertNodes,
-    PlateEditor,
-    TElement
+  createPlateEditor,
+  insertNodes,
+  mergeNodes,
+  PlateEditor,
+  splitNodes,
 } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
 import {
@@ -434,7 +435,7 @@ describe('when inserting nodes', () => {
         ],
       });
 
-      insertNodes<TElement>(
+      insertNodes(
         editor,
         (
           <fragment>
@@ -443,7 +444,7 @@ describe('when inserting nodes', () => {
         ) as any
       );
 
-      insertNodes<TElement>(
+      insertNodes(
         editor,
         (
           <fragment>
@@ -474,7 +475,7 @@ describe('when splitting nodes', () => {
         plugins: [createNodeIdPlugin()],
       });
 
-      Transforms.splitNodes(editor);
+      splitNodes(editor);
 
       expect(input.children[1].id).toBeDefined();
     });
@@ -510,7 +511,7 @@ describe('when splitting nodes', () => {
         ],
       });
 
-      Transforms.splitNodes(editor);
+      splitNodes(editor);
 
       editor.undo();
       editor.redo();
@@ -550,7 +551,7 @@ describe('when splitting nodes', () => {
         ],
       });
 
-      Transforms.splitNodes(editor);
+      splitNodes(editor);
 
       editor.undo();
       editor.redo();
@@ -591,7 +592,7 @@ describe('when splitting nodes', () => {
         ],
       });
 
-      Transforms.splitNodes(editor);
+      splitNodes(editor);
 
       editor.undo();
       editor.redo();
@@ -635,7 +636,7 @@ describe('when splitting nodes', () => {
         ],
       });
 
-      Transforms.splitNodes(editor);
+      splitNodes(editor);
 
       editor.undo();
       editor.redo();
@@ -679,7 +680,7 @@ describe('when merging nodes', () => {
         ],
       });
 
-      Transforms.mergeNodes(editor, { at: [0, 1] });
+      mergeNodes(editor, { at: [0, 1] });
       editor.undo();
 
       expect(input.children).toEqual(output.children);
@@ -713,7 +714,7 @@ describe('when merging nodes', () => {
         ],
       });
 
-      Transforms.mergeNodes(editor, { at: [1] });
+      mergeNodes(editor, { at: [1] });
       editor.undo();
       editor.redo();
       editor.undo();

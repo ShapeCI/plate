@@ -7,16 +7,18 @@ import {
     insertEmptyCodeBlock
 } from '@udecode/plate-code-block';
 import {
-    ELEMENT_DEFAULT,
-    getPluginType,
-    getRangeFromBlockStart,
-    getText,
-    mockPlugin,
-    PlateEditor
+  ELEMENT_DEFAULT,
+  getEditorString,
+  getPluginType,
+  getRangeFromBlockStart,
+  mockPlugin,
+  PlateEditor,
 } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { clearBlockFormat } from '../../../../../../../docs/src/live/config/autoformat/autoformatUtils';
-import { CONFIG } from '../../../../../../../docs/src/live/config/config';
+import { autoformatPlugin } from 'examples/src/autoformat/autoformatPlugin';
+import { Range } from 'slate';
+import { withReact } from 'slate-react';
+import { preFormat } from '../../../../../../../examples/src/autoformat/autoformatUtils';
 import { AutoformatPlugin } from '../../../types';
 import { withAutoformat } from '../../../withAutoformat';
 
@@ -43,7 +45,7 @@ describe('when ``` at block start', () => {
       </editor>
     ) as any;
 
-    const editor = withAutoformat(withReact(input), CONFIG.autoformat as any);
+    const editor = withAutoformat(withReact(input), autoformatPlugin as any);
 
     editor.insertText('`');
     editor.insertText('new');
@@ -83,9 +85,9 @@ describe('when ``` at block start, but customising with query we get the most re
               type: ELEMENT_CODE_BLOCK,
               match: '```',
               triggerAtBlockStart: false,
-              preFormat: clearBlockFormat,
+              preFormat: preFormat as any,
               format: (editor) => {
-                insertEmptyCodeBlock(editor as PlateEditor, {
+                insertEmptyCodeBlock(editor, {
                   defaultType: getPluginType(
                     editor as PlateEditor,
                     ELEMENT_DEFAULT
@@ -99,7 +101,7 @@ describe('when ``` at block start, but customising with query we get the most re
                 }
 
                 const matchRange = getRangeFromBlockStart(editor) as Range;
-                const textFromBlockStart = getText(editor, matchRange);
+                const textFromBlockStart = getEditorString(editor, matchRange);
                 const currentNodeText = (textFromBlockStart || '') + rule.text;
 
                 return rule.match === currentNodeText;
@@ -140,7 +142,7 @@ describe('when ```', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText('`');

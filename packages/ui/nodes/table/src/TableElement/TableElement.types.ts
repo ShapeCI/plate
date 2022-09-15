@@ -1,27 +1,24 @@
-import { RenderFunction } from '@shapeci/plate-core';
-import { StyledElementProps } from '@shapeci/plate-styled-components';
-import { TableNodeData } from '@shapeci/plate-table';
-import { PopoverProps } from '@shapeci/plate-ui-popover';
+import { Value } from '@udecode/plate-core';
+import { PopoverProps } from '@udecode/plate-floating';
+import { StyledElementProps } from '@udecode/plate-styled-components';
+import { TTableElement } from '@udecode/plate-table';
 import { CSSProp } from 'styled-components';
 
-export interface TableElementStyleProps extends TableElementProps {}
+export interface TableElementStyleProps<V extends Value>
+  extends TableElementProps<V> {
+  isSelectingCell?: boolean;
+}
 
 export interface TableElementStyles {
   tbody: CSSProp;
 }
 
-export interface TableElementProps
-  extends StyledElementProps<TableNodeData, TableElementStyles> {
+export interface TableElementProps<V extends Value>
+  extends StyledElementProps<V, TTableElement, TableElementStyles> {
+  popoverProps?: PopoverProps;
+
   /**
    * Transform node column sizes
    */
-  popoverProps?: PopoverProps;
-
   transformColSizes?: (colSizes: number[]) => number[];
-
-  /**
-   * An override to render the table container.
-   * @default TablePopover
-   */
-  onRenderContainer?: RenderFunction<TableElementProps>;
 }

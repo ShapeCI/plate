@@ -1,25 +1,32 @@
 import {
-    getLastNode,
-    insertNodes,
-    queryNode,
-    TElement,
-    WithOverride
-} from '@shapeci/plate-core';
-import { Path } from '@shapeci/slate';
+  getLastNodeByLevel,
+  insertElements,
+  PlateEditor,
+  queryNode,
+  Value,
+  WithPlatePlugin,
+} from '@udecode/plate-core';
+import { Path } from 'slate';
 import { TrailingBlockPlugin } from './createTrailingBlockPlugin';
 
 /**
  * Add a trailing block when the last node type is not `type` and when the editor has .
  */
-export const withTrailingBlock: WithOverride<{}, TrailingBlockPlugin> = (
-  editor,
-  { type, options: { level, ...query } }
+export const withTrailingBlock = <
+  V extends Value = Value,
+  E extends PlateEditor<V> = PlateEditor<V>
+>(
+  editor: E,
+  {
+    type,
+    options: { level, ...query },
+  }: WithPlatePlugin<TrailingBlockPlugin, V, E>
 ) => {
   const { normalizeNode } = editor;
 
   editor.normalizeNode = ([currentNode, currentPath]) => {
     if (!currentPath.length) {
-      const lastChild = getLastNode(editor, level!);
+      const lastChild = getLastNodeByLevel(editor, level!);
 
       const lastChildNode = lastChild?.[0];
 
@@ -29,7 +36,7 @@ export const withTrailingBlock: WithOverride<{}, TrailingBlockPlugin> = (
       ) {
         const at = lastChild ? Path.next(lastChild[1]) : [0];
 
-        insertNodes<TElement>(
+        insertElements(
           editor,
           {
             type: type!,

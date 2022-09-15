@@ -1,42 +1,29 @@
 {
-  "name": "@shapeci/plate-ui-font",
-  "version": "1.0.3",
+  "name": "@udecode/plate-ui-font",
+  "version": "17.0.1",
   "description": "Font UI for Plate",
-  "keywords": [
-    "slate",
-    "plate",
-    "plugin"
-  ],
+  "license": "MIT",
   "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/shapeci/plate/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shapeci/plate.git",
     "directory": "packages/ui/nodes/font"
   },
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udecode/plate/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "tsc && yarn rollup",
-    "build:w": "yarn rollup -w",
-    "cti": "sh ../../../../cti.sh",
-    "rollup": "rollup -c=../../../../rollup.config.js",
-    "test": "jest"
-  },
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.3",
-    "@shapeci/plate-font": "^1.0.3",
-    "@shapeci/plate-styled-components": "^1.0.3",
-    "@shapeci/plate-ui-button": "^1.0.3",
-    "@shapeci/plate-ui-toolbar": "^1.0.3"
+    "@udecode/plate-core": "17.0.1",
+    "@udecode/plate-font": "17.0.1",
+    "@udecode/plate-styled-components": "17.0.1",
+    "@udecode/plate-ui-button": "17.0.1",
+    "@udecode/plate-ui-toolbar": "17.0.1"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",
@@ -44,8 +31,16 @@
     "@shapeci/slate-react": "1.0.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
+    "slate": ">=0.78.0",
+    "slate-history": ">=0.66.0",
+    "slate-react": ">=0.79.0",
     "styled-components": ">=5.0.0"
   },
+  "keywords": [
+    "plate",
+    "plugin",
+    "slate"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
   },

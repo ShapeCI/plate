@@ -1,14 +1,15 @@
 /** @jsx jsx */
 import { createAlignPlugin } from '@shapeci/plate-alignment';
 import {
-    createPlateEditor,
-    OverrideByKey,
-    PlatePlugin
-} from '@shapeci/plate-core';
-import { createImagePlugin } from '@shapeci/plate-image';
-import { createLinkPlugin } from '@shapeci/plate-link';
-import { jsx } from '@shapeci/plate-test-utils';
-import { CONFIG } from '../../../../../../docs/src/live/config/config';
+  createPlateEditor,
+  OverrideByKey,
+  PlatePlugin,
+} from '@udecode/plate-core';
+import { createLinkPlugin } from '@udecode/plate-link';
+import { createImagePlugin } from '@udecode/plate-media';
+import { jsx } from '@udecode/plate-test-utils';
+import { alignPlugin } from 'examples/src/align/alignPlugin';
+import { lineHeightPlugin } from 'examples/src/line-height/lineHeightPlugin';
 import { createBasicElementsPlugin } from '../../../../../nodes/basic-elements/src/createBasicElementsPlugin';
 import { createBasicMarksPlugin } from '../../../../../nodes/basic-marks/src/createBasicMarksPlugin';
 import {
@@ -65,8 +66,8 @@ export const testDocxDeserializer = ({
         createBasicElementsPlugin(),
         createBasicMarksPlugin(),
         createTablePlugin(),
-        createLineHeightPlugin(CONFIG.lineHeight),
-        createAlignPlugin(CONFIG.align),
+        createLineHeightPlugin(lineHeightPlugin as any),
+        createAlignPlugin(alignPlugin as any),
         createIndentPlugin({
           inject: {
             props: {

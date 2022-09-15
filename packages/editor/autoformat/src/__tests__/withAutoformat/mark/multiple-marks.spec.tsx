@@ -3,7 +3,8 @@
 import { withReact } from '@shapeci/slate-react';
 import { mockPlugin } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { CONFIG } from '../../../../../../../docs/src/live/config/config';
+import { autoformatPlugin } from 'examples/src/autoformat/autoformatPlugin';
+import { withReact } from 'slate-react';
 import { MARK_BOLD } from '../../../../../../nodes/basic-marks/src/createBoldPlugin';
 import { MARK_ITALIC } from '../../../../../../nodes/basic-marks/src/createItalicPlugin';
 import { MARK_UNDERLINE } from '../../../../../../nodes/basic-marks/src/createUnderlinePlugin';
@@ -34,7 +35,7 @@ describe('when inserting ***', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText('*');

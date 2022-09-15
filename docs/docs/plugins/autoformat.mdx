@@ -9,35 +9,16 @@ into an H1. This package also provides predefined rules.
 ### Installation
 
 ```bash npm2yarn
+npm install @udecode/plate
+# or
 npm install @udecode/plate-autoformat
 ```
 
 ### Usage
 
-```ts live
-() => {
-  const plugins = createPlugins([
-    ...PLUGINS.basicNodes,
-    createListPlugin(),
-    createHorizontalRulePlugin(),
-    createResetNodePlugin(CONFIG.resetBlockType),
-    createSoftBreakPlugin(CONFIG.softBreak),
-    createExitBreakPlugin(CONFIG.exitBreak),
-    createAutoformatPlugin(CONFIG.autoformat),
-  ], {
-    components: CONFIG.components,
-  });
+import { AutoformatSandpack } from './AutoformatSandpack'
 
-  return (
-    <Plate
-      id="autoformat"
-      editableProps={CONFIG.editableProps}
-      initialValue={VALUES.autoformat}
-      plugins={plugins}
-    />
-  );
-}
-```
+<AutoformatSandpack />
 
 ### Rules
 
@@ -144,7 +125,7 @@ export interface AutoformatCommonRule {
   /**
    * Query to allow autoformat.
    */
-  query?: (editor: TEditor, options: AutoformatQueryOptions) => boolean;
+  query?: (editor: TEditor<V>, options: AutoformatQueryOptions) => boolean;
 }
 
 export interface AutoformatBlockRule extends AutoformatCommonRule {
@@ -180,13 +161,13 @@ export interface AutoformatBlockRule extends AutoformatCommonRule {
    * Function called just before `format`.
    * Generally used to reset the selected block.
    */
-  preFormat?: (editor: TEditor) => void;
+  preFormat?: (editor: TEditor<V>) => void;
 
   /**
    * Custom formatting function.
-   * @default setNodes(editor, { type }, { match: (n) => Editor.isBlock(editor, n) })
+   * @default setNodes(editor, { type }, { match: (n) => isBlock(editor, n) })
    */
-  format?: (editor: TEditor) => void;
+  format?: (editor: TEditor<V>) => void;
 }
 
 export interface AutoformatMarkRule extends AutoformatCommonRule {
@@ -216,7 +197,7 @@ export interface AutoformatTextRule extends AutoformatCommonRule {
   format:
     | string
     | string[]
-    | ((editor: TEditor, options: GetMatchPointsReturnType) => void);
+    | ((editor: TEditor<V>, options: GetMatchPointsReturnType) => void);
 }
 
 export type AutoformatRule =
@@ -235,4 +216,4 @@ export interface AutoformatPlugin {
 ### Source code
 
 - [Plugin](https://github.com/udecode/plate/blob/main/packages/editor/autoformat/src/createAutoformatPlugin.ts)
-- [Variables](https://github.com/udecode/plate/blob/main/docs/src/live/live.tsx)
+- [Variables](https://github.com/udecode/plate/blob/main/examples/src)

@@ -1,9 +1,10 @@
-import { PlateEditor } from '../../../types/PlateEditor';
-import { AnyObject } from '../../../types/utility/AnyObject';
+import { Value } from '../../../slate/editor/TEditor';
+import { AnyObject } from '../../../types/misc/AnyObject';
+import { PlateEditor } from '../../../types/plate/PlateEditor';
 import { pluginDeserializeHtml } from './pluginDeserializeHtml';
 
-export const pipeDeserializeHtmlLeaf = <T = {}>(
-  editor: PlateEditor<T>,
+export const pipeDeserializeHtmlLeaf = <V extends Value>(
+  editor: PlateEditor<V>,
   element: HTMLElement
 ) => {
   let node: AnyObject = {};

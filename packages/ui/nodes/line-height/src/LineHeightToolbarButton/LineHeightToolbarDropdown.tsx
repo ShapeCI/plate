@@ -1,75 +1,72 @@
 import {
-    getPluginInjectProps,
-    isCollapsed,
-    someNode,
-    useEventPlateId,
-    usePlateEditorState,
-    withPlateEventProvider
-} from '@shapeci/plate-core';
-import { KEY_LINE_HEIGHT, setLineHeight } from '@shapeci/plate-line-height';
+  focusEditor,
+  getPluginInjectProps,
+  isCollapsed,
+  someNode,
+  useEventPlateId,
+  usePlateEditorState,
+} from '@udecode/plate-core';
+import { KEY_LINE_HEIGHT, setLineHeight } from '@udecode/plate-line-height';
 import {
-    ToolbarButton,
-    ToolbarButtonProps,
-    ToolbarDropdown
-} from '@shapeci/plate-ui-toolbar';
-import { ReactEditor } from '@shapeci/slate-react';
-import React, { useCallback } from 'react';
+  ToolbarButton,
+  ToolbarButtonProps,
+  ToolbarDropdown,
+} from '@udecode/plate-ui-toolbar';
 
-export const LineHeightToolbarDropdown = withPlateEventProvider(
-  (props: ToolbarButtonProps) => {
-    let { id } = props;
-    id = useEventPlateId(id);
-    const editor = usePlateEditorState(id)!;
+export const LineHeightToolbarDropdown = ({
+  id,
+  ...props
+}: ToolbarButtonProps) => {
+  const editor = usePlateEditorState(useEventPlateId(id));
 
-    const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
 
-    const { validNodeValues } = getPluginInjectProps(editor, KEY_LINE_HEIGHT);
+  const { validNodeValues } = getPluginInjectProps(editor, KEY_LINE_HEIGHT);
 
-    const onToggle = useCallback(() => {
-      setOpen(!open);
-    }, [open, setOpen]);
+  const onToggle = useCallback(() => {
+    setOpen(!open);
+  }, [open, setOpen]);
 
-    const selectHandler = useCallback(
-      (lineHeight) => {
-        if (editor) {
-          ReactEditor.focus(editor);
+  const selectHandler = useCallback(
+    (lineHeight) => {
+      if (editor) {
+        focusEditor(editor);
 
-          setLineHeight(editor, {
-            value: lineHeight,
-          });
-        }
-      },
-      [editor]
-    );
+        setLineHeight(editor, {
+          value: lineHeight,
+        });
+      }
+    },
+    [editor]
+  );
 
-    return (
-      <ToolbarDropdown
-        control={
-          <ToolbarButton
-            active={
-              isCollapsed(editor?.selection) &&
-              someNode(editor!, {
-                match: (n) => n[KEY_LINE_HEIGHT] !== undefined,
-              })
-            }
-            {...props}
-          />
-        }
-        open={open}
-        onOpen={onToggle}
-        onClose={onToggle}
-      >
-        {validNodeValues &&
-          validNodeValues.map((lineHeight) => (
-            <div
-              style={{ cursor: 'pointer' }}
-              key={lineHeight}
-              onClick={() => selectHandler(lineHeight)}
-            >
-              {lineHeight}
-            </div>
-          ))}
-      </ToolbarDropdown>
-    );
-  }
-);
+  return (
+    <ToolbarDropdown
+      control={
+        <ToolbarButton
+          active={
+            isCollapsed(editor?.selection) &&
+            someNode(editor!, {
+              match: (n) => n[KEY_LINE_HEIGHT] !== undefined,
+            })
+          }
+          {...props}
+        />
+      }
+      open={open}
+      onOpen={onToggle}
+      onClose={onToggle}
+    >
+      {validNodeValues &&
+        validNodeValues.map((lineHeight) => (
+          <div
+            style={{ cursor: 'pointer' }}
+            key={lineHeight}
+            onClick={() => selectHandler(lineHeight)}
+          >
+            {lineHeight}
+          </div>
+        ))}
+    </ToolbarDropdown>
+  );
+};

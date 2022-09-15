@@ -7,18 +7,31 @@ import {
     TComboboxItem
 } from '@shapeci/plate-combobox';
 import {
-    getBlockAbove,
-    getPlugin,
-    insertNodes,
-    PlatePluginKey
-} from '@shapeci/plate-core';
-import { Editor, Transforms } from '@shapeci/slate';
-import { HistoryEditor } from '@shapeci/slate-history';
+  getBlockAbove,
+  getPlugin,
+  insertNodes,
+  insertText,
+  isEndPoint,
+  moveSelection,
+  PlatePluginKey,
+  removeNodes,
+  select,
+  TNodeProps,
+  withoutMergingHistory,
+  withoutNormalizing,
+} from '@udecode/plate-core';
 import { ELEMENT_MENTION, ELEMENT_MENTION_INPUT } from './createMentionPlugin';
-import { MentionNode, MentionNodeData, MentionPlugin } from './types';
+import { MentionPlugin, TMentionElement } from './types';
 
 export interface CreateMentionNode<TData extends Data> {
-  (item: TComboboxItem<TData>): MentionNodeData;
+  (
+    item: TComboboxItem<TData>,
+    meta: CreateMentionNodeMeta
+  ): TNodeProps<TMentionElement>;
+}
+
+export interface CreateMentionNodeMeta {
+  search: string;
 }
 
 export const getMentionOnSelectItem = <TData extends Data = NoData>({
@@ -30,42 +43,43 @@ export const getMentionOnSelectItem = <TData extends Data = NoData>({
   const {
     type,
     options: { insertSpaceAfterMention, createMentionNode },
-  } = getPlugin<MentionPlugin>(editor, key);
+  } = getPlugin<MentionPlugin>(editor as any, key);
 
   const pathAbove = getBlockAbove(editor)?.[1];
-  const isBlockEnd =
+  const isBlockEnd = () =>
     editor.selection &&
     pathAbove &&
-    Editor.isEnd(editor, editor.selection.anchor, pathAbove);
+    isEndPoint(editor, editor.selection.anchor, pathAbove);
 
-  Editor.withoutNormalizing(editor, () => {
-    // insert a space to fix the bug
-    if (isBlockEnd) {
-      Transforms.insertText(editor, ' ');
-    }
+  withoutNormalizing(editor, () => {
+    // Selectors are sensitive to operations, it's better to create everything
+    // before the editor state is changed. For example, asking for text after
+    // removeNodes below will return null.
+    const props = createMentionNode!(item, {
+      search: comboboxSelectors.text() ?? '',
+    });
 
-    Transforms.select(editor, targetRange);
+    select(editor, targetRange);
 
-    HistoryEditor.withoutMerging(editor, () =>
-      Transforms.removeNodes(editor, {
-        // TODO: replace any
-        match: (node: any) => node.type === ELEMENT_MENTION_INPUT,
+    withoutMergingHistory(editor, () =>
+      removeNodes(editor, {
+        match: (node) => node.type === ELEMENT_MENTION_INPUT,
       })
     );
 
-    insertNodes<MentionNode>(editor, {
+    insertNodes<TMentionElement>(editor, {
       type,
       children: [{ text: '' }],
-      ...createMentionNode!(item),
-    });
+      ...props,
+    } as TMentionElement);
 
     // move the selection after the element
-    Transforms.move(editor);
+    moveSelection(editor, { unit: 'offset' });
 
-    // delete the inserted space
-    if (isBlockEnd && !insertSpaceAfterMention) {
-      Transforms.delete(editor);
+    if (isBlockEnd() && insertSpaceAfterMention) {
+      insertText(editor, ' ');
     }
   });
+
   return comboboxActions.reset();
 };

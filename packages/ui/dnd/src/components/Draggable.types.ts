@@ -2,10 +2,15 @@ import { TEditor } from '@shapeci/plate-core';
 import { StyledElementProps } from '@shapeci/plate-styled-components';
 import { Element, Path } from '@shapeci/slate';
 import React from 'react';
+import { EElement, TEditor, TElement, Value } from '@udecode/plate-core';
+import { StyledElementProps } from '@udecode/plate-styled-components';
+import { Path } from 'slate';
 import { CSSProp } from 'styled-components';
+import { DropLineDirection } from '../types';
 
-export interface DraggableStyleProps extends DraggableProps {
-  direction: '' | 'top' | 'bottom';
+export interface DraggableStyleProps<V extends Value>
+  extends DraggableProps<V> {
+  direction: DropLineDirection;
   isDragging: boolean;
 
   selected?: boolean;
@@ -60,12 +65,12 @@ export interface DragHandleProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  element: Element;
+  element: TElement;
   styles?: CSSProp;
 }
 
-export interface DraggableProps
-  extends StyledElementProps<{}, DraggableStyles> {
+export interface DraggableProps<V extends Value>
+  extends StyledElementProps<V, EElement<V>, DraggableStyles> {
   componentRef?: any;
 
   /**
@@ -73,7 +78,20 @@ export interface DraggableProps
    */
   onRenderDragHandle?: (props: DragHandleProps) => JSX.Element;
 
-  level?: number;
-  filter?: (editor: TEditor, path: Path) => boolean;
+  /**
+   * Document level where dnd is enabled. 0 = root blocks, 1 = first level of children, etc.
+   * Set to null to allow all levels.
+   * @default 0
+   */
+  level?: number | null;
+
+  /**
+   * Filter out elements that can't be dragged.
+   */
+  filter?: (editor: TEditor<V>, path: Path) => boolean;
+
+  /**
+   * Enables dnd in read-only.
+   */
   allowReadOnly?: boolean;
 }

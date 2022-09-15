@@ -1,41 +1,33 @@
 {
-  "name": "@shapeci/plate-test-utils",
-  "version": "1.0.3",
+  "name": "@udecode/plate-test-utils",
+  "version": "13.4.0",
   "description": "Testing utilities for Plate",
-  "keywords": [
-    "slate",
-    "plate",
-    "plugin",
-    "test"
-  ],
+  "license": "MIT",
   "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/shapeci/plate/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shapeci/plate.git",
     "directory": "packages/test-utils"
   },
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udecode/plate/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "tsc && yarn rollup",
-    "build:w": "yarn rollup -w",
-    "cti": "sh ../../cti.sh",
-    "rollup": "rollup -c=../../rollup.config.js",
-    "test": "jest"
-  },
+  "types": "dist/index.d.ts",
   "peerDependencies": {
-    "@shapeci/slate": "1.0.0",
-    "@shapeci/slate-hyperscript": "1.0.1"
+    "slate": ">=0.78.0",
+    "slate-hyperscript": ">=0.66.0"
   },
+  "keywords": [
+    "plate",
+    "plugin",
+    "slate",
+    "test"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
   },

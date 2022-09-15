@@ -1,24 +1,28 @@
 import {
-    getAbove,
-    getPluginType,
-    PlateEditor,
-    someNode
-} from '@shapeci/plate-core';
-import { Transforms } from '@shapeci/slate';
+  getAboveNode,
+  getPluginType,
+  PlateEditor,
+  removeNodes,
+  setNodes,
+  someNode,
+  Value,
+  withoutNormalizing,
+} from '@udecode/plate-core';
 import {
     ELEMENT_TABLE,
     ELEMENT_TD,
     ELEMENT_TH,
     ELEMENT_TR
 } from '../createTablePlugin';
+import { TTableElement } from '../types';
 
-export const deleteColumn = (editor: PlateEditor) => {
+export const deleteColumn = <V extends Value>(editor: PlateEditor<V>) => {
   if (
     someNode(editor, {
       match: { type: getPluginType(editor, ELEMENT_TABLE) },
     })
   ) {
-    const currentCellItem = getAbove(editor, {
+    const tdEntry = getAboveNode(editor, {
       match: {
         type: [
           getPluginType(editor, ELEMENT_TD),
@@ -26,30 +30,53 @@ export const deleteColumn = (editor: PlateEditor) => {
         ],
       },
     });
-    const currentRowItem = getAbove(editor, {
+    const trEntry = getAboveNode(editor, {
       match: { type: getPluginType(editor, ELEMENT_TR) },
     });
-    const currentTableItem = getAbove(editor, {
+    const tableEntry = getAboveNode<TTableElement>(editor, {
       match: { type: getPluginType(editor, ELEMENT_TABLE) },
     });
 
     if (
-      currentCellItem &&
-      currentRowItem &&
-      currentTableItem &&
+      tdEntry &&
+      trEntry &&
+      tableEntry &&
       // Cannot delete the last cell
-      currentRowItem[0].children.length > 1
+      trEntry[0].children.length > 1
     ) {
-      const currentCellPath = currentCellItem[1];
-      const pathToDelete = currentCellPath.slice();
+      const [tableNode, tablePath] = tableEntry;
+
+      const tdPath = tdEntry[1];
+      const colIndex = tdPath[tdPath.length - 1];
+
+      const pathToDelete = tdPath.slice();
       const replacePathPos = pathToDelete.length - 2;
 
-      currentTableItem[0].children.forEach((row, rowIdx) => {
-        pathToDelete[replacePathPos] = rowIdx;
+      withoutNormalizing(editor, () => {
+        tableEntry[0].children.forEach((row, rowIdx) => {
+          pathToDelete[replacePathPos] = rowIdx;
 
-        Transforms.removeNodes(editor, {
-          at: pathToDelete,
+          removeNodes(editor, {
+            at: pathToDelete,
+          });
         });
+
+        const { colSizes } = tableNode;
+
+        if (colSizes) {
+          const newColSizes = [...colSizes];
+          newColSizes.splice(colIndex, 1);
+
+          setNodes<TTableElement>(
+            editor,
+            {
+              colSizes: newColSizes,
+            },
+            {
+              at: tablePath,
+            }
+          );
+        }
       });
     }
   }

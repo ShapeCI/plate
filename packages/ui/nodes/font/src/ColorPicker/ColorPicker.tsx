@@ -1,6 +1,6 @@
 import { Button } from '@shapeci/plate-ui-button';
 import React, { ReactNode } from 'react';
-import tw from 'twin.macro';
+import { PlateButton } from '@udecode/plate-ui-button';
 import { getColorPickerStyles } from './ColorPicker.styles';
 import { Colors } from './Colors';
 import { ColorType } from './ColorType';
@@ -38,21 +38,21 @@ const ColorPickerInternal = ({
         updateColor={updateColor}
         updateCustomColor={updateCustomColor}
       />
-      <div css={tw`border border-gray-200 border-solid`} />
+      <div tw="border border-gray-200 border-solid" />
       <Colors
         color={color}
         colors={colors}
         selectedIcon={selectedIcon}
         updateColor={updateColor}
       />
-      <Button
+      <PlateButton
         data-testid="ColorPickerClear"
-        css={tw`w-full py-2`}
+        tw="w-full py-2"
         onClick={clearColor}
         disabled={!color}
       >
         Clear
-      </Button>
+      </PlateButton>
     </div>
   );
 };

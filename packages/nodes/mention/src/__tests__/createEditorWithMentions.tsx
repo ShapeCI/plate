@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { createPlateEditor, PlateEditor } from '@shapeci/plate-core';
-import { createParagraphPlugin } from '@shapeci/plate-paragraph';
-import { jsx } from '@shapeci/plate-test-utils';
+import { createPlateEditor, PlateEditor, Value } from '@udecode/plate-core';
+import { createParagraphPlugin } from '@udecode/plate-paragraph';
+import { jsx } from '@udecode/plate-test-utils';
 import { createMentionPlugin } from '../createMentionPlugin';
 
 jsx;
@@ -15,13 +15,13 @@ export type CreateEditorOptions = {
   };
 };
 
-export const createEditorWithMentions = (
+export const createEditorWithMentions = <V extends Value>(
   state: JSX.Element,
   {
     multipleMentionPlugins,
     pluginOptions: { trigger, key } = {},
   }: CreateEditorOptions = {}
-): PlateEditor => {
+): PlateEditor<V> => {
   const plugins = [
     createParagraphPlugin(),
     createMentionPlugin({ key, options: { trigger } }),

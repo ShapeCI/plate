@@ -1,52 +1,39 @@
 {
-  "name": "@shapeci/plate-ui-image",
-  "version": "1.0.3",
+  "name": "@udecode/plate-ui-image",
+  "version": "15.0.3",
   "description": "Image UI for Plate",
-  "keywords": [
-    "slate",
-    "plate",
-    "plugin"
-  ],
+  "license": "MIT",
   "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/shapeci/plate/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shapeci/plate.git",
     "directory": "packages/ui/nodes/image"
   },
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udecode/plate/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "tsc && yarn rollup",
-    "build:w": "yarn rollup -w",
-    "cti": "sh ../../../../cti.sh",
-    "rollup": "rollup -c=../../../../rollup.config.js",
-    "test": "jest"
-  },
-  "dependencies": {
-    "@shapeci/plate-core": "^1.0.3",
-    "@shapeci/plate-image": "^1.0.3",
-    "@shapeci/plate-styled-components": "^1.0.3",
-    "@shapeci/plate-ui-toolbar": "^1.0.3",
-    "re-resizable": "^6.9.0",
-    "react-textarea-autosize": "^8.3.3"
-  },
+  "types": "dist/index.d.ts",
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",
     "@shapeci/slate-history": "1.0.2",
     "@shapeci/slate-react": "1.0.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
+    "slate": ">=0.78.0",
+    "slate-history": ">=0.66.0",
+    "slate-react": ">=0.79.0",
     "styled-components": ">=5.0.0"
   },
+  "keywords": [
+    "plate",
+    "plugin",
+    "slate"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
   },

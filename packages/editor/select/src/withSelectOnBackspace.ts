@@ -1,36 +1,45 @@
 import {
-    isCollapsed,
-    queryNode,
-    TNode,
-    WithOverride
-} from '@shapeci/plate-core';
-import Slate, { Editor, Transforms } from '@shapeci/slate';
+  getNodeEntries,
+  getPointBefore,
+  isCollapsed,
+  PlateEditor,
+  queryNode,
+  select,
+  Value,
+  WithPlatePlugin,
+} from '@udecode/plate-core';
+import Slate from 'slate';
 import { SelectOnBackspacePlugin } from './createSelectOnBackspacePlugin';
 
 /**
  * Set a list of element types to select on backspace
  */
-export const withSelectOnBackspace: WithOverride<
-  {},
-  SelectOnBackspacePlugin
-> = (editor, { options: { query } }) => {
+export const withSelectOnBackspace = <
+  V extends Value = Value,
+  E extends PlateEditor<V> = PlateEditor<V>
+>(
+  editor: E,
+  { options: { query } }: WithPlatePlugin<SelectOnBackspacePlugin, V, E>
+) => {
   const { deleteBackward } = editor;
 
   editor.deleteBackward = (unit: 'character' | 'word' | 'line' | 'block') => {
     const { selection } = editor;
+
     if (unit === 'character' && isCollapsed(selection)) {
-      const prevNode = Editor.before(editor, selection as Slate.Location, {
+      const pointBefore = getPointBefore(editor, selection as Slate.Location, {
         unit,
       });
-      if (prevNode) {
-        const [prevCell] = Editor.nodes<TNode>(editor, {
-          match: (node) => queryNode([node as TNode, prevNode.path], query),
-          at: prevNode,
+
+      if (pointBefore) {
+        const [prevCell] = getNodeEntries(editor, {
+          match: (node) => queryNode([node, pointBefore.path], query),
+          at: pointBefore,
         });
 
-        if (!!prevCell && prevNode) {
+        if (!!prevCell && pointBefore) {
           // don't delete image, set selection there
-          Transforms.select(editor, prevNode);
+          select(editor, pointBefore);
         } else {
           deleteBackward(unit);
         }

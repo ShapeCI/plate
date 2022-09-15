@@ -1,11 +1,14 @@
-import { usePlateSelectors } from '../platesStore';
-import { getPlateEditorRef } from './usePlateEditorRef';
+import { Value } from '../../../slate/editor/TEditor';
+import { PlateEditor } from '../../../types/plate/PlateEditor';
+import { PlateId, usePlateSelectors } from '../createPlateStore';
 
-export const getPlatePlugins = <T = {}>(id?: string) =>
-  getPlateEditorRef<T>(id)?.plugins;
-
-export const usePlatePlugins = <T = {}>(id?: string) => {
+export const usePlatePlugins = <
+  V extends Value = Value,
+  E extends PlateEditor<V> = PlateEditor<V>
+>(
+  id?: PlateId
+) => {
   usePlateSelectors(id).keyPlugins();
 
-  return getPlatePlugins<T>(id);
+  return usePlateSelectors<V, E>(id).plugins();
 };

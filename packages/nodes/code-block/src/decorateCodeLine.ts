@@ -1,11 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unused-vars,simple-import-sort/imports */
 import {
-    Decorate,
-    getParent,
-    getPlugin,
-    TDescendant
-} from '@shapeci/plate-core';
-import { Node, NodeEntry, Range } from '@shapeci/slate';
+  DecorateEntry,
+  getNodeString,
+  getParentNode,
+  getPlugin,
+  PlateEditor,
+  Value,
+} from '@udecode/plate-core';
+
 // noinspection ES6UnusedImports
 import { languages, Token, tokenize } from 'prismjs';
 import 'prismjs/components/prism-antlr4';
@@ -17,9 +19,9 @@ import 'prismjs/components/prism-cpp';
 import 'prismjs/components/prism-csharp';
 import 'prismjs/components/prism-css';
 import 'prismjs/components/prism-dart';
-import 'prismjs/components/prism-django';
+// import 'prismjs/components/prism-django';
 import 'prismjs/components/prism-docker';
-import 'prismjs/components/prism-ejs';
+// import 'prismjs/components/prism-ejs';
 import 'prismjs/components/prism-erlang';
 import 'prismjs/components/prism-git';
 import 'prismjs/components/prism-go';
@@ -38,7 +40,7 @@ import 'prismjs/components/prism-markdown';
 import 'prismjs/components/prism-matlab';
 import 'prismjs/components/prism-objectivec';
 import 'prismjs/components/prism-perl';
-import 'prismjs/components/prism-php';
+// import 'prismjs/components/prism-php';
 import 'prismjs/components/prism-powershell';
 import 'prismjs/components/prism-properties';
 import 'prismjs/components/prism-protobuf';
@@ -55,36 +57,41 @@ import 'prismjs/components/prism-tsx';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-wasm';
 import 'prismjs/components/prism-yaml';
+import { Range } from 'slate';
 import {
-    ELEMENT_CODE_BLOCK,
-    ELEMENT_CODE_LINE,
-    ELEMENT_CODE_SYNTAX
+  ELEMENT_CODE_BLOCK,
+  ELEMENT_CODE_LINE,
+  ELEMENT_CODE_SYNTAX,
 } from './constants';
-import { CodeBlockPlugin } from './types';
-
+import { CodeBlockPlugin, TCodeBlockElement } from './types';
 
 export interface CodeSyntaxRange extends Range {
   tokenType: string;
   [ELEMENT_CODE_SYNTAX]: true;
 }
 
-export const decorateCodeLine: Decorate = (editor) => {
-  const code_block = getPlugin<CodeBlockPlugin>(editor, ELEMENT_CODE_BLOCK);
-  const code_line = getPlugin(editor, ELEMENT_CODE_LINE);
+export const decorateCodeLine = <
+  V extends Value = Value,
+  E extends PlateEditor<V> = PlateEditor<V>
+>(
+  editor: E
+): DecorateEntry => {
+  const code_block = getPlugin<CodeBlockPlugin, V>(editor, ELEMENT_CODE_BLOCK);
+  const code_line = getPlugin<{}, V>(editor, ELEMENT_CODE_LINE);
 
-  return ([node, path]: NodeEntry<TDescendant>): CodeSyntaxRange[] => {
+  return ([node, path]): CodeSyntaxRange[] => {
     const ranges: CodeSyntaxRange[] = [];
 
     if (!code_block.options.syntax || node.type !== code_line.type) {
       return ranges;
     }
 
-    const codeBlock = getParent(editor, path);
+    const codeBlock = getParentNode<TCodeBlockElement>(editor, path);
     if (!codeBlock) {
       return ranges;
     }
 
-    let langName = codeBlock[0].lang;
+    let langName = codeBlock[0].lang ?? '';
     if (langName === 'plain') {
       langName = '';
     }
@@ -94,7 +101,7 @@ export const decorateCodeLine: Decorate = (editor) => {
       return ranges;
     }
 
-    const text = Node.string(node);
+    const text = getNodeString(node);
     const tokens = tokenize(text, lang);
     let offset = 0;
 

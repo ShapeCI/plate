@@ -1,46 +1,41 @@
 {
-  "name": "@shapeci/plate-horizontal-rule",
-  "version": "1.0.3",
+  "name": "@udecode/plate-horizontal-rule",
+  "version": "17.0.1",
   "description": "Horizontal rule plugin for Plate",
-  "keywords": [
-    "slate",
-    "plate",
-    "plugin"
-  ],
+  "license": "MIT",
   "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/shapeci/plate/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shapeci/plate.git",
     "directory": "packages/nodes/horizontal-rule"
   },
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udecode/plate/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "tsc && yarn rollup",
-    "build:w": "yarn rollup -w",
-    "cti": "sh ../../../cti.sh",
-    "rollup": "rollup -c=../../../rollup.config.js",
-    "test": "jest"
-  },
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "@shapeci/plate-core": "^1.0.3"
+    "@udecode/plate-core": "17.0.1"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",
     "@shapeci/slate-history": "1.0.2",
     "@shapeci/slate-react": "1.0.1",
     "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react-dom": ">=16.8.0",
+    "slate": ">=0.78.0",
+    "slate-history": ">=0.66.0",
+    "slate-react": ">=0.79.0"
   },
+  "keywords": [
+    "plate",
+    "plugin",
+    "slate"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
   },

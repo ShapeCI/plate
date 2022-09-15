@@ -1,16 +1,30 @@
-import { TElement } from '@shapeci/plate-core';
+import { useEffect } from 'react';
 import {
-    ELEMENT_TABLE,
-    getTableColumnCount,
-    TableNodeData
-} from '@shapeci/plate-table';
-import { useAtom } from 'jotai';
-import { resizingColAtom } from '../table.atoms';
+  findNodePath,
+  getPluginOptions,
+  unsetNodes,
+  useEditorRef,
+} from '@udecode/plate-core';
+import {
+  ELEMENT_TABLE,
+  getTableColumnCount,
+  TablePlugin,
+  TTableElement,
+} from '@udecode/plate-table';
+import { useTableStore } from '../table.atoms';
 
-export const useTableColSizes = (
-  tableNode: TElement<TableNodeData>
-): number[] => {
-  const [resizingCol] = useAtom(resizingColAtom, ELEMENT_TABLE);
+/**
+ * Returns node.colSizes if it exists, otherwise returns a 0-filled array.
+ * Unset node.colSizes if `colCount` updates to 1.
+ */
+export const useTableColSizes = (tableNode: TTableElement): number[] => {
+  const editor = useEditorRef();
+  const resizingCol = useTableStore().get.resizingCol();
+
+  const { disableUnsetSingleColSize } = getPluginOptions<TablePlugin>(
+    editor,
+    ELEMENT_TABLE
+  );
 
   const colCount = getTableColumnCount(tableNode);
 
@@ -21,6 +35,18 @@ export const useTableColSizes = (
   if (resizingCol) {
     colSizes[resizingCol.index ?? 0] = resizingCol.width;
   }
+
+  useEffect(() => {
+    if (
+      !disableUnsetSingleColSize &&
+      colCount < 2 &&
+      tableNode.colSizes?.length
+    ) {
+      unsetNodes(editor, 'colSizes', {
+        at: findNodePath(editor, tableNode),
+      });
+    }
+  }, [colCount, disableUnsetSingleColSize, editor, tableNode]);
 
   return colSizes;
 };

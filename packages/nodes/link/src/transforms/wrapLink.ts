@@ -1,21 +1,34 @@
-import { getPluginType, PlateEditor, wrapNodes } from '@shapeci/plate-core';
-import { Location } from '@shapeci/slate';
+import {
+  getPluginType,
+  PlateEditor,
+  Value,
+  wrapNodes,
+  WrapNodesOptions,
+} from '@udecode/plate-core';
 import { ELEMENT_LINK } from '../createLinkPlugin';
+import { TLinkElement } from '../types';
+
+export interface WrapLinkOptions<V extends Value = Value>
+  extends WrapNodesOptions<V> {
+  url: string;
+  target?: string;
+}
 
 /**
- * Wrap selected nodes with a link and collapse at the end.
+ * Wrap a link node with split.
  */
-export const wrapLink = <T = {}>(
-  editor: PlateEditor<T>,
-  { at, url }: { url: string; at?: Location }
+export const wrapLink = <V extends Value>(
+  editor: PlateEditor<V>,
+  { url, target, ...options }: WrapLinkOptions<V>
 ) => {
-  wrapNodes(
+  wrapNodes<TLinkElement, Value>(
     editor,
     {
       type: getPluginType(editor, ELEMENT_LINK),
       url,
+      target,
       children: [],
     },
-    { at, split: true }
+    { split: true, ...options } as any
   );
 };

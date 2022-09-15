@@ -3,7 +3,8 @@
 import { withReact } from '@shapeci/slate-react';
 import { mockPlugin } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { CONFIG } from '../../../../../../../docs/src/live/config/config';
+import { autoformatPlugin } from 'examples/src/autoformat/autoformatPlugin';
+import { withReact } from 'slate-react';
 import { withAutoformat } from '../../../withAutoformat';
 
 jsx;
@@ -32,7 +33,7 @@ describe('when -space', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText(' ');
@@ -65,7 +66,7 @@ describe('when 1.space', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText(' ');
@@ -94,7 +95,7 @@ describe('when [].space', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText(' ');
@@ -123,7 +124,7 @@ describe('when [x].space', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText(' ');

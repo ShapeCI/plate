@@ -1,12 +1,13 @@
 import {
-    ELEMENT_DEFAULT,
-    getPlugin,
-    getPluginType,
-    PlateEditor,
-    TDescendant,
-    TElement,
-    TNode
-} from '@shapeci/plate-core';
+  ELEMENT_DEFAULT,
+  getPlugin,
+  getPluginType,
+  PlateEditor,
+  TDescendant,
+  TElement,
+  TNode,
+  Value,
+} from '@udecode/plate-core';
 import {
     ELEMENT_TABLE,
     ELEMENT_TD,
@@ -32,8 +33,8 @@ const isValidCsv = (
   );
 };
 
-export const deserializeCsv = <T = {}>(
-  editor: PlateEditor<T>,
+export const deserializeCsv = <V extends Value>(
+  editor: PlateEditor<V>,
   {
     data,
     header = false,
@@ -44,7 +45,10 @@ export const deserializeCsv = <T = {}>(
 ): TDescendant[] | undefined => {
   const {
     options: { errorTolerance },
-  } = getPlugin<DeserializeCsvPlugin, T>(editor, KEY_DESERIALIZE_CSV);
+  } = getPlugin<DeserializeCsvPlugin, V, PlateEditor<V>>(
+    editor,
+    KEY_DESERIALIZE_CSV
+  );
 
   // Verify it's a csv string
   const testCsv = parse(data, { preview: 2 });

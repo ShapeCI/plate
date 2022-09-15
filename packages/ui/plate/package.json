@@ -1,63 +1,43 @@
 {
-  "name": "@shapeci/plate-ui",
-  "version": "1.0.3",
+  "name": "@udecode/plate-ui",
+  "version": "17.0.1",
   "description": "Plate UI",
-  "keywords": [
-    "wysiwyg",
-    "rich text",
-    "editor",
-    "html",
-    "contentEditable",
-    "framework",
-    "slate",
-    "plate",
-    "plugin"
-  ],
+  "license": "MIT",
   "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/shapeci/plate/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shapeci/plate.git",
     "directory": "packages/ui/plate"
   },
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udecode/plate/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "tsc && yarn rollup",
-    "build:w": "yarn rollup -w",
-    "cti": "sh ../../../cti.sh below",
-    "rollup": "rollup -c=../../../rollup.config.js"
-  },
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "@shapeci/plate-headless": "^1.0.3",
-    "@shapeci/plate-styled-components": "^1.0.3",
-    "@shapeci/plate-ui-alignment": "^1.0.3",
-    "@shapeci/plate-ui-block-quote": "^1.0.3",
-    "@shapeci/plate-ui-button": "^1.0.3",
-    "@shapeci/plate-ui-code-block": "^1.0.3",
-    "@shapeci/plate-ui-combobox": "^1.0.3",
-    "@shapeci/plate-ui-dnd": "^1.0.3",
-    "@shapeci/plate-ui-find-replace": "^1.0.3",
-    "@shapeci/plate-ui-font": "^1.0.3",
-    "@shapeci/plate-ui-image": "^1.0.3",
-    "@shapeci/plate-ui-line-height": "^1.0.3",
-    "@shapeci/plate-ui-link": "^1.0.3",
-    "@shapeci/plate-ui-list": "^1.0.3",
-    "@shapeci/plate-ui-media-embed": "^1.0.3",
-    "@shapeci/plate-ui-mention": "^1.0.3",
-    "@shapeci/plate-ui-placeholder": "^1.0.3",
-    "@shapeci/plate-ui-popover": "^1.0.3",
-    "@shapeci/plate-ui-popper": "^1.0.3",
-    "@shapeci/plate-ui-table": "^1.0.3",
-    "@shapeci/plate-ui-toolbar": "^1.0.3"
+    "@udecode/plate-headless": "17.0.1",
+    "@udecode/plate-styled-components": "17.0.1",
+    "@udecode/plate-ui-alignment": "17.0.1",
+    "@udecode/plate-ui-block-quote": "17.0.1",
+    "@udecode/plate-ui-button": "17.0.1",
+    "@udecode/plate-ui-code-block": "17.0.1",
+    "@udecode/plate-ui-combobox": "17.0.1",
+    "@udecode/plate-ui-cursor": "17.0.1",
+    "@udecode/plate-ui-dnd": "17.0.1",
+    "@udecode/plate-ui-find-replace": "17.0.1",
+    "@udecode/plate-ui-font": "17.0.1",
+    "@udecode/plate-ui-line-height": "17.0.1",
+    "@udecode/plate-ui-link": "17.0.1",
+    "@udecode/plate-ui-list": "17.0.1",
+    "@udecode/plate-ui-media": "17.0.1",
+    "@udecode/plate-ui-mention": "17.0.1",
+    "@udecode/plate-ui-placeholder": "17.0.1",
+    "@udecode/plate-ui-table": "17.0.1",
+    "@udecode/plate-ui-toolbar": "17.0.1"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",
@@ -65,9 +45,26 @@
     "@shapeci/slate-hyperscript": "1.0.1",
     "@shapeci/slate-react": "1.0.1",
     "react": ">=16.8.0",
+    "react-dnd": ">=14.0.0",
+    "react-dnd-html5-backend": ">=14.0.0",
     "react-dom": ">=16.8.0",
+    "slate": ">=0.78.0",
+    "slate-history": ">=0.66.0",
+    "slate-hyperscript": ">=0.66.0",
+    "slate-react": ">=0.79.0",
     "styled-components": ">=5.0.0"
   },
+  "keywords": [
+    "contentEditable",
+    "editor",
+    "framework",
+    "html",
+    "plate",
+    "plugin",
+    "rich text",
+    "slate",
+    "wysiwyg"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
   },

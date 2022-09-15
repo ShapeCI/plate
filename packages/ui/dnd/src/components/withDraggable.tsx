@@ -1,43 +1,42 @@
 import {
-    createNodesWithHOC,
-    PlateRenderElementProps,
-    TEditor
-} from '@shapeci/plate-core';
-import { Path } from '@shapeci/slate';
-import { ReactEditor, useReadOnly } from '@shapeci/slate-react';
-import React, { forwardRef, useMemo } from 'react';
+  createNodesWithHOC,
+  findNodePath,
+  PlateRenderElementProps,
+  Value,
+} from '@udecode/plate-core';
+import { useReadOnly } from 'slate-react';
 import { Draggable } from './Draggable';
 import { DraggableProps } from './Draggable.types';
 
-export interface WithDraggableOptions
-  extends Pick<DraggableProps, 'onRenderDragHandle' | 'styles'> {
-  level?: number;
-  filter?: (editor: TEditor, path: Path) => boolean;
-  allowReadOnly?: boolean;
-}
+export interface WithDraggableOptions<V extends Value = Value>
+  extends Pick<
+    DraggableProps<V>,
+    'onRenderDragHandle' | 'styles' | 'level' | 'filter' | 'allowReadOnly'
+  > {}
 
-export const withDraggable = (
+export const withDraggable = <V extends Value>(
   Component: any,
   {
     styles,
-    level,
+    level = 0,
     filter,
     allowReadOnly = false,
     onRenderDragHandle,
-  }: WithDraggableOptions = {}
+  }: WithDraggableOptions<V> = {}
 ) => {
-  return forwardRef((props: PlateRenderElementProps, ref) => {
+  return forwardRef((props: PlateRenderElementProps<V>, ref) => {
     const { attributes, element, editor } = props;
     const readOnly = useReadOnly();
-    const path = useMemo(() => ReactEditor.findPath(editor, element), [
+    const path = useMemo(() => findNodePath(editor, element), [
       editor,
       element,
     ]);
 
     const filteredOut = useMemo(
       () =>
-        (Number.isInteger(level) && level !== path.length - 1) ||
-        (filter && filter(editor, path)),
+        path &&
+        ((Number.isInteger(level) && level !== path.length - 1) ||
+          (filter && filter(editor, path))),
       [path, editor]
     );
 

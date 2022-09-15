@@ -1,40 +1,26 @@
 {
-  "name": "@shapeci/plate",
-  "version": "1.0.3",
+  "name": "@udecode/plate",
+  "version": "17.0.1",
   "description": "Plate – a plugin system for slate",
-  "keywords": [
-    "wysiwyg",
-    "rich text",
-    "editor",
-    "html",
-    "contentEditable",
-    "framework",
-    "slate",
-    "plate",
-    "plugin"
-  ],
+  "license": "MIT",
+  "homepage": "https://plate.udecode.io",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ShapeCI/plate.git",
     "directory": "packages/plate"
   },
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udecode/plate/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "tsc && yarn rollup",
-    "build:w": "yarn rollup -w",
-    "cti": "sh ../../cti.sh below",
-    "rollup": "rollup -c=../../rollup.config.js"
-  },
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "@shapeci/plate-headless": "^1.0.3",
-    "@shapeci/plate-ui": "^1.0.3"
+    "@udecode/plate-headless": "17.0.1",
+    "@udecode/plate-ui": "17.0.1"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",
@@ -43,8 +29,23 @@
     "@shapeci/slate-react": "1.0.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
+    "slate": ">=0.78.0",
+    "slate-history": ">=0.66.0",
+    "slate-hyperscript": ">=0.66.0",
+    "slate-react": ">=0.79.0",
     "styled-components": ">=5.0.0"
   },
+  "keywords": [
+    "contentEditable",
+    "editor",
+    "framework",
+    "html",
+    "plate",
+    "plugin",
+    "rich text",
+    "slate",
+    "wysiwyg"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
   },

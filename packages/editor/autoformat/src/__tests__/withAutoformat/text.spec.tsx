@@ -3,7 +3,8 @@
 import { withReact } from '@shapeci/slate-react';
 import { mockPlugin } from '@udecode/plate-core';
 import { jsx } from '@udecode/plate-test-utils';
-import { CONFIG } from '../../../../../../docs/src/live/config/config';
+import { autoformatPlugin } from 'examples/src/autoformat/autoformatPlugin';
+import { withReact } from 'slate-react';
 import { withAutoformat } from '../../withAutoformat';
 
 jsx;
@@ -32,7 +33,69 @@ describe('when --space', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
+    );
+
+    editor.insertText('-');
+
+    expect(input.children).toEqual(output.children);
+  });
+
+  it('should not insert — with multiple in between chars', () => {
+    const input = (
+      <editor>
+        <hp>
+          -OO
+          <cursor />
+          hello
+        </hp>
+      </editor>
+    ) as any;
+
+    const output = (
+      <editor>
+        <hp>
+          -OO-
+          <cursor />
+          hello
+        </hp>
+      </editor>
+    ) as any;
+
+    const editor = withAutoformat(
+      withReact(input),
+      mockPlugin(autoformatPlugin as any)
+    );
+
+    editor.insertText('-');
+
+    expect(input.children).toEqual(output.children);
+  });
+
+  it('should not insert — with 1 in between char', () => {
+    const input = (
+      <editor>
+        <hp>
+          -O
+          <cursor />
+          hello
+        </hp>
+      </editor>
+    ) as any;
+
+    const output = (
+      <editor>
+        <hp>
+          -O-
+          <cursor />
+          hello
+        </hp>
+      </editor>
+    ) as any;
+
+    const editor = withAutoformat(
+      withReact(input),
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText('-');
@@ -65,7 +128,7 @@ describe('when (tm)', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText(')');
@@ -98,7 +161,7 @@ describe('when &sect', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText(';');
@@ -131,7 +194,7 @@ describe('when //', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText('/');
@@ -174,7 +237,7 @@ describe('when typing %%%', () => {
 
     const editor = withAutoformat(
       withReact(input),
-      mockPlugin(CONFIG.autoformat)
+      mockPlugin(autoformatPlugin as any)
     );
 
     editor.insertText('%');

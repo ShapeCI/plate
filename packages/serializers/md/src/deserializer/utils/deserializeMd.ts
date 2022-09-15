@@ -1,24 +1,25 @@
 import {
-    MARK_BOLD,
-    MARK_CODE,
-    MARK_ITALIC,
-    MARK_STRIKETHROUGH
-} from '@shapeci/plate-basic-marks';
-import { ELEMENT_BLOCKQUOTE } from '@shapeci/plate-block-quote';
-import { ELEMENT_CODE_BLOCK } from '@shapeci/plate-code-block';
-import { getPluginType, PlateEditor } from '@shapeci/plate-core';
+  MARK_BOLD,
+  MARK_CODE,
+  MARK_ITALIC,
+  MARK_STRIKETHROUGH,
+} from '@udecode/plate-basic-marks';
+import { ELEMENT_BLOCKQUOTE } from '@udecode/plate-block-quote';
+import { ELEMENT_CODE_BLOCK } from '@udecode/plate-code-block';
+import { getPluginType, PlateEditor, Value } from '@udecode/plate-core';
 import {
-    ELEMENT_H1,
-    ELEMENT_H2,
-    ELEMENT_H3,
-    ELEMENT_H4,
-    ELEMENT_H5,
-    ELEMENT_H6
-} from '@shapeci/plate-heading';
-import { ELEMENT_HR } from '@shapeci/plate-horizontal-rule';
-import { ELEMENT_LINK } from '@shapeci/plate-link';
-import { ELEMENT_LI, ELEMENT_OL, ELEMENT_UL } from '@shapeci/plate-list';
-import { ELEMENT_PARAGRAPH } from '@shapeci/plate-paragraph';
+  ELEMENT_H1,
+  ELEMENT_H2,
+  ELEMENT_H3,
+  ELEMENT_H4,
+  ELEMENT_H5,
+  ELEMENT_H6,
+} from '@udecode/plate-heading';
+import { ELEMENT_HR } from '@udecode/plate-horizontal-rule';
+import { ELEMENT_LINK } from '@udecode/plate-link';
+import { ELEMENT_LI, ELEMENT_OL, ELEMENT_UL } from '@udecode/plate-list';
+import { ELEMENT_IMAGE } from '@udecode/plate-media';
+import { ELEMENT_PARAGRAPH } from '@udecode/plate-paragraph';
 import markdown from 'remark-parse';
 import slate from 'remark-slate';
 import unified from 'unified';
@@ -27,7 +28,10 @@ import unified from 'unified';
  * Deserialize content from Markdown format to Slate format.
  * `editor` needs
  */
-export const deserializeMd = (editor: PlateEditor, data: string) => {
+export const deserializeMd = <V extends Value>(
+  editor: PlateEditor<V>,
+  data: string
+) => {
   const tree: any = unified()
     .use(markdown)
     .use(slate, {
@@ -43,6 +47,7 @@ export const deserializeMd = (editor: PlateEditor, data: string) => {
         // underline: getPluginType(editor, MARK_UNDERLINE),
         // subscript: getPluginType(editor, MARK_SUBSCRIPT),
         // superscript: getPluginType(editor, MARK_SUPERSCRIPT),
+        image: getPluginType(editor, ELEMENT_IMAGE),
         code_block: getPluginType(editor, ELEMENT_CODE_BLOCK),
         thematic_break: getPluginType(editor, ELEMENT_HR),
         ul_list: getPluginType(editor, ELEMENT_UL),

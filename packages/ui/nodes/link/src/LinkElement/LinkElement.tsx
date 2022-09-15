@@ -1,27 +1,13 @@
-import { LinkNodeData } from '@shapeci/plate-link';
-import {
-    getRootProps,
-    StyledElementProps
-} from '@shapeci/plate-styled-components';
 import React from 'react';
+import { Value } from '@udecode/plate-core';
+import { Link, TLinkElement } from '@udecode/plate-link';
+import { StyledElementProps } from '@udecode/plate-styled-components';
 import { getLinkElementStyles } from './LinkElement.styles';
 
-export const LinkElement = (props: StyledElementProps<LinkNodeData>) => {
-  const { attributes, children, nodeProps, element } = props;
+export const LinkElement = (props: StyledElementProps<Value, TLinkElement>) => {
+  const { as, ...rootProps } = props;
 
-  const rootProps = getRootProps(props);
   const { root } = getLinkElementStyles(props);
 
-  return (
-    <a
-      {...attributes}
-      href={element.url}
-      css={root.css}
-      className={root.className}
-      {...rootProps}
-      {...nodeProps}
-    >
-      {children}
-    </a>
-  );
+  return <Link.Root {...rootProps} css={root.css} />;
 };

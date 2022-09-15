@@ -1,58 +1,53 @@
 {
-  "name": "@shapeci/plate-serializer-md",
-  "version": "1.0.3",
+  "name": "@udecode/plate-serializer-md",
+  "version": "17.0.1",
   "description": "Markdown serializer plugin for Plate",
-  "keywords": [
-    "slate",
-    "plate",
-    "plugin",
-    "serializer",
-    "markdown",
-    "md"
-  ],
+  "license": "MIT",
   "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/shapeci/plate/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shapeci/plate.git",
     "directory": "packages/serializers/md"
   },
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udecode/plate/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "tsc && yarn rollup",
-    "build:w": "yarn rollup -w",
-    "cti": "sh ../../../cti.sh",
-    "rollup": "rollup -c=../../../rollup.config.js",
-    "test": "jest"
-  },
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "@shapeci/plate-block-quote": "^1.0.3",
-    "@shapeci/plate-code-block": "^1.0.3",
-    "@shapeci/plate-core": "^1.0.3",
-    "@shapeci/plate-heading": "^1.0.3",
-    "@shapeci/plate-link": "^1.0.3",
-    "@shapeci/plate-list": "^1.0.3",
-    "@shapeci/plate-paragraph": "^1.0.3",
+    "@udecode/plate-block-quote": "17.0.1",
+    "@udecode/plate-code-block": "17.0.1",
+    "@udecode/plate-core": "17.0.1",
+    "@udecode/plate-heading": "17.0.1",
+    "@udecode/plate-link": "17.0.1",
+    "@udecode/plate-list": "17.0.1",
+    "@udecode/plate-paragraph": "17.0.1",
     "remark-parse": "^9.0.0",
-    "remark-slate": "^1.4.0",
-    "unified": "^9.2.0"
+    "remark-slate": "^1.8.6",
+    "unified": "^9.2.1"
   },
   "peerDependencies": {
     "@shapeci/slate": "1.0.0",
     "@shapeci/slate-history": "1.0.2",
     "@shapeci/slate-react": "1.0.1",
     "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react-dom": ">=16.8.0",
+    "slate": ">=0.78.0",
+    "slate-history": ">=0.66.0",
+    "slate-react": ">=0.79.0"
   },
+  "keywords": [
+    "markdown",
+    "md",
+    "plate",
+    "plugin",
+    "serializer",
+    "slate"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shapeci"
   },

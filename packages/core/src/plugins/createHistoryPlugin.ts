@@ -1,11 +1,20 @@
-import { withHistory } from '@shapeci/slate-history';
-import { WithOverride } from '../types/plugins/WithOverride';
-import { createPluginFactory } from '../utils/createPluginFactory';
+import { withHistory } from 'slate-history';
+import { TEditor, Value } from '../slate/editor/TEditor';
+import { THistoryEditor } from '../slate/history-editor/THistoryEditor';
+import { createPluginFactory } from '../utils/plate/createPluginFactory';
+
+export const withTHistory = <
+  V extends Value = Value,
+  E extends TEditor<V> = TEditor<V>,
+  EE extends E = E & THistoryEditor<V>
+>(
+  editor: E
+) => (withHistory(editor as any) as any) as EE;
 
 /**
  * @see {@link withHistory}
  */
 export const createHistoryPlugin = createPluginFactory({
   key: 'history',
-  withOverrides: withHistory as WithOverride,
+  withOverrides: withTHistory,
 });

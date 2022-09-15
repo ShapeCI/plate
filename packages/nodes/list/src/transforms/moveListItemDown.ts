@@ -1,16 +1,28 @@
-import { match, PlateEditor, TElement, wrapNodes } from '@shapeci/plate-core';
-import { Ancestor, Editor, Element, NodeEntry, Path, Transforms } from '@shapeci/slate';
+import {
+  getNodeEntry,
+  match,
+  moveNodes,
+  PlateEditor,
+  TElement,
+  TElementEntry,
+  Value,
+  withoutNormalizing,
+  wrapNodes,
+} from '@udecode/plate-core';
+import { Path } from 'slate';
 import { getListTypes } from '../queries';
 
 export interface MoveListItemDownOptions {
-  list: NodeEntry<TElement>;
-  listItem: NodeEntry<TElement>;
+  list: TElementEntry;
+  listItem: TElementEntry;
 }
 
-export const moveListItemDown = (
-  editor: PlateEditor,
+export const moveListItemDown = <V extends Value>(
+  editor: PlateEditor<V>,
   { list, listItem }: MoveListItemDownOptions
 ) => {
+  let moved = false;
+
   const [listNode] = list;
   const [, listItemPath] = listItem;
 
@@ -23,25 +35,25 @@ export const moveListItemDown = (
   }
 
   // Previous sibling is the new parent
-  const previousSiblingItem = Editor.node(
+  const previousSiblingItem = getNodeEntry<TElement>(
     editor,
     previousListItemPath
-  ) as NodeEntry<Ancestor>;
+  );
 
   if (previousSiblingItem) {
     const [previousNode, previousPath] = previousSiblingItem;
 
-    const sublist = previousNode.children.find((n) =>
-      match(n, { type: getListTypes(editor) })
-    ) as Element | undefined;
+    const sublist = (previousNode.children as TElement[]).find((n) =>
+      match(n, [], { type: getListTypes(editor) })
+    );
     const newPath = previousPath.concat(
       sublist ? [1, sublist.children.length] : [1]
     );
 
-    Editor.withoutNormalizing(editor, () => {
+    withoutNormalizing(editor, () => {
       if (!sublist) {
         // Create new sublist
-        wrapNodes(
+        wrapNodes<TElement>(
           editor,
           { type: listNode.type, children: [] },
           { at: listItemPath }
@@ -49,10 +61,14 @@ export const moveListItemDown = (
       }
 
       // Move the current item to the sublist
-      Transforms.moveNodes(editor, {
+      moveNodes(editor, {
         at: listItemPath,
         to: newPath,
       });
+
+      moved = true;
     });
   }
+
+  return moved;
 };

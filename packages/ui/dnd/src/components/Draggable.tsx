@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import useMergedRef from '@react-hook/merged-ref';
+import { Value } from '@udecode/plate-core';
 import { useDndBlock } from '../hooks/useDndBlock';
 import { getDraggableStyles } from './Draggable.styles';
 import { DraggableProps, DragHandleProps } from './Draggable.types';
@@ -8,7 +9,7 @@ const DefaultDragHandle = ({ styles, ...props }: DragHandleProps) => (
   <button type="button" {...props} css={styles} />
 );
 
-export const Draggable = (props: DraggableProps) => {
+export const Draggable = <V extends Value>(props: DraggableProps<V>) => {
   const { children, element, componentRef, onRenderDragHandle } = props;
 
   const DragHandle = onRenderDragHandle ?? DefaultDragHandle;
@@ -19,8 +20,8 @@ export const Draggable = (props: DraggableProps) => {
   const multiRootRef = useMergedRef(componentRef, rootRef);
 
   const { dropLine, dragRef, isDragging } = useDndBlock({
-    id: element.id,
-    blockRef: rootRef,
+    id: element.id as string,
+    nodeRef: rootRef,
   });
 
   const multiDragRef = useMergedRef(dragRef, dragWrapperRef);
@@ -37,24 +38,6 @@ export const Draggable = (props: DraggableProps) => {
       className={styles.root.className}
       ref={multiRootRef}
     >
-      <div
-        ref={blockRef}
-        css={[
-          ...(styles.blockAndGutter?.css ?? []),
-          ...(styles.block?.css ?? []),
-        ]}
-      >
-        {children}
-
-        {!!dropLine && (
-          <div
-            css={styles.dropLine?.css}
-            className={styles.dropLine?.className}
-            contentEditable={false}
-          />
-        )}
-      </div>
-
       <div
         css={[
           ...(styles.blockAndGutter?.css ?? []),
@@ -80,6 +63,24 @@ export const Draggable = (props: DraggableProps) => {
             />
           </div>
         </div>
+      </div>
+
+      <div
+        ref={blockRef}
+        css={[
+          ...(styles.blockAndGutter?.css ?? []),
+          ...(styles.block?.css ?? []),
+        ]}
+      >
+        {children}
+
+        {!!dropLine && (
+          <div
+            css={styles.dropLine?.css}
+            className={styles.dropLine?.className}
+            contentEditable={false}
+          />
+        )}
       </div>
     </div>
   );

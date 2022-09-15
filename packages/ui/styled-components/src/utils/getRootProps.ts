@@ -1,9 +1,9 @@
-import { AnyObject } from '@shapeci/plate-core';
+import { AnyObject, EElement, Value } from '@udecode/plate-core';
 import { StyledElementProps } from '../StyledElement/StyledElement.types';
 import { StyledLeafProps } from '../StyledLeaf/StyledLeaf.types';
 
-export const getRootProps = (
-  props: StyledElementProps | StyledLeafProps | AnyObject
+export const getRootProps = <V extends Value = Value>(
+  props: StyledElementProps<V, EElement<V>> | StyledLeafProps<V> | AnyObject
 ) => {
   const {
     editor,
@@ -17,7 +17,7 @@ export const getRootProps = (
     leaf,
     text,
     ...rootProps
-  } = props;
+  } = props as StyledElementProps<V, EElement<V>> & StyledLeafProps<V>;
 
   return rootProps;
 };

@@ -1,55 +1,90 @@
-import { getAbove, KeyboardHandler, TElement } from '@shapeci/plate-core';
-import { Transforms } from '@shapeci/slate';
-import { getNextTableCell } from './queries/getNextTableCell';
-import { getPreviousTableCell } from './queries/getPreviousTableCell';
-import { getTableCellEntry } from './queries/getTableCellEntry';
+import {
+  getAboveNode,
+  Hotkeys,
+  KeyboardHandlerReturnType,
+  PlateEditor,
+  PluginOptions,
+  select,
+  TElement,
+  Value,
+  WithPlatePlugin,
+} from '@udecode/plate-core';
+import isHotkey from 'is-hotkey';
+import {
+  getNextTableCell,
+  getPreviousTableCell,
+  getTableEntries,
+} from './queries/index';
+import { moveSelectionFromCell } from './transforms/index';
+import { keyShiftEdges } from './constants';
 
-export const onKeyDownTable: KeyboardHandler = (editor, { type }) => (e) => {
-  if (e.key === 'Tab') {
-    e.preventDefault();
-    e.stopPropagation();
-    const res = getTableCellEntry(editor, {});
-    if (!res) return;
-    const { tableRow, tableCell } = res;
-    const [, tableCellPath] = tableCell;
-    const shiftTab = e.shiftKey;
-    const tab = !e.shiftKey;
-    if (shiftTab) {
-      // move left with shift+tab
-      const previousCell = getPreviousTableCell(
-        editor,
-        tableCell,
-        tableCellPath,
-        tableRow
-      );
-      if (previousCell) {
-        const [, previousCellPath] = previousCell;
-        Transforms.select(editor, previousCellPath);
-      }
-    } else if (tab) {
-      // move right with tab
-      const nextCell = getNextTableCell(
-        editor,
-        tableCell,
-        tableCellPath,
-        tableRow
-      );
-      if (nextCell) {
-        const [, nextCellPath] = nextCell;
-        Transforms.select(editor, nextCellPath);
+export const onKeyDownTable = <
+  P = PluginOptions,
+  V extends Value = Value,
+  E extends PlateEditor<V> = PlateEditor<V>
+>(
+  editor: E,
+  { type }: WithPlatePlugin<P, V, E>
+): KeyboardHandlerReturnType => (e) => {
+  const isKeyDown = {
+    'shift+up': isHotkey('shift+up', e),
+    'shift+down': isHotkey('shift+down', e),
+    'shift+left': isHotkey('shift+left', e),
+    'shift+right': isHotkey('shift+right', e),
+  };
+
+  Object.keys(isKeyDown).forEach((key) => {
+    if (isKeyDown[key]) {
+      // if many cells are selected
+      if (
+        moveSelectionFromCell(editor, {
+          reverse: key === 'shift+up',
+          edge: keyShiftEdges[key],
+        })
+      ) {
+        e.preventDefault();
+        e.stopPropagation();
       }
     }
+  });
+
+  const isTab = Hotkeys.isTab(editor, e);
+  const isUntab = Hotkeys.isUntab(editor, e);
+  if (isTab || isUntab) {
+    const entries = getTableEntries(editor);
+    if (!entries) return;
+
+    const { row, cell } = entries;
+    const [, cellPath] = cell;
+
+    if (isUntab) {
+      // move left with shift+tab
+      const previousCell = getPreviousTableCell(editor, cell, cellPath, row);
+      if (previousCell) {
+        const [, previousCellPath] = previousCell;
+        select(editor, previousCellPath);
+      }
+    } else if (isTab) {
+      // move right with tab
+      const nextCell = getNextTableCell(editor, cell, cellPath, row);
+      if (nextCell) {
+        const [, nextCellPath] = nextCell;
+        select(editor, nextCellPath);
+      }
+    }
+
+    e.preventDefault();
+    e.stopPropagation();
   }
 
-  // FIXME: would prefer this as mod+a, but doesn't work
-  if (e.key === 'a' && (e.metaKey || e.ctrlKey)) {
-    const res = getAbove<TElement>(editor, { match: { type } });
+  if (isHotkey('mod+a', e)) {
+    const res = getAboveNode<TElement>(editor, { match: { type } });
     if (!res) return;
 
     const [, tablePath] = res;
 
     // select the whole table
-    Transforms.select(editor, tablePath);
+    select(editor, tablePath);
 
     e.preventDefault();
     e.stopPropagation();

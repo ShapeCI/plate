@@ -1,9 +1,13 @@
 import { StyledProps } from '@shapeci/plate-styled-components';
 import { UsePopperPositionOptions } from '@shapeci/plate-ui-popper';
 import { ReactNode } from 'react';
+import { UseVirtualFloatingOptions } from '@udecode/plate-floating';
+import { StyledProps } from '@udecode/plate-styled-components';
 import { ToolbarProps } from '../Toolbar/Toolbar.types';
 
-export interface BalloonToolbarStyleProps extends BalloonToolbarProps {}
+export interface BalloonToolbarStyleProps extends BalloonToolbarProps {
+  placement?: string;
+}
 
 export interface BalloonToolbarProps extends StyledProps<ToolbarProps> {
   children: ReactNode;
@@ -20,5 +24,5 @@ export interface BalloonToolbarProps extends StyledProps<ToolbarProps> {
 
   portalElement?: Element;
 
-  popperOptions?: Partial<UsePopperPositionOptions>;
+  floatingOptions?: UseVirtualFloatingOptions;
 }

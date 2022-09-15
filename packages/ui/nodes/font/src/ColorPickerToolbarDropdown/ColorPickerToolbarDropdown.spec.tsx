@@ -2,10 +2,15 @@ import { Editor, Transforms } from '@shapeci/slate';
 import { render, RenderOptions, screen } from '@testing-library/react';
 import userEvents from '@testing-library/user-event';
 import {
-    getPlateEditorRef,
-    Plate,
-    PlateEditor,
-    TDescendant
+  createPlateEditor,
+  createTEditor,
+  getEndPoint,
+  getStartPoint,
+  Plate,
+  PlateEditor,
+  select,
+  TEditor,
+  Value,
 } from '@udecode/plate-core';
 import {
     createFontBackgroundColorPlugin,
@@ -14,7 +19,6 @@ import {
     MARK_BG_COLOR,
     MARK_COLOR
 } from '@udecode/plate-font';
-import React, { ReactElement, ReactNode } from 'react';
 import { ColorPickerToolbarDropdown } from './ColorPickerToolbarDropdown';
 
 const DEFAULT_PLUGINS = [
@@ -23,7 +27,7 @@ const DEFAULT_PLUGINS = [
   createFontSizePlugin(),
 ];
 
-const DEFAULT_INITIAL_VALUE: TDescendant[] = [
+const DEFAULT_INITIAL_VALUE: Value = [
   {
     type: 'p',
     children: [
@@ -38,13 +42,18 @@ function renderWithPlate(
   ui: ReactElement,
   {
     initialValue = DEFAULT_INITIAL_VALUE,
+    editor,
     ...options
   }: {
-    initialValue?: TDescendant[];
+    initialValue?: Value;
+    editor?: TEditor;
   } & RenderOptions = {}
 ) {
   const Wrapper = ({ children }: { children?: ReactNode }) => (
-    <Plate plugins={DEFAULT_PLUGINS} initialValue={initialValue}>
+    <Plate
+      editor={createPlateEditor({ editor, plugins: DEFAULT_PLUGINS })}
+      initialValue={initialValue}
+    >
       {children}
     </Plate>
   );
@@ -80,14 +89,14 @@ describe('ColorPickerToolbarDropdown', () => {
           />
         );
 
-        renderWithPlate(<Component />);
+        editor = createTEditor() as any;
 
-        editor = getPlateEditorRef()!;
+        renderWithPlate(<Component />, { editor });
 
         // select the entire text
-        Transforms.select(editor, {
-          anchor: Editor.start(editor, []),
-          focus: Editor.end(editor, []),
+        select(editor, {
+          anchor: getStartPoint(editor, []),
+          focus: getEndPoint(editor, []),
         });
       });
 
